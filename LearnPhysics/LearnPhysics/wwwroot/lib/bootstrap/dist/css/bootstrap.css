@@ -70,7 +70,8 @@
 
 .body-background-image {
     /*  background-image: url('../../../../images/minimal-wallpapers-hd-for-desktop.jpg');*/
-    background-image: url('../../../../images/paperplane.png');
+    /*background-image: url('../../../../images/paperplane.png');*/
+    background-image: url('../../../../images/paperplanedesktop.png');
     /*background-image: url('../../../../images/paperplaneblue.png');*/
     background-repeat: no-repeat
 }
