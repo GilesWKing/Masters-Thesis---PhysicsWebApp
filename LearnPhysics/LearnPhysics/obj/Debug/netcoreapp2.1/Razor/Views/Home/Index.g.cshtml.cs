@@ -85,7 +85,7 @@ using LearnPhysics.Models;
     ");
             EndContext();
             BeginContext(663, 117, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("button", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8b80bbed0b08460287a891bdbba8196f", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("button", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1f5a1a016d834a9ebb56d740cc53b845", async() => {
                 BeginContext(766, 5, true);
                 WriteLiteral("Login");
                 EndContext();
