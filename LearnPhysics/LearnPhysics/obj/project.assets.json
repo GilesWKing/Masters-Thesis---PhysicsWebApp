@@ -11800,11 +11800,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Giles\\source\\repos\\LearnPhysics\\LearnPhysics\\LearnPhysics.csproj",
+      "projectUniqueName": "C:\\Users\\Giles\\Source\\Repos\\giles-king-pg\\Proj516\\LearnPhysics\\LearnPhysics\\LearnPhysics.csproj",
       "projectName": "LearnPhysics",
-      "projectPath": "C:\\Users\\Giles\\source\\repos\\LearnPhysics\\LearnPhysics\\LearnPhysics.csproj",
+      "projectPath": "C:\\Users\\Giles\\Source\\Repos\\giles-king-pg\\Proj516\\LearnPhysics\\LearnPhysics\\LearnPhysics.csproj",
       "packagesPath": "C:\\Users\\Giles\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Giles\\source\\repos\\LearnPhysics\\LearnPhysics\\obj\\",
+      "outputPath": "C:\\Users\\Giles\\Source\\Repos\\giles-king-pg\\Proj516\\LearnPhysics\\LearnPhysics\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
