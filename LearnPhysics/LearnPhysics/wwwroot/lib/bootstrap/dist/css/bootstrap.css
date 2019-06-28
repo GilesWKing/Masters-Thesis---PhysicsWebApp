@@ -75,6 +75,9 @@
     /*background-image: url('../../../../images/paperplaneblue.png');*/
     background-repeat: no-repeat
 }
+
+
+
 /*-------- End Custom CSS here!!! --------*/
 *,
 *::before,
@@ -1706,6 +1709,11 @@ pre code {
   margin-bottom: 1rem;
   color: #495057;
 }
+
+    .table.center {
+        margin-left: auto;
+        margin-right: auto;
+    }
 
 .table th,
 .table td {
