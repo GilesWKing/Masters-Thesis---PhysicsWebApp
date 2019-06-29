@@ -47,7 +47,6 @@
     margin-bottom: 1rem;
     max-width: 250px;
     margin: auto;
-
     padding-bottom: 1em;
 }
 
@@ -71,7 +70,7 @@
 .body-background-image {
     /*  background-image: url('../../../../images/minimal-wallpapers-hd-for-desktop.jpg');*/
     /*background-image: url('../../../../images/paperplane.png');*/
-    background-image: url('../../../../images/paperplanedesktop.png');
+    /*background-image: url('../../../../images/paperplanedesktop.png');*/
     /*background-image: url('../../../../images/paperplaneblue.png');*/
     background-repeat: no-repeat
 }
@@ -79,6 +78,10 @@
 
 
 /*-------- End Custom CSS here!!! --------*/
+
+
+
+
 *,
 *::before,
 *::after {
@@ -1706,14 +1709,9 @@ pre code {
 
 .table {
   width: 100%;
-  margin-bottom: 1rem;
+  margin-bottom: 0rem;
   color: #495057;
 }
-
-    .table.center {
-        margin-left: auto;
-        margin-right: auto;
-    }
 
 .table th,
 .table td {

@@ -2,78 +2,87 @@
     ViewData["Title"] = "Home Page";
 }
 
+<br />
+
 <div class="container">
-    <br />
 
     <h1 style="text-align:center;"><u>Topics</u></h1>
     <br />
     <!-- Begin tables to list topics. -->
-    <table class="table" style="width:80%; margin-left:10%; margin-right:10%;">
+    <table class="table-borderless" style="width:80%; margin-left:10%; margin-right:10%;">
         <tr>
             <th scope="col" rowspan="3">
-                <div style="text-align:center;">
-                    <img src="~/images/math-png-icon-20.jpg" height="128px" width="128px" />
+                <div style="text-align:left;">
+                    <img src="~/images/math-png-icon-20.jpg" height="76px" width="76px" />
                 </div>
             </th>
-            <th scope="col">Maths Skills</th>
+            <th scope="col"><h3>Maths Skills</h3></th>
         </tr>
         <tr>
-            <td>Difficulty: easy</td>
+            <td><p>easy</p></td>
         </tr>
         <tr>
-            <td>          </td>
+            <td><p>          </p></td>
+        </tr>
+    </table>
+
+    <table class="table-borderless" style="width:80%; margin-left:10%; margin-right:10%;">
+        <tr>
+            <th scope="col" rowspan="3">
+                <div style="text-align:left;">
+                    <a asp-area="" asp-controller="Energy" asp-action="Index">
+                        <img src="~/images/sun.png" height="76px" width="76px" />
+                    </a>
+                </div>
+            </th>
+
+            <th scope="col"><a asp-area="" asp-controller="Energy" asp-action="Index"><h3>Energy</h3></a></th>
+        </tr>
+        <tr>
+            <td><p>3 equations</p></td>
+        </tr>
+        <tr>
+            <td><p>easy</p></td>
+        </tr>
+    </table>
+
+    <table class="table-borderless" style="width:80%; margin-left:10%; margin-right:10%;">
+        <tr>
+            <th scope="col" rowspan="3">
+                <div style="text-align:left;">
+                    <img src="~/images/ParticleModel.png" height="76px" width="76px" style="border-radius: 1.25rem;" />
+                </div>
+            </th>
+            <th scope="col"><h3>Particles</h3></th>
+        </tr>
+        <tr>
+            <td><p>2 equations</p></td>
+        </tr>
+        <tr>
+            <td><p>medium</p></td>
+        </tr>
+    </table>
+
+    <table class="table-borderless" style="width:80%; margin-left:10%; margin-right:10%;">
+        <tr>
+            <th scope="col" rowspan="3">
+                <div style="text-align:left;">
+                    <img src="~/images/question_mark.png" height="45.2px" width="76x" />
+                </div>
+            </th>
+            <th scope="col"><h3>Blog</h3></th>
+        </tr>
+        <tr>
+            <td><p>FAQ's</p></td>
+        </tr>
+        <tr>
+            <td></td>
         </tr>
     </table>
 
     <table class="table" style="width:80%; margin-left:10%; margin-right:10%;">
-        <tr>
-            <th scope="col" rowspan="3">
-                <div style="text-align:center;">
-                    <img src="~/images/sun.png" height="128px" width="128px" />
-                </div>
-            </th>
-            <th scope="col">Energy</th>
-        </tr>
-        <tr>
-            <td>Difficulty: easy</td>
-        </tr>
-        <tr>
-            <td>3 equations</td>
-        </tr>
-    </table>
-
-    <table class="table" style="width:80%; margin-left:10%; margin-right:10%;">
-        <tr>
-            <th scope="col" rowspan="3">
-                <div style="text-align:center;">
-                    <img src="~/images/ParticleModel.png" height="128px" width="128px" style="border-radius: 1.25rem;" />
-                </div>
-            </th>
-            <th scope="col">Particles</th>
-        </tr>
-        <tr>
-            <td>Difficulty: med</td>
-        </tr>
-        <tr>
-            <td>2 equations</td>
-        </tr>
-    </table>
-
-    <table class="table" style="width:80%; margin-left:10%; margin-right:10%;">
-        <tr>
-            <th scope="col" rowspan="3">
-                <div style="text-align:center;">
-                    <img src="~/images/question_mark_PNG128.png" height="76.3px" width="128px" />
-                </div>
-            </th>
-            <th scope="col">Blog</th>
-        </tr>
-        <tr>
-            <td>Difficulty: easy</td>
-        </tr>
-        <tr>
-            <td>3 equations</td>
-        </tr>
+        <tr></tr>
     </table>
 
 </div>
+<br />

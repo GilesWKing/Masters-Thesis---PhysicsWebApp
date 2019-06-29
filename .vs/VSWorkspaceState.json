@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\LearnPhysics"
+    "\\LearnPhysics",
+    "\\LearnPhysics\\LearnPhysics",
+    "\\LearnPhysics\\LearnPhysics\\Views"
   ],
-  "SelectedNode": "\\LearnPhysics\\LearnPhysics.sln",
+  "SelectedNode": "\\LearnPhysics\\LearnPhysics\\Views",
   "PreviewInSolutionExplorer": false
 }
