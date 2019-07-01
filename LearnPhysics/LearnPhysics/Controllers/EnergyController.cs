@@ -8,7 +8,7 @@ namespace LearnPhysics.Controllers
 {
     public class EnergyController : Controller
     {
-        public IActionResult Index()
+        public IActionResult EnergyIndex()
         {
             return View();
         }

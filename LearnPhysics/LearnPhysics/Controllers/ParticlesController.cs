@@ -6,9 +6,9 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace LearnPhysics.Controllers
 {
-    public class TopicsController : Controller
+    public class ParticlesController : Controller
     {
-        public IActionResult TopicsIndex()
+        public IActionResult ParticlesIndex()
         {
             return View();
         }
