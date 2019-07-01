@@ -1,0 +1,121 @@
+﻿@{
+    ViewData["Title"] = "List of Topics";
+}
+
+<!-- OPEN CONTAINER FOR TABLE -->
+<div class="container">
+
+    <h2 style="text-align:center;"><u>Topics</u></h2>
+    <br />
+    <!-- Begin tables to list topics. -->
+    <!-- MATHS SKILLS TABLE BEGINS HERE -->
+    <table class="table-borderless" style="width:80%; margin-left:10%; margin-right:10%;">
+        <tr>
+            <th scope="col" rowspan="3" style="width:82px;">
+                <div style="text-align:left;">
+                    <div class="img-border-custom" style="height:82px;">
+                        <img src="~/images/math-png-icon-20.jpg" height="76px" width="76px" />
+                    </div>
+                </div>
+            </th>
+            <th scope="col">
+                <a asp-area="" asp-controller="Maths" asp-action="MathsIndex">
+                    <h3 style="margin-bottom: 0rem;">Maths Skills</h3>
+                </a>
+            </th>
+        </tr>
+        <tr>
+            <td><p-custom>Making maths easy</p-custom></td>
+        </tr>
+        <tr>
+            <td><p-custom>easy</p-custom></td>
+        </tr>
+    </table>
+
+    <br />
+
+    <!-- ENERGY TOPIC TABLE BEGINS HERE -->
+    <table class="table-borderless" style="width:80%; margin-left:10%; margin-right:10%;">
+        <tr>
+            <th scope="col" rowspan="3" style="width:82px;">
+                <div style="text-align:left;">
+                    <div class="img-border-custom" style="height:82px;">
+                        <a asp-area="" asp-controller="Energy" asp-action="Index">
+                            <img src="~/images/sun.png" height="76px" width="76px" />
+                        </a>
+                    </div>
+                </div>
+            </th>
+            <th scope="col">
+                <a asp-area="" asp-controller="Energy" asp-action="EnergyIndex">
+                    <h3 style="margin-bottom: 0rem;">Energy</h3>
+                </a>
+            </th>
+        </tr>
+        <tr>
+            <td><p-custom>3 equations</p-custom></td>
+        </tr>
+        <tr>
+            <td><p-custom>easy</p-custom></td>
+        </tr>
+    </table>
+
+    <br />
+
+    <!-- PARTICLE MODEL TOPIC TABLE BEGINS HERE -->
+    <table class="table-borderless" style="width:80%; margin-left:10%; margin-right:10%;">
+        <tr>
+            <th scope="col" rowspan="3" style="width:82px;">
+                <div style="text-align:left;">
+                    <div class="img-border-custom" style="height:82px;">
+                        <img src="~/images/ParticleModel.png" height="76px" width="76px" style="border-radius: 1.25rem;" />
+                    </div>
+                </div>
+            </th>
+            <th scope="col">
+                <a asp-area="" asp-controller="Particles" asp-action="ParticlesIndex">
+                    <h3 style="margin-bottom: 0rem;">Particles</h3>
+                </a>
+            </th>
+        </tr>
+        <tr>
+            <td><p-custom>2 equations</p-custom></td>
+        </tr>
+        <tr>
+            <td><p-custom>medium</p-custom></td>
+        </tr>
+    </table>
+
+    <br />
+
+    <!-- BLOG AND FAQ'S TABLE BEGINS HERE -->
+    <table class="table-borderless" style="width:80%; margin-left:10%; margin-right:10%;">
+        <tr>
+            <th scope="col" rowspan="3" style="width:82px;">
+                <div style="text-align:left;">
+                    <div class="img-border-custom" style="height:82px;">
+                        <img src="~/images/question_mark.png" height="45.2px" width="76px" />
+                    </div>
+                </div>
+            </th>
+            <th scope="col">
+                <a asp-area="" asp-controller="Blog" asp-action="BlogIndex">
+                    <h3 style="margin-bottom: 0rem;">Blog </h3>
+                </a>
+            </th>
+        </tr>
+        <tr>
+            <td><p-custom>FAQ's</p-custom></td>
+        </tr>
+        <tr>
+            <td><p-custom>What's new?</p-custom></td>
+        </tr>
+    </table>
+
+    <!-- TABLE ENDS HERE -->
+
+</div>
+
+<!-- CLOSE CONTAINER FOR TABLE -->
+
+<br />
