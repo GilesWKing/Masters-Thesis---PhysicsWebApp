@@ -12,5 +12,10 @@ namespace LearnPhysics.Controllers
         {
             return View();
         }
+
+        public IActionResult Lesson1()
+        {
+            return View();
+        }
     }
 }
