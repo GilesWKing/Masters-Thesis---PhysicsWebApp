@@ -1,30 +1,33 @@
 ﻿
 @{
-    ViewData["Title"] = "Lesson1View";
+    ViewData["Title"] = "Lesson 1";
 }
+
 <br />
 
-<h2 style="text-align: center;"><u>Lesson 1: Energy</u></h2>
+<h2 style="text-align: center; margin-top:80px;"><u>Lesson 1: Energy</u></h2>
 
 <br />
 
 <div class="container">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <ul class="nav nav-tabs">
-        <li class="nav-item">
-            <a class="nav-link active" data-toggle="tab" href="#intro">Intro</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#part1">1</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#part2">2</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#part3">3</a>
-        </li>
-    </ul>
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#intro">Intro</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#part1">1</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#part2">2</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#part3">3</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#summary">Summary</a>
+            </li>
+        </ul>
 
     <div id="myTabContent" class="tab-content">
 
@@ -32,10 +35,18 @@
         <div class="tab-pane fade active show" id="intro">
             <br />
             <p>
-                Energy is all around us yet we can't see it.
-                It's neither tangible, nor visible so it can be quite an abstract thing
-                to think about. Don't worry, this simple lesson will open your eyes
-                to energy and what it's in everyday life. Consider the below.
+                Energy is all around us yet (other than light) it's rare that we can see it.
+                With the exception of heat and electricity, it's not really
+                <a href="#" style="color:black; font-weight:bold;" data-toggle="tooltip" data-placement="top"
+                   title="definition: able to touch or feel something">
+                    tangible
+                </a>, so it can be quite an abstract thing to learn about.
+            </p>
+            <p>
+                Energy comes in many different forms, and we use it in very different ways.
+            </p>
+            <p>
+                But for now, consider the questions below;
             </p>
             <h4><strong><u>Big questions;</u></strong></h4>
             <br />
@@ -50,19 +61,22 @@
             <p><strong> - What is energy?</strong></p>
             <br />
             <p>
-                Energy is defined as the ‘capacity to do work’ which is a technical way of
-                saying moving an object from one place to another.
+                Energy is defined as the ‘capacity to do
+                <a href="#" style="color:black; font-weight:bold;" title="Work" data-container="body" data-toggle="popover" data-placement="top"
+                   data-content="A technical way to say moving something from one place to another. The real definition is when a force is applied to, and moves an object."
+                   data-original-title="Work" aria-describedby="popover168466">work</a>’.
             </p>
             <p>
-                Energy is also used when discussing the temperature of an object. In general
+                Energy is also used when discussing the
+                <a href="#" style="color:black; font-weight:bold;" title="Temperature" data-container="body" data-toggle="popover" data-placement="top"
+                   data-content="Temperature is actually a way of saying the amount of energy something contains." data-original-title="Temperature"
+                   aria-describedby="popover168466">temperature</a> of an object. In general
                 terms, something with a higher temperature has more energy than something with
                 a lower temperature (fridges and freezers are exceptions to the rule).
             </p>
-
             <p>A good way to look at it would be a blacksmith with a heavy metal bar.</p>
             <p>
-                - To move the metal bar means the smith would have to do ‘work’, i.e.
-                use energy from his body.
+                - To move the metal bar means the smith would have to do work, i.e.apply a force by using energy from his body.
             </p>
             <p>
                 - Once the metal bar has been placed in a fire, the metal bar would
@@ -76,41 +90,52 @@
 
         <!-- PART 2 -->
         <div class="tab-pane fade" id="part2">
+
             <br />
+
             <p><strong> - Where does energy come from?</strong></p>
 
             <br />
+
             <p>
                 Good question! Energy cannot be created or destroyed. It just moves from one
                 form to another.
             </p>
-
             <p>
-                For that reason, the energy we are using today must have already existed
+                For that reason, the energy we are use is not created, so it must have already existed
                 from somewhere before.
             </p>
-
             <p>
-                The overwhelming theory surrounding the ‘creation’ of all energy is the ‘big
-                bang’, the event that started the construction and expansion of the universe.
+                The overwhelming theory surrounding the ‘<b>creation</b>’ of all energy is the ‘big
+                bang’ - the event that started the construction and expansion of the universe.
             </p>
-
             <p>
                 After the big bang, all the energy that was available has been used to create
-                stars, planets and life on Earth began to use this energy.
+                stars, planets and other objects in the cosmos. Life on Earth started by exploiting this energy.
             </p>
 
-            <p>
-                Plants use energy from the sun to make sugars. Animals eat plants to gain energy,
-                keep vital organs working, store fat, build muscle and continue to live. When
-                they die, other animals and organisms breakdown the body to gain energy.
-            </p>
+            <div class="row justify-content-center">
+                <div class="card text-white bg-secondary mb-3" style="max-width: 494px;">
+                    <div class="card-body">
+                        <img src="~/images/topics/energy/lesson1/solarenergy.png" />
+                    </div>
+                </div>
+            </div>
 
             <p>
-                On our planet, all energy can be traced back to the Sun. The Sun’s energy can be
+                Plants photosynthesise, making use of energy from the sun to make sugars.
+                Without plants exploiting the
+                <a href="#" style="color:black; font-weight:bold;" title="Sunlight" data-container="body" data-toggle="popover" data-placement="top"
+                   data-content="Currently we use fossil fuels as an energy source. Fossil fuels used to be life that relied on photosynthetic organisms,
+                   and the sun's energy. We are therefore still using sunlight as our main energy source." data-original-title="Sunlight"
+                   aria-describedby="popover168466">
+                    energy from the sun
+                </a>, life would not be here on Earth.
+            </p>
+            <p>
+                On our planet, all energy can be traced back to the Sun, and the Sun’s energy can be
                 traced back to the big bang.
             </p>
-
         </div>
 
         <!-- PART 3 -->
@@ -122,13 +147,16 @@
                 As we’ve already seen, a smith can use energy to make a fire, move
                 metal to heat it and then be able to bend the metal bar.
             </p>
-
             <p>
-                Energy is something we can measure, usually in Joules. We also measure
-                energy in food as calories. As humans, we need to consume food to perform
-                actions and continue to live.
+                Energy is something we can measure, usually in
+                <a href="#" style="color:black; font-weight:bold;" title="Joule" data-container="body" data-toggle="popover" data-placement="top"
+                   data-content="Named after a scientist - James Prescott Joule. Remember, a Joule is
+                   a unit of energy. Scientists use the capital letter J as a symbol."
+                   data-original-title="Joules" aria-describedby="popover168466">
+                    Joules
+                </a>. We also measure energy in food as calories. As humans, we need to
+                consume food to perform actions and continue to live.
             </p>
-
             <ul>
                 <li>
                     A mosquito uses very little energy and would need to fly non-stop for 72 days
@@ -143,11 +171,55 @@
                 <li>A 30 minute run can use 1,300,000 joules of energy.</li>
                 <li>
                     An atomic bomb releases approximately 63,000,000,000,000 (63 trillion) joules
-                    of energy.</li>
+                    of energy.
+                </li>
             </ul>
-
-            <p>Everything requires energy but in varying amounts.</p>
-
-
+            <p>
+                Everything requires energy but in varying amounts.
+            </p>
         </div>
 
+        <!-- PART 4 - Summary -->
+        <div class="tab-pane fade" id="summary">
+            <br />
+            <p><strong> Summary</strong></p>
+            <br />
+            <ul>
+                <li>
+                    Energy is defined by physicists as the capacity to do '
+                    <a href="#" style="color:black; font-weight:bold;" title="Work" data-container="body" data-toggle="popover" data-placement="top"
+                       data-content="A technical way to say moving something from one place to another." data-original-title="Work"
+                       aria-describedby="popover168466">work</a>'
+                </li>
+                <li>
+                    Energy cannot be created or destroyed, but transformed from one form to another.
+                </li>
+                <li>
+                    Energy is measured in
+                    <a href="#" style="color:black; font-weight:bold;" title="Joule" data-container="body" data-toggle="popover" data-placement="top"
+                       data-content="Named after a scientist - James Prescott Joule. Remember, a joule is
+                   a unit of energy. Scientists use the capital letter J as a symbol."
+                       data-original-title="Joules" aria-describedby="popover168466">Joules</a>
+                </li>
+                <li>
+                    1 joule of energy can be expended by a human when lifting an apple 1 metre
+                    in the air.
+                </li>
+                <li>
+                    The most widely believed theory is that the big bang created all the energy around us today.
+                </li>
+                <li>
+                    Most of the energy available to us on the planet has come from the Sun, which showers us with energy everyday.
+                </li>
+                <li>
+                    Life forms have exploited the energy from the sun. We rely on these organisms to give us energy as well.
+                </li>
+                <li>
+                    We need energy to do work.
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<a href="">Back to topics list</a>

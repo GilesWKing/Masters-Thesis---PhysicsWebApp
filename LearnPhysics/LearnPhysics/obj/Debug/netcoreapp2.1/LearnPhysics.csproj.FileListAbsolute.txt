@@ -99,3 +99,8 @@ C:\Users\Giles\Source\Repos\giles-king-pg\Proj516\LearnPhysics\LearnPhysics\obj\
 C:\Users\Giles\Source\Repos\giles-king-pg\Proj516\LearnPhysics\LearnPhysics\obj\Debug\netcoreapp2.1\Razor\Views\Particles\ParticlesIndex.g.cshtml.cs
 C:\Users\Giles\Source\Repos\giles-king-pg\Proj516\LearnPhysics\LearnPhysics\obj\Debug\netcoreapp2.1\Razor\Views\Topics\TopicsIndex.g.cshtml.cs
 C:\Users\Giles\Source\Repos\giles-king-pg\Proj516\LearnPhysics\LearnPhysics\obj\Debug\netcoreapp2.1\Razor\Views\Energy\Lesson1.g.cshtml.cs
+C:\Users\Giles\Source\Repos\giles-king-pg\Proj516\LearnPhysics\LearnPhysics\obj\Debug\netcoreapp2.1\Razor\Views\Energy\Lesson2.g.cshtml.cs
+C:\Users\Giles\Source\Repos\giles-king-pg\Proj516\LearnPhysics\LearnPhysics\obj\Debug\netcoreapp2.1\Razor\Views\Energy\Lesson3.g.cshtml.cs
+C:\Users\Giles\Source\Repos\giles-king-pg\Proj516\LearnPhysics\LearnPhysics\obj\Debug\netcoreapp2.1\Razor\Views\Energy\Lesson4.g.cshtml.cs
+C:\Users\Giles\Source\Repos\giles-king-pg\Proj516\LearnPhysics\LearnPhysics\obj\Debug\netcoreapp2.1\Razor\Views\Energy\Lesson5.g.cshtml.cs
+C:\Users\Giles\Source\Repos\giles-king-pg\Proj516\LearnPhysics\LearnPhysics\obj\Debug\netcoreapp2.1\Razor\Views\Energy\Lesson6.g.cshtml.cs
