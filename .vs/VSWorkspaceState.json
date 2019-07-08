@@ -3,8 +3,9 @@
     "",
     "\\LearnPhysics",
     "\\LearnPhysics\\LearnPhysics",
-    "\\LearnPhysics\\LearnPhysics\\Views"
+    "\\LearnPhysics\\LearnPhysics\\Views",
+    "\\LearnPhysics\\LearnPhysics\\Views\\Energy"
   ],
-  "SelectedNode": "\\LearnPhysics\\LearnPhysics\\Views",
+  "SelectedNode": "\\LearnPhysics\\LearnPhysics.sln",
   "PreviewInSolutionExplorer": false
 }
