@@ -11,6 +11,68 @@
 <div class="container">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <a class="nav-link active" data-toggle="tab" href="#intro">Intro</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#part1">1</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#part2">2</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#part3">3</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#part4">4</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#summary">Summary</a>
+        </li>
+    </ul>
 
-    <a asp-area="" asp-controller="Energy" asp-action="EnergyIndex">Back to lessons list</a>
+    <div id="myTabContent" class="tab-content">
+
+        <!-- INTRO -->
+        <div class="tab-pane fade active show" id="intro">
+            <br />
+            <p>
+                In this lesson, we will look at the equations for 
+                <a href="javascript://" style="color:black; font-weight:bold;" data-toggle="tooltip" data-placement="top"
+                   title="Kinetic energy meant the energy something has when it moves - like a human running.">
+                    Kinetic
+                    </a>
+                    energy and 
+                <a href="javascript://" style="color:black; font-weight:bold;" data-toggle="tooltip" data-placement="top"
+                   title="Gravitational potential energy is the energy something has when above the Earth's surface 
+                   - like an apple hanging from a tree.">
+                    Gravitational potential
+                    </a>
+            energy.</p>
+        </div>
+
+        <!-- PART 1 -->
+        <div class="tab-pane fade active show" id="part1">
+            <br />
+            <p>
+                In this lesson, we will look at the equations for Kinetic energy and Gravitational potential energy.
+            </p>
+        </div>
+
+        <!-- PART 2 -->
+        <div class="tab-pane fade active show" id="part2">
+            <br />
+            <p>
+                In this lesson, we will look at the equations for Kinetic energy and Gravitational potential energy.
+            </p>
+        </div>
+
+    </div>
+
+        <hr />
+        <a asp-area="" asp-controller="Energy" asp-action="EnergyIndex">Back to lessons list</a>
+        <br />
+    
+    <br />
 </div>
