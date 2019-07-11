@@ -1,4 +1,6 @@
-﻿
+﻿@model LearnPhysics.Models.RegistrationModel
+
+
 @{
     ViewData["Title"] = "Registration";
 }
@@ -8,98 +10,118 @@
 
 <br />
 
-<fieldset class="login-fieldset" style="margin-top:0px;">
+    @using (Html.BeginForm("Registration", "Home", FormMethod.Post))
+    {
+        <fieldset class="login-fieldset" style="margin-top:0px;">
 
-    <div class="form-group row">
-        <label for="username">Username: </label>
-        <input type="text" class="form-control" id="usernameInput" aria-describedby="usernameHelp" placeholder="Enter username" style="border-radius: 1.25rem;">
-        <small id="usernameHelp" class="form-text text-muted">Pick a memorable username - <b>NOT your own name or anything identifiable to you as an individual</b>.</small>
-    </div>
 
-    <div class="form-group row">
-        <label for="passwordInput">Password: </label>
-        <input type="password" class="form-control" id="passwordInput" placeholder="Enter password" style="border-radius: 1.25rem;">
-        <small id="passwordHelp" class="form-text text-muted">Pick a memorable password - <b>NOT something you use on other websites</b>.</small>
-    </div>
+            <div class="form-group row">
+                <label for="username">Username: </label>
+                @Html.TextBoxFor(m=>m.Username, new { placeholder = "Enter username", aria_describedby = "usernameHelp",  @class ="form-control", @style = "border-radius: 1.25rem;"})
+                <!--<input type="text" class="form-control" name="username" id="usernameInput" aria-describedby="usernameHelp" placeholder="Enter username" style="border-radius: 1.25rem;">-->
+                <small id="usernameHelp" class="form-text text-muted">Pick a memorable username - <b>NOT your own name or anything identifiable to you as an individual</b>.</small>
+            </div>
 
-    <div class="form-group row">
-        <label>
-            Sex:
-            &emsp;&emsp;
-            <label for="gender-Female">
-                <input type="radio" name="gender-Female" id="gender-Female" value="Female" />
-                Female
-            </label>
-            &emsp;&emsp;
-            <label for="gender-Male">
-                <input type="radio" name="gender-Male" id="gender-Male" value="Male" />
-                Male
-            </label>
-        </label>
-    </div>
+            <div class="form-group row">
+                <label for="passwordInput">Password: </label>
+                @Html.PasswordFor(m => m.Password, new { placeholder = "Enter password", aria_describedby = "passwordHelp", @class = "form-control", @style = "border-radius: 1.25rem;" })
+                <!--<input type="password" class="form-control" name="password" id="passwordInput" placeholder="Enter password" style="border-radius: 1.25rem;">-->
+                <small id="passwordHelp" class="form-text text-muted">Pick a memorable password - <b>NOT something you use on other websites</b>.</small>
+            </div>
 
-    <div class="form-group row">
-        <label>Age:</label>
-        &emsp;&emsp;
-        <label for="age-20">
-            <input type="radio" name="age-20" id="age-20" value="0-20" />
-            0 - 20
-        </label>
-        &emsp;&emsp;
-        <label for="age-30">
-            <input type="radio" name="age-30" id="age-30" value="21-30" />
-            21-30
-        </label>
-        &emsp;&emsp;
-        <label for="age-40">
-            <input type="radio" name="age-40" id="age-40" value="31-40" />
-            31-40
-        </label>
-        &emsp;&emsp;
-        <label for="age-50">
-            <input type="radio" name="age-50" id="age-50" value="41-50" />
-            41-50
-        </label>
-        &emsp;&emsp;
-        <label for="age-60">
-            <input type="radio" name="age-60" id="age-60" value="51-60" />
-            51-60
-        </label>
-        &emsp;&emsp;
-        <label for="age-70">
-            <input type="radio" name="age-70" id="age-70" value="61-70" />
-            61-70
-        </label>
-        &emsp;&emsp;
-        <label for="age-71+">
-            <input type="radio" name="age-71+" id="age-71+" value="71+" />
-            71+
-        </label>
-    </div>
-    <hr />
-    <h3><u>Consent</u> - read before continuing.</h3>
-    <p>
-        All information asked for during the registration process has been designed to be anonymous.
-        Results shall be used in the final collation to measure the efficacy of this '<i><b>Learn Physics</i></b>'
-        web application. To clarify, usernames and passwords will not displayed in the results. The results
-        are not a reflection of the aptitude or intelligence of the user, but a measure of viability for learning
-        through a self-contained digital medium. Your details will remain confidential and not be used or 
-        forwarded on to any other research project internal or external to this one, or used internally or 
-        externally by the University of Plymouth, or for commercial products and/or services.
-    </p>
-    <p>
-        If you consent to your results being used in the research, please tick the box below to give consent;
-        <label for="consent"><h4><strong>I give consent for my results to be used </strong><input type="checkbox" name="consent" id="consent" value="1" /></h4></label>
-    </p>
-    <p>
-        Participants have the right to withdraw from the research at any time. This can be done by simply 
-        discontinuing your progress in the activities, and any results and/or data will not be used in the research. 
-        Should you wish to have your user profile deleted from the system, please do not hesitate to contact me at: 
-        <b><u>giles.king@postgrad.plymouth.ac.uk</u></b>
-    </p>
-    <hr />
-    <div class="login-button-wrapper">
-        <button type="submit" class="btn btn-success" a asp-area="" asp-controller="Topics" asp-action="topicsIndex">Register me</button>
-    </div>
-</fieldset>
-<br />
+            <div class="form-group row">
+                <label>
+                    Sex:
+                    &emsp;&emsp;
+                    <label for="gender-Female">
+                        @Html.RadioButtonFor(m=>m.Gender, "Female")
+                        <!--<input type="radio" name="gender" id="gender-Female" value="Female" />-->
+                        Female
+                    </label>
+                    &emsp;&emsp;
+                    <label for="gender-Male">
+                        @Html.RadioButtonFor(m => m.Gender, "Male")
+                        <!--<input type="radio" name="gender" id="gender-Male" value="Male" />-->
+                        Male
+                    </label>
+                </label>
+            </div>
+
+            <div class="form-group row">
+                <label>Age:</label>
+                &emsp;&emsp;
+                <label for="age-20">
+                    @Html.RadioButtonFor(m => m.Age, "0-20")
+                    <!--<input type="radio" name="age" id="age-20" value="0-20" />-->
+                    0 - 20
+                </label>
+                &emsp;&emsp;
+                <label for="age-30">
+                    @Html.RadioButtonFor(m => m.Age, "21-30")
+                    <!--<input type="radio" name="age" id="age-30" value="21-30" />-->
+                    21-30
+                </label>
+                &emsp;&emsp;
+                <label for="age-40">
+                    @Html.RadioButtonFor(m => m.Age, "31-40")
+                    <!--<input type="radio" name="age" id="age-40" value="31-40" />-->
+                    31-40
+                </label>
+                &emsp;&emsp;
+                <label for="age-50">
+                    @Html.RadioButtonFor(m => m.Age, "41-50")
+                    <!--<input type="radio" name="age" id="age-50" value="41-50" />-->
+                    41-50
+                </label>
+                &emsp;&emsp;
+                <label for="age-60">
+                    @Html.RadioButtonFor(m => m.Age, "51-60")
+                    <!--<input type="radio" name="age" id="age-60" value="51-60" />-->
+                    51-60
+                </label>
+                &emsp;&emsp;
+                <label for="age-70">
+                    @Html.RadioButtonFor(m => m.Age, "61-70")
+                    <!--<input type="radio" name="age" id="age-70" value="61-70" />-->
+                    61-70
+                </label>
+                &emsp;&emsp;
+                <label for="age-71+">
+                    @Html.RadioButtonFor(m => m.Age, "71+")
+                    <!--<input type="radio" name="age" id="age-71+" value="71+" />-->
+                    71+
+                </label>
+            </div>
+            <hr />
+            <h3><u>Consent</u> - read before continuing.</h3>
+            <p>
+                All information asked for during the registration process has been designed to be anonymous.
+                Results shall be used in the final collation to measure the efficacy of this '<i><b>Learn Physics</b></i>'
+                web application. To clarify, usernames and passwords will not displayed in the results. The results
+                are not a reflection of the aptitude or intelligence of the user, but a measure of viability for learning
+                through a self - contained digital medium.Your details will remain confidential and not be used or
+                forwarded on to any other research project internal or external to this one, or used internally or
+                externally by the University of Plymouth, or for commercial products and/or services.
+            </p>
+            <p>
+                If you consent to your results being used in the research, please tick the box below to give consent;
+            </p>
+            <p>
+                <label for="consent">
+                    <Strong>I give consent for my results to be used </Strong>@Html.CheckBoxFor(m => m.Consent)
+                </label>
+            </p>
+            <p>
+                Participants have the right to withdraw from the research at any time. This can be done by simply
+                discontinuing your progress in the activities, and any results and/or data will not be used in the research.
+                Should you wish to have your user profile deleted from the system, please do not hesitate to contact me at:
+                <b><u>giles.king@postgrad.plymouth.ac.uk</u></b>
+            </p>
+            <hr />
+            <div class="login-button-wrapper">
+                <button type="submit" class="btn btn-success">Register me</button>
+            </div>
+
+        </fieldset>
+           }
+        <br />

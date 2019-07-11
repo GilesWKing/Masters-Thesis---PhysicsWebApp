@@ -20,6 +20,12 @@ namespace LearnPhysics.Controllers
             return View();
         }
 
+        [HttpPost]
+        public ActionResult Registration(RegistrationModel registrationData)
+        {
+            return View();
+        }
+
         public IActionResult About()
         {
             ViewData["Message"] = "Your application description page.";

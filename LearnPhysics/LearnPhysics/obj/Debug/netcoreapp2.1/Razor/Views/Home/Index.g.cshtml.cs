@@ -89,7 +89,7 @@ using LearnPhysics.Models;
         ");
             EndContext();
             BeginContext(708, 123, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("button", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "cfcf1fef095f496995b0b353c25426f7", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("button", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9c2a696005c84e73a27c66371a27f7f1", async() => {
                 BeginContext(817, 5, true);
                 WriteLiteral("Login");
                 EndContext();
@@ -120,7 +120,7 @@ using LearnPhysics.Models;
             WriteLiteral("\r\n    </div>\r\n    <div class=\"text-center\">Haven\'t registered yet? ");
             EndContext();
             BeginContext(898, 77, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2d15c1f383884264a5fc5746c5334a72", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "860d9a85b85d40c4b89c7bb0637c8371", async() => {
                 BeginContext(961, 10, true);
                 WriteLiteral("Click here");
                 EndContext();

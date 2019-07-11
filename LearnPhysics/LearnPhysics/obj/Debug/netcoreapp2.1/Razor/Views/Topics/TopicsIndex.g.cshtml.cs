@@ -91,7 +91,7 @@ using LearnPhysics.Models;
                         ");
             EndContext();
             BeginContext(608, 66, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "308a501e629544f4ae010e7c4f0210b4", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "a281aea1a17e4991ab138009b548b5d1", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -111,7 +111,7 @@ using LearnPhysics.Models;
             WriteLiteral("\r\n                    </div>\r\n                </div>\r\n            </th>\r\n            <th scope=\"col\">\r\n                ");
             EndContext();
             BeginContext(793, 156, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fa298662dc99427dbf28255daeef9f99", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "669eca46f9d347d9b7475cdaf04bec2a", async() => {
                 BeginContext(855, 90, true);
                 WriteLiteral("\r\n                    <h3 style=\"margin-bottom: 0rem;\">Maths Skills</h3>\r\n                ");
                 EndContext();
@@ -156,12 +156,12 @@ using LearnPhysics.Models;
                         ");
             EndContext();
             BeginContext(1541, 185, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3218941db9324fb7ae85f52527005eab", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "adfa263614154b99819776987aa0a2f2", async() => {
                 BeginContext(1599, 30, true);
                 WriteLiteral("\r\n                            ");
                 EndContext();
                 BeginContext(1629, 67, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "dde97c95aa2c40cd94874fd8805d9393", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "3e9e5848aad9403a90fe8ca348c5207e", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -202,7 +202,7 @@ using LearnPhysics.Models;
             WriteLiteral("\r\n                    </div>\r\n                </div>\r\n            </th>\r\n            <th scope=\"col\">\r\n                ");
             EndContext();
             BeginContext(1845, 152, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "91904f6f2e1e4859aa1a7b1cf3752731", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5d28f0eb48724240be629121c76b0112", async() => {
                 BeginContext(1909, 84, true);
                 WriteLiteral("\r\n                    <h3 style=\"margin-bottom: 0rem;\">Energy</h3>\r\n                ");
                 EndContext();
@@ -247,7 +247,7 @@ using LearnPhysics.Models;
                         ");
             EndContext();
             BeginContext(2591, 102, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "a1b32aa8d8bb42deb32364f1c0b5ec87", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "ddc30524aa4844c2bdf03531c9b1e1da", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -268,7 +268,7 @@ using LearnPhysics.Models;
             WriteLiteral("\r\n                    </div>\r\n                </div>\r\n            </th>\r\n            <th scope=\"col\">\r\n                ");
             EndContext();
             BeginContext(2812, 161, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "16514add2af8401c80520fb20d05367b", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "56cf26e98fec42168910678b1e2b1bd0", async() => {
                 BeginContext(2882, 87, true);
                 WriteLiteral("\r\n                    <h3 style=\"margin-bottom: 0rem;\">Particles</h3>\r\n                ");
                 EndContext();
@@ -313,7 +313,7 @@ using LearnPhysics.Models;
                         ");
             EndContext();
             BeginContext(3563, 67, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "315cefc806d64d3a97e3f35a3735b579", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "c432e84633414988bfc2a535aa419229", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -333,7 +333,7 @@ using LearnPhysics.Models;
             WriteLiteral("\r\n                    </div>\r\n                </div>\r\n            </th>\r\n            <th scope=\"col\">\r\n                ");
             EndContext();
             BeginContext(3749, 147, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "118b56a8a2a24f7b9030b0355285f73a", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "73eb4f6c8a8d4378a3f2abe72109c3ea", async() => {
                 BeginContext(3809, 83, true);
                 WriteLiteral("\r\n                    <h3 style=\"margin-bottom: 0rem;\">Blog </h3>\r\n                ");
                 EndContext();

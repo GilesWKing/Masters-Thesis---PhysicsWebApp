@@ -65,7 +65,7 @@ using LearnPhysics.Models;
             WriteLiteral("<br />\r\n\r\n<h2 style=\"text-align: center; margin-top:80px;\"><u>Lesson 5: Heating and energy transfer</u></h2>\r\n\r\n<br />\r\n\r\n<div class=\"container\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n\r\n\r\n    ");
             EndContext();
             BeginContext(276, 88, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b7784c76e32542e4ad419eb0aa9a7729", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "173cce7ff0aa4d4b94081b2953d173fe", async() => {
                 BeginContext(340, 20, true);
                 WriteLiteral("Back to lessons list");
                 EndContext();
