@@ -115,3 +115,4 @@ C:\Users\Giles\Source\Repos\giles-king-pg\Proj516\LearnPhysics\LearnPhysics\obj\
 C:\Users\Giles\Source\Repos\giles-king-pg\Proj516\LearnPhysics\LearnPhysics\obj\Debug\netcoreapp2.1\LearnPhysics.RazorTargetAssemblyInfo.cs
 C:\Users\Giles\Source\Repos\giles-king-pg\Proj516\LearnPhysics\LearnPhysics\obj\Debug\netcoreapp2.1\LearnPhysics.Views.pdb
 C:\Users\Giles\Source\Repos\giles-king-pg\Proj516\LearnPhysics\LearnPhysics\obj\Debug\netcoreapp2.1\LearnPhysics.csproj.CopyComplete
+C:\Users\gwking1\Source\Repos\giles-king-pg\Proj516\LearnPhysics\LearnPhysics\obj\Debug\netcoreapp2.1\Razor\Views\Home\Registration.g.cshtml.cs
