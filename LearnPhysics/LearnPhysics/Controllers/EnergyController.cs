@@ -8,23 +8,15 @@ namespace LearnPhysics.Controllers
 {
     public class EnergyController : Controller
     {
-        private enum Quizzes
-        {
-            OpeningQuiz = 1,
-            ChapterQuiz = 2
-        }
+        
 
         public IActionResult EnergyIndex()
         {
             return View();
         }
 
-        public IActionResult OpeningQuiz(Quizzes quiz)
+        public IActionResult OpeningQuiz()
         {
-            if (quiz == Quizzes.OpeningQuiz)
-            {
-
-            }
             return View();
         }
 
