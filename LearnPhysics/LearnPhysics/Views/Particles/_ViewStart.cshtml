@@ -1,0 +1,11 @@
+﻿@{
+    @using Microsoft.AspNetCore.Http
+    @inject IHttpContextAccessor HttpContextAccessor
+
+    Layout = "_Layout";
+
+    if (!Convert.ToBoolean(@HttpContextAccessor.HttpContext.Session.GetString("Authenticated")))
+    {
+        Context.Response.Redirect("/");
+    }
+}

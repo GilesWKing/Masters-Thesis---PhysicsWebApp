@@ -110,9 +110,14 @@ C:\Users\Giles\Source\Repos\giles-king-pg\Proj516\LearnPhysics\LearnPhysics\obj\
 C:\Users\Giles\Source\Repos\giles-king-pg\Proj516\LearnPhysics\LearnPhysics\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
 C:\Users\Giles\Source\Repos\giles-king-pg\Proj516\LearnPhysics\LearnPhysics\obj\Debug\netcoreapp2.1\Razor\Views\Topics\TopicsIndex.g.cshtml.cs
 C:\Users\Giles\Source\Repos\giles-king-pg\Proj516\LearnPhysics\LearnPhysics\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.g.cshtml.cs
-C:\Users\Giles\Source\Repos\giles-king-pg\Proj516\LearnPhysics\LearnPhysics\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.g.cshtml.cs
 C:\Users\Giles\Source\Repos\giles-king-pg\Proj516\LearnPhysics\LearnPhysics\obj\Debug\netcoreapp2.1\LearnPhysics.RazorTargetAssemblyInfo.cache
 C:\Users\Giles\Source\Repos\giles-king-pg\Proj516\LearnPhysics\LearnPhysics\obj\Debug\netcoreapp2.1\LearnPhysics.RazorTargetAssemblyInfo.cs
 C:\Users\Giles\Source\Repos\giles-king-pg\Proj516\LearnPhysics\LearnPhysics\obj\Debug\netcoreapp2.1\LearnPhysics.Views.pdb
 C:\Users\Giles\Source\Repos\giles-king-pg\Proj516\LearnPhysics\LearnPhysics\obj\Debug\netcoreapp2.1\LearnPhysics.csproj.CopyComplete
 C:\Users\gwking1\Source\Repos\giles-king-pg\Proj516\LearnPhysics\LearnPhysics\obj\Debug\netcoreapp2.1\Razor\Views\Home\Registration.g.cshtml.cs
+C:\Users\Giles\Source\Repos\giles-king-pg\Proj516\LearnPhysics\LearnPhysics\obj\Debug\netcoreapp2.1\Razor\Views\Home\_ViewStart.g.cshtml.cs
+C:\Users\Giles\Source\Repos\giles-king-pg\Proj516\LearnPhysics\LearnPhysics\obj\Debug\netcoreapp2.1\Razor\Views\Topics\_ViewStart.g.cshtml.cs
+C:\Users\Giles\Source\Repos\giles-king-pg\Proj516\LearnPhysics\LearnPhysics\obj\Debug\netcoreapp2.1\Razor\Views\Blog\_ViewStart.g.cshtml.cs
+C:\Users\Giles\Source\Repos\giles-king-pg\Proj516\LearnPhysics\LearnPhysics\obj\Debug\netcoreapp2.1\Razor\Views\Energy\_ViewStart.g.cshtml.cs
+C:\Users\Giles\Source\Repos\giles-king-pg\Proj516\LearnPhysics\LearnPhysics\obj\Debug\netcoreapp2.1\Razor\Views\Maths\_ViewStart.g.cshtml.cs
+C:\Users\Giles\Source\Repos\giles-king-pg\Proj516\LearnPhysics\LearnPhysics\obj\Debug\netcoreapp2.1\Razor\Views\Particles\_ViewStart.g.cshtml.cs

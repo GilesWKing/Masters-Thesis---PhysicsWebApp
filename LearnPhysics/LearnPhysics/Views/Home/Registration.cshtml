@@ -1,4 +1,4 @@
-﻿@model LearnPhysics.Models.RegistrationModel
+﻿@model LearnPhysics.Models.User
 
 
 @{
@@ -34,13 +34,13 @@
                     Sex:
                     &emsp;&emsp;
                     <label for="gender-Female">
-                        @Html.RadioButtonFor(m=>m.Gender, "Female")
+                        @Html.RadioButtonFor(m=>m.Female, "Female")
                         <!--<input type="radio" name="gender" id="gender-Female" value="Female" />-->
                         Female
                     </label>
                     &emsp;&emsp;
                     <label for="gender-Male">
-                        @Html.RadioButtonFor(m => m.Gender, "Male")
+                        @Html.RadioButtonFor(m => m.Female, "Male")
                         <!--<input type="radio" name="gender" id="gender-Male" value="Male" />-->
                         Male
                     </label>
@@ -99,7 +99,7 @@
                 Results shall be used in the final collation to measure the efficacy of this '<i><b>Learn Physics</b></i>'
                 web application. To clarify, usernames and passwords will not displayed in the results. The results
                 are not a reflection of the aptitude or intelligence of the user, but a measure of viability for learning
-                through a self - contained digital medium.Your details will remain confidential and not be used or
+                through a self - contained digital medium. Your details will remain confidential and not be used or
                 forwarded on to any other research project internal or external to this one, or used internally or
                 externally by the University of Plymouth, or for commercial products and/or services.
             </p>
