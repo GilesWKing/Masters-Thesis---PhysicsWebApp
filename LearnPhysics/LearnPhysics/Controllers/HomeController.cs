@@ -14,10 +14,12 @@ namespace LearnPhysics.Controllers
     public class HomeController : Controller
     {
         private readonly GilesContext _context;
+        private readonly Common _common;
 
-        public HomeController(GilesContext context)
+        public HomeController(GilesContext context, Common common)
         {
             _context = context;
+            _common = common;
         }
 
         public IActionResult Index()
@@ -41,6 +43,8 @@ namespace LearnPhysics.Controllers
                 {
                     //Use 'session' to limit login capability.
                     HttpContext.Session.SetString("Authenticated", true.ToString());
+
+                    HttpContext.Session.SetInt32("UserId", user.UserId);
                     //Return TopicsIndex screen once logged in.
                     return RedirectToAction("TopicsIndex", "Topics");
                     //return View("~/Views/Topics/TopicsIndex.cshtml");
@@ -68,6 +72,12 @@ namespace LearnPhysics.Controllers
             return Convert.ToBase64String(bytes);
         }
 
+        public IActionResult Logout()
+        {
+            HttpContext.Session.SetString("Authenticated", false.ToString());
+            return Redirect("/");
+        }
+
         public IActionResult Registration()
         {
             return View();
@@ -76,6 +86,8 @@ namespace LearnPhysics.Controllers
         [HttpPost]
         public IActionResult Registration(User registrationData)
         {
+            registrationData.UserId = 0;
+
             // Stores unencrypted password in model rather than encrypted version.
             string password = registrationData.Password;
             // Creates a new salt stored in a variable called salt.
@@ -85,13 +97,27 @@ namespace LearnPhysics.Controllers
             registrationData.PasswordSalt = salt;
             // Storing a concatenated encrypted password and salt in model.
             registrationData.Password = CreatePasswordHash(password, salt);
+            
+            try
+            {
+                _context.Reset();
+                _context.User.Add(registrationData);
+                _context.SaveChanges();
 
-            _context.User.Add(registrationData);
-            _context.SaveChanges();
+                User user = new User();
+                user.Username = registrationData.Username;
+                user.Password = password;
 
-            registrationData.Password = password;
+                // Not returning index -> running login function.
+                return Index(user);
+            }
+            catch (Exception e)
+            {
+                registrationData.Password = "";
+                ViewBag.UsernameTaken = "Username already exists.";
+            }
 
-            return Index(registrationData);
+            return View(registrationData);
         }
 
         public IActionResult About()

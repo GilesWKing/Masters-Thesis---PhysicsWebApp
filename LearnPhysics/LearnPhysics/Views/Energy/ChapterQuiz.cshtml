@@ -1,0 +1,361 @@
+﻿@model LearnPhysics.Models.EnergyChapterQuiz
+
+@{
+    ViewData["Title"] = "Chapter Quiz";
+}
+
+<br />
+<div class="container" style="margin-top:80px;">
+    <h2 style="text-align: center; margin-top:80px;"><u>Energy - Opening Quiz</u></h2>
+    <br />
+    <p>
+        <strong>Let's see what you've learned!</strong> Consolidation of knowledge is often done
+        through a form of assessment. We can only assess how much we know by testing ourselves and
+        our knowledge. This test is slightly longer than the opening quiz, but has similar questions
+        in order of the topics' structure. <b>If you leave this form, it will not save your progress</b>.
+        Try and apply your knowledge as best you can to each question. Good luck!
+    </p>
+
+    @using (Html.BeginForm("OpeningQuiz", "Energy", FormMethod.Post))
+    {
+
+    <fieldset>
+
+        <br />
+        <!-- QUESTION 1 -->
+        <h3><u>Question 1:</u></h3>
+        <h5>Which of the following is the best way a physicist can describe energy?</h5>
+        <div>
+            @Html.RadioButtonFor(m => m.Question1, "A")
+            <label for="question-1-answers-A">A) Energy allows work to be done</label>
+        </div>
+        <div>
+            @Html.RadioButtonFor(m => m.Question1, "B")
+            <label for="question-1-answers-B">B) Energy allows stars to form</label>
+        </div>
+        <div>
+            @Html.RadioButtonFor(m => m.Question1, "C")
+            <label for="question-1-answers-C">C) Energy allows humans to exercise</label>
+        </div>
+        <div>
+            @Html.RadioButtonFor(m => m.Question1, "D")
+            <label for="question-1-answers-D">D) Energy allows humans to do work</label>
+        </div>
+
+        <br />
+
+        <!-- QUESTION 2 -->
+        <h3><u>Question 2:</u></h3><h5>Where does the Earth get most of its energy from?</h5>
+        <div>
+            @Html.RadioButtonFor(m => m.Question2, "A")
+            <label for="question-2-answers-A">A) Sugar</label>
+        </div>
+        <div>
+            @Html.RadioButtonFor(m => m.Question2, "B")
+            <label for="question-2-answers-B">B) Humans</label>
+        </div>
+        <div>
+            @Html.RadioButtonFor(m => m.Question2, "C")
+            <label for="question-2-answers-C">C) The Sun</label>
+        </div>
+        <div>
+            @Html.RadioButtonFor(m => m.Question2, "D")
+            <label for="question-2-answers-D">D) Fire</label>
+        </div>
+
+        <br />
+
+        <!-- QUESTION 3 -->
+        <h3><u>Question 3:</u></h3><h5>What is the scientific (SI) unit for energy?</h5>
+        <div>
+            @Html.RadioButtonFor(m => m.Question3, "A")
+            <label for="question-3-answers-A">A) Jewel</label>
+        </div>
+        <div>
+            @Html.RadioButtonFor(m => m.Question3, "B")
+            <label for="question-3-answers-B">B) Gem</label>
+        </div>
+        <div>
+            @Html.RadioButtonFor(m => m.Question3, "C")
+            <label for="question-3-answers-C">C) Crystal</label>
+        </div>
+        <div>
+            @Html.RadioButtonFor(m => m.Question3, "D")
+            <label for="question-3-answers-D">D) Joule</label>
+        </div>
+
+        <br />
+
+        <!-- QUESTION 4 -->
+        <h3><u>Question 4:</u></h3><h5>Which of these is one of the nine stores of energy we looked at?</h5>
+        <div>
+            @Html.RadioButtonFor(m => m.Question4, "A")
+            <label for="question-4-answers-A">A) Fat</label>
+        </div>
+        <div>
+            @Html.RadioButtonFor(m => m.Question4, "B")
+            <label for="question-4-answers-B">B) Nuclear</label>
+        </div>
+        <div>
+            @Html.RadioButtonFor(m => m.Question4, "C")
+            <label for="question-4-answers-C">C) Tea</label>
+        </div>
+        <div>
+            @Html.RadioButtonFor(m => m.Question4, "D")
+            <label for="question-4-answers-D">D) The Sun</label>
+        </div>
+
+        <br />
+
+        <!-- QUESTION 5 -->
+        <h3><u>Question 5:</u></h3>
+        <h5>Which of the below best describes the energy transferring between stores in a car when you press the accelerator?</h5>
+        <div>
+            @Html.RadioButtonFor(m => m.Question5, "A")
+            <label for="question-5-answers-A">A) Nuclear energy -> heat energy -> kinetic energy</label>
+        </div>
+        <div>
+            @Html.RadioButtonFor(m => m.Question5, "B")
+            <label for="question-5-answers-B">B) Chemical energy -> sound energy -> nuclear energy -> kinetic energy</label>
+        </div>
+        <div>
+            @Html.RadioButtonFor(m => m.Question5, "C")
+            <label for="question-5-answers-C">C) Kinetic energy -> heat energy -> chemical energy</label>
+        </div>
+        <div>
+            @Html.RadioButtonFor(m => m.Question5, "D")
+            <label for="question-5-answers-D">D) Chemical energy -> heat energy -> sound energy -> kinetic energy</label>
+        </div>
+
+        <br />
+
+        <!-- QUESTION 6 -->
+        <h3><u>Question 6:</u></h3><h5>Which of the equations below is used to calculate the kinetic energy store of an object?</h5>
+        <div>
+            @Html.RadioButtonFor(m => m.Question6, "A")
+            <label for="question-4-answers-A">A)&emsp;&emsp;&emsp;&emsp;E = mc<sup>2</sup></label>
+        </div>
+        <div>
+            @Html.RadioButtonFor(m => m.Question6, "B")
+            <label for="question-4-answers-B">B)&emsp;&emsp;&emsp;&emsp;E<sub>k </sub>= ½mv<sup>2</sup></label>
+        </div>
+        <div>
+            @Html.RadioButtonFor(m => m.Question6, "C")
+            <label for="question-4-answers-C">C)&emsp;&emsp;&emsp;&emsp;y = mx + c</label>
+        </div>
+        <div>
+            @Html.RadioButtonFor(m => m.Question6, "D")
+            <label for="question-4-answers-D">D)&emsp;&emsp;&emsp;&emsp;E<sub>p</sub> = mgh</label>
+        </div>
+
+        <br />
+
+        <!-- QUESTION 7 -->
+        <h3><u>Question 7:</u></h3>
+        <h5>
+            A 10kg object is dropped from a window at a height of 25 metres. What is it's
+            gravitational potential energy in Joules to 1 decimal place? Where E<sub>p</sub> = mgh (Use 9.81 for g)
+        </h5>
+        <div>
+            @Html.RadioButtonFor(m => m.Question7, "A")
+            <label for="question-7-answers-A">A) 2,452.5 J</label>
+        </div>
+        <div>
+            @Html.RadioButtonFor(m => m.Question7, "B")
+            <label for="question-7-answers-B">B) 2,452.50 J</label>
+        </div>
+        <div>
+            @Html.RadioButtonFor(m => m.Question7, "C")
+            <label for="question-7-answers-C">C) 2,502.0 J</label>
+        </div>
+        <div>
+            @Html.RadioButtonFor(m => m.Question7, "D")
+            <label for="question-7-answers-D">D) 2.502 kJ</label>
+        </div>
+
+        <br />
+
+        <!-- QUESTION 8 -->
+        <h3><u>Question 8:</u></h3><h5>Conservation of energy states that...</h5>
+        <div>
+            @Html.RadioButtonFor(m => m.Question8, "A")
+            <label for="question-8-answers-A">A) Energy can be created</label>
+        </div>
+        <div>
+            @Html.RadioButtonFor(m => m.Question8, "B")
+            <label for="question-8-answers-B">B) Energy cannot be created nor destroyed</label>
+        </div>
+        <div>
+            @Html.RadioButtonFor(m => m.Question8, "C")
+            <label for="question-8-answers-C">C) Energy can be created and destroyed</label>
+        </div>
+        <div>
+            @Html.RadioButtonFor(m => m.Question8, "D")
+            <label for="question-8-answers-D">D) Energy can be destroyed</label>
+        </div>
+
+        <br />
+
+        <!-- QUESTION 9 -->
+        <h3><u>Question 9:</u></h3>
+        <h5>
+            50,000 Joules of energy is stored in a log. If the log is set on fire, which of the below is the
+            most likely energy transfer?
+        </h5>
+        <div>
+            @Html.RadioButtonFor(m => m.Question9, "A")
+            <label for="question-9-answers-A">A) 26,000 J of heat energy and 26,000 J of light energy</label>
+        </div>
+        <div>
+            @Html.RadioButtonFor(m => m.Question9, "B")
+            <label for="question-9-answers-B">B) 5,000 J of heat energy, 5,000 J of light energy and 5,000 J of sound energy</label>
+        </div>
+        <div>
+            @Html.RadioButtonFor(m => m.Question9, "C")
+            <label for="question-9-answers-C">C) 38,000 J of heat energy, 8,000 J of light energy and 4,000 J of sound energy</label>
+        </div>
+        <div>
+            @Html.RadioButtonFor(m => m.Question9, "D")
+            <label for="question-9-answers-D">D) 48,000 J of sound energy and 2,000 J of heat energy</label>
+        </div>
+
+        <br />
+
+        <!-- QUESTION 10 -->
+        <h3><u>Question 10:</u></h3><h5>What is the <b>useful</b> energy we want from a car?</h5>
+        <div>
+            @Html.RadioButtonFor(m => m.Question10, "A")
+            <label for="question-10-answers-A">A) Electrical energy</label>
+        </div>
+        <div>
+            @Html.RadioButtonFor(m => m.Question10, "B")
+            <label for="question-10-answers-B">B) Sound energy</label>
+        </div>
+        <div>
+            @Html.RadioButtonFor(m => m.Question10, "C")
+            <label for="question-10-answers-C">C) Heat energy</label>
+        </div>
+        <div>
+            @Html.RadioButtonFor(m => m.Question10, "D")
+            <label for="question-10-answers-D">D) Kinetic energy</label>
+        </div>
+
+        <br />
+
+        <!-- QUESTION 11 -->
+        <h3><u>Question 11:</u></h3><h5>Conduction occurs in...? (You can pick <b>more than one</b> answer)</h5>
+        <div>
+            @Html.CheckBoxFor(m => m.Question11a)
+            <label for="question-11-answers-A">A) A solid</label>
+        </div>
+        <div>
+            @Html.CheckBoxFor(m => m.Question11b)
+            <label for="question-11-answers-B">B) A liquid</label>
+        </div>
+        <div>
+            @Html.CheckBoxFor(m => m.Question11c)
+            <label for="question-11-answers-C">C) A gas</label>
+        </div>
+        <div>
+            @Html.CheckBoxFor(m => m.Question11d)
+            <label for="question-11-answers-D">D) A vaccuum</label>
+        </div>
+
+        <br />
+
+        <!-- QUESTION 12 -->
+        <h3><u>Question 12:</u></h3><h5>Whilst convection occurs in...? (You can pick <b>more than one</b> answer)</h5>
+        <div>
+            @Html.CheckBoxFor(m => m.Question12a)
+            <label for="question-12-answers-A">A) A solid</label>
+        </div>
+        <div>
+            @Html.CheckBoxFor(m => m.Question12b)
+            <label for="question-12-answers-B">B) A liquid</label>
+        </div>
+        <div>
+            @Html.CheckBoxFor(m => m.Question12c)
+            <label for="question-12-answers-C">C) A gas</label>
+        </div>
+        <div>
+            @Html.CheckBoxFor(m => m.Question12d)
+            <label for="question-12-answers-D">D) A vaccuum</label>
+        </div>
+
+        <br />
+
+        <!-- QUESTION 13 -->
+        <h3><u>Question 13:</u></h3><h5>Radiation is unique because it can travel through...? (You can pick <b>more than one</b> answer)</h5>
+        <div>
+            @Html.CheckBoxFor(m => m.Question13a)
+            <label for="question-13-answers-A">A) A solid</label>
+        </div>
+        <div>
+            @Html.CheckBoxFor(m => m.Question13b)
+            <label for="question-13-answers-B">B) A liquid</label>
+        </div>
+        <div>
+            @Html.CheckBoxFor(m => m.Question13c)
+            <label for="question-13-answers-C">C) A gas</label>
+        </div>
+        <div>
+            @Html.CheckBoxFor(m => m.Question13d)
+            <label for="question-13-answers-D">D) A vaccuum</label>
+        </div>
+
+        <br />
+
+        <!-- QUESTION 14 -->
+        <h3><u>Question 14:</u></h3><h5>Which of the following are <b>non-renewable</b> energy source(s)? (You can pick <b>more than one</b> answer)</h5>
+        <div>
+            @Html.CheckBoxFor(m => m.Question14a)
+            <label for="question-14-answers-A">A) Solar</label>
+        </div>
+        <div>
+            @Html.CheckBoxFor(m => m.Question14b)
+            <label for="question-14-answers-B">B) Nuclear</label>
+        </div>
+        <div>
+            @Html.CheckBoxFor(m => m.Question14c)
+            <label for="question-14-answers-C">C) Tidal</label>
+        </div>
+        <div>
+            @Html.CheckBoxFor(m => m.Question14d)
+            <label for="question-14-answers-D">D) Natural gas</label>
+        </div>
+
+        <br />
+
+        <!-- QUESTION 15 -->
+        <h3><u>Question 15:</u></h3><h5>Which of the following are <b>renewable</b> energy source(s)? (You can pick <b>more than one</b> answer)</h5>
+        <div>
+            @Html.CheckBoxFor(m => m.Question15a)
+            <label for="question-15-answers-A">A) Solar</label>
+        </div>
+        <div>
+            @Html.CheckBoxFor(m => m.Question15b)
+            <label for="question-15-answers-B">B) Nuclear</label>
+        </div>
+        <div>
+            @Html.CheckBoxFor(m => m.Question15c)
+            <label for="question-15-answers-C">C) Tidal</label>
+        </div>
+        <div>
+            @Html.CheckBoxFor(m => m.Question15d)
+            <label for="question-15-answers-D">D) Natural gas</label>
+        </div>
+        <br />
+        <hr />
+        <button type="submit" class="btn btn-success">Submit</button>
+    </fieldset>
+    }
+</div>
+<br />
+
+
+
+
+
+
+
+

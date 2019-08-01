@@ -64,7 +64,7 @@ using LearnPhysics.Models;
             WriteLiteral("\r\n<h2>Calculator</h2>\r\n\r\n");
             EndContext();
             BeginContext(73, 2346, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("FORM", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a698ccaf7e214ab5960a0949938dcce7", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("FORM", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef01ecab462846e08c5a1600b51fd1b3", async() => {
                 BeginContext(91, 2321, true);
                 WriteLiteral(@"
     <TABLE BORDER=4>

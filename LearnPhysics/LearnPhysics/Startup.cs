@@ -39,7 +39,11 @@ namespace LearnPhysics
             });
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+
+            // Singleton only allows single instance of Giles Context and Common models.
+            // Giles Context is the class that holds database information and connection methods.
             services.AddSingleton<Models.GilesContext>();
+            services.AddSingleton<Models.Common>();
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
         }
 

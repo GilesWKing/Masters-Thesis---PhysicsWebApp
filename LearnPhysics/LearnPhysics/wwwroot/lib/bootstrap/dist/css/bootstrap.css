@@ -93,49 +93,46 @@ p-custom {
     list-style-type: circle;
 }
 
-/* CUSTOM NAVIGATION ARROW */
-.arrow {
-    position:absolute;
-    /*top: 50%;*/
-    width: 1rem;
-    height: 1rem;
-    background: transparent;
-    border-top: .4rem solid #a3c2d1;
-    border-right: .4rem solid #a3c2d1;
-    box-shadow: 0 0 0 lightgray;
-    -webkit-transition: all 200ms ease;
-    transition: all 200ms ease;
+/* HIGHLIGHTS TEXT AS GREEN ON MENU's FOR READ PAGES */
+.menu-read {
+    font-size: 8pt;
+    font-weight: bold !important;
+    color: green !important;
 }
 
-    .arrow.left {
-        left: 0;
-        -webkit-transform: translate3d(0, -50%, 0) rotate(-135deg);
-        transform: translate3d(0, -50%, 0) rotate(-135deg);
-    }
+.responsive {
+    max-width: 100%;
+    height: auto;
+}
 
-    .arrow.right {
-        right: 0;
-        -webkit-transform: translate3d(0, -50%, 0) rotate(45deg);
-        transform: translate3d(0, -50%, 0) rotate(45deg);
-    }
+.quiz-answer-container {
+    max-width: 500px;
+}
 
-    .arrow:hover {
-        border-top: .4rem solid #2fa4e7;
-        border-right: .4rem solid #2fa4e7;
-        box-shadow: .2rem -.2rem 0 #a3c2d1;
-    }
+/* HIGHLIGHTS TEXT AS GREEN ON QUIZ RESULTS PAGE */
+.quiz-correct {
+    font-weight: bold;
+    color: green;
+}
 
-        .arrow:hover.left {
-            left: -.2rem;
-        }
+/* HIGHLIGHTS TEXT AS RED ON QUIZ RESULTS PAGE */
+.quiz-incorrect {
+    font-weight: bold;
+    color: red;
+}
 
-        .arrow:hover.right {
-            right: -.2rem;
-        }
-/* END CUSTOM NAVIGATION ARROW - lots of code here... */
+/* HIGHLIGHTS TEXT ON MULTIPLE ANSWERS ON QUIZ RESULTS PAGE */
+.quiz-info {
+    font-weight: bold;
+}
 
+.nav-link {
+    font-weight: bold;
+}
 
 /*-------- End Custom CSS here!!! --------*/
+
+
 *,
 *::before,
 *::after {

@@ -2,7 +2,7 @@
     @using Microsoft.AspNetCore.Http
     @inject IHttpContextAccessor HttpContextAccessor
 
-    Layout = "_Layout";
+    Layout = "_Layout_Login";
 
     if (!Convert.ToBoolean(@HttpContextAccessor.HttpContext.Session.GetString("Authenticated")))
     {

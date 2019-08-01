@@ -1,0 +1,278 @@
+﻿@model LearnPhysics.Models.EnergyOpeningQuiz
+
+@{
+    ViewData["Title"] = "Opening Quiz";
+}
+
+<br />
+<div class="container" style="margin-top:80px;">
+    <h2 style="text-align: center; margin-top:80px;"><u>Energy - Opening Quiz</u></h2>
+    <br />
+    <p>
+        <strong>Practising questions is really important</strong> - you can self assess how much you know at the beginning
+        of the course and compare it to what you've found out by the end of the course. Don't feel any pressure in getting
+        the questions 100% correct, no one else will see the results except for you.
+    </p>
+    <p>
+        @Model.CorrectAnswerTotal of 6 Correct - well done! (@Model.Percentage%)
+    </p>
+
+    @using (Html.BeginForm("energyIndex", "Energy", FormMethod.Get))
+    {
+
+    <fieldset>
+
+        <br />
+        <!-- QUESTION 1 -->
+        <h3><u>Question 1:</u></h3><h5>Which of the following best describes energy?</h5>
+        @if (Model.Question1Correct)
+        {
+            <div class="alert alert-dismissible alert-success quiz-answer-container">
+                <span class="quiz-correct">Correct</span>
+                <span>- You picked @Model.Question1CorrectText</span>
+            </div>
+        }
+
+        else
+        {
+            <div class="alert alert-dismissible alert-danger quiz-answer-container">
+                <span class="quiz-incorrect">Incorrect</span>
+                <span>- You picked @Model.Question1CorrectText</span>
+            </div>
+        }
+        <div>
+            <s>A) Energy allows humans to exercise</s>
+        </div>
+        <div>
+            <s>B) Energy allows organisms to think</s>
+        </div>
+        <div>
+            <b>C) Energy allows work to be done</b>
+        </div>
+        <div>
+            <s>D) Energy allows humans to do work</s>
+        </div>
+
+        <br />
+
+        <!-- QUESTION 2 -->
+        <h3><u>Question 2:</u></h3><h5>Which of the following is a <b>type</b> of energy?</h5>
+        @if (Model.Question2Correct)
+        {
+            <div class="alert alert-dismissible alert-success quiz-answer-container">
+                <span class="quiz-correct">Correct</span>
+                <span>- You picked @Model.Question2CorrectText</span>
+            </div>
+        }
+
+        else
+        {
+            <div class="alert alert-dismissible alert-danger quiz-answer-container">
+                <span class="quiz-incorrect">Incorrect</span>
+                <span>- You picked @Model.Question2CorrectText</span>
+            </div>
+        }
+        <div>
+            <div>
+                A) Kinetic
+            </div>
+        </div>
+        <div>
+            <div>
+                B) ADHD
+            </div>
+        </div>
+        <div>
+            <div>
+                C) Sugar
+            </div>
+        </div>
+        <div>
+            <div>
+                D) Fire
+            </div>
+        </div>
+
+        <br />
+
+        <!-- QUESTION 3 -->
+        <h3><u>Question 3:</u></h3><h5>Which of the following is <b>true</b> about energy?</h5>
+        @if (Model.Question3Correct)
+        {
+            <div class="alert alert-dismissible alert-success quiz-answer-container">
+                <span class="quiz-correct">Correct</span>
+                <span>- You picked @Model.Question3CorrectText</span>
+            </div>
+        }
+
+        else
+        {
+            <div class="alert alert-dismissible alert-danger quiz-answer-container">
+                <span class="quiz-incorrect">Incorrect</span>
+                <span>- You picked @Model.Question3CorrectText</span>
+            </div>
+        }
+        <div>
+            <s>A) Energy can be created.</s>
+        </div>
+        <div>
+            <s>B) Energy can be destroyed.</s>
+        </div>
+        <div>
+            <s>C) We are running out of energy.</s>
+        </div>
+        <div>
+            D) Energy cannot be created or destroyed.
+        </div>
+
+        <br />
+
+        <!-- QUESTION 4 -->
+        <h3><u>Question 4:</u></h3><h5>Which of the following is an equation we can use for energy? (You can pick <b>more than one</b> answer)</h5>
+        @if (Model.Question4Correct)
+        {
+            <div class="alert alert-dismissible alert-success quiz-answer-container">
+                <span class="quiz-correct">Correct</span>
+                <span>- You picked @Model.Question4CorrectText</span>
+            </div>
+        }
+        else
+        {
+            <div class="alert alert-dismissible alert-danger quiz-answer-container">
+                <span class="quiz-incorrect">Incorrect</span>
+                <span>- You picked @Model.Question4CorrectText</span>
+            </div>
+        }
+        <div>
+            A)&emsp;&emsp;&emsp;&emsp;E = mc<sup>2</sup>
+        </div>
+        <div>
+            B)&emsp;&emsp;&emsp;&emsp;E<sub>k </sub>= ½mv<sup>2</sup>
+        </div>
+        <div>
+            <s>C)&emsp;&emsp;&emsp;&emsp;y = mx + c</s>
+        </div>
+        <div>
+            D)&emsp;&emsp;&emsp;&emsp;E<sub>p</sub> = mgh
+        </div>
+
+        <br />
+
+        <!-- QUESTION 5 -->
+        <h3><u>Question 5:</u></h3><h5>When heating something up, which of the <b>following statements are true?</b> (You can pick <b>more than one</b> answer)</h5>
+        @if (Model.Question5Correct)
+        {
+            <div class="alert alert-dismissible alert-success quiz-answer-container">
+                <span class="quiz-correct">Correct</span>
+                <span>- You picked @Model.Question5CorrectText</span>
+            </div>
+        }
+        else
+        {
+            <div class="alert alert-dismissible alert-danger quiz-answer-container">
+                <span class="quiz-incorrect">Incorrect</span>
+                <span>- You picked @Model.Question5CorrectText</span>
+            </div>
+        }
+        <div>
+            <s>A) Heating something up takes <b>less</b> energy.</s>
+        </div>
+        <div>
+            B) Heating something up takes <b>more</b> energy.
+        </div>
+        <div>
+            <s>C) Something that is hot has <b>less</b> energy than something that is cold.</s>
+        </div>
+        <div>
+            D) Something that is hot has <b>more</b> energy than something that is cold.
+        </div>
+
+        <br />
+
+        <!-- QUESTION 6 -->
+        <h3><u>Question 6:</u></h3><h5>We rely on multiple different sources of energy; some are <b>renewable</b> and some are <b>non-renewable</b>. Sort these into renewable or non-renewable sources.</h5>
+        @if (Model.Question6Correct)
+        {
+            <div class="alert alert-dismissible alert-success quiz-answer-container">
+                <span class="quiz-correct">Correct! You got all of these right.</span>
+            </div>
+        }
+
+        else
+        {
+            <div class="alert alert-dismissible alert-danger quiz-answer-container">
+                <span class="quiz-incorrect">Incorrect.</span>
+                <span class="quiz-incorrect">A, C and F were all renewable, while B, D and E were all non-renewable.</span>
+            </div>
+        }
+            <div>
+                A) <u>Geothermal</u> - energy that comes from underground sources of heat.
+                <br />
+                Renewable
+                &emsp;&emsp;|&emsp;&emsp;
+                <s>Non-renewable</s>
+                <br />
+                <div class="alert alert-dismissible alert-info quiz-answer-container">
+                    <span>You picked @Model.Question6aCorrectText</span>
+                </div>
+            </div>
+            <div>
+                B) <u>Natural Gas</u> - a natural form of gas that's extracted from under the Earth's surface.
+                <br />
+                <s>Renewable</s>
+                &emsp;&emsp;|&emsp;&emsp;
+                Non-renewable
+                <br />
+                
+            </div>
+            <div>
+                C) <u>Wind</u> - Turning a turbine using the kinetic energy from the wind.
+                <br />
+                Renewable
+                &emsp;&emsp;|&emsp;&emsp;
+                <s>Non-renewable</s>
+                <br />
+                <div class="alert alert-dismissible alert-info quiz-answer-container">
+                    <span>You picked @Model.Question6cCorrectText</span>
+                </div>
+            </div>
+            <div>
+                D) <u>Nuclear</u> - Using a radioactive source to turn turbines.
+                <br />
+                <s>Renewable</s>
+                &emsp;&emsp;|&emsp;&emsp;
+                Non-renewable
+                <br />
+                <div class="alert alert-dismissible alert-info quiz-answer-container">
+                    <span>You picked @Model.Question6dCorrectText</span>
+                </div>
+            </div>
+            <div>
+                E) <u>Coal</u> - mining a combustible black rock from beneath the Earth's surface and combusting it.
+                <br />
+                <s>Renewable</s>
+                &emsp;&emsp;|&emsp;&emsp;
+                Non-renewable
+                <br />
+                <div class="alert alert-dismissible alert-info quiz-answer-container">
+                    <span>You picked @Model.Question6eCorrectText</span>
+                </div>
+            </div>
+            <div>
+                F) <u>Bio-fuels</u> - Using either plant products or animal dung to produce energy.
+                <br />
+                Renewable
+                &emsp;&emsp;|&emsp;&emsp;
+                <s>Non-renewable</s>
+                <br />
+                <div class="alert alert-dismissible alert-info quiz-answer-container">
+                    <span>You picked @Model.Question6fCorrectText</span>
+                </div>
+            </div>
+        <hr />
+        <button type="submit" class="btn btn-success">Back to Energy</button>
+    </fieldset>
+    }
+</div>
+<br />
+<br />

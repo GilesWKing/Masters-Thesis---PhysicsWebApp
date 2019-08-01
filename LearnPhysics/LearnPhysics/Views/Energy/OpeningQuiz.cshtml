@@ -1,39 +1,41 @@
-﻿
+﻿@model LearnPhysics.Models.EnergyOpeningQuiz
+
 @{
     ViewData["Title"] = "Opening Quiz";
 }
+
 <br />
 <div class="container" style="margin-top:80px;">
-    <h2 style="text-align: center; margin-top:80px;"><u>Opening Quiz</u></h2>
+    <h2 style="text-align: center; margin-top:80px;"><u>Energy - Opening Quiz</u></h2>
     <br />
     <p>
-        <strong>Practising questions is really important</strong> - you can self assess how much you know at the beginning 
-        of the course and compare it to what you've found out by the end of the course. Don't feel any pressure in getting 
+        <strong>Practising questions is really important</strong> - you can self assess how much you know at the beginning
+        of the course and compare it to what you've found out by the end of the course. Don't feel any pressure in getting
         the questions 100% correct, no one else will see the results except for you.
     </p>
 
-    <form>
+    @using (Html.BeginForm("OpeningQuiz", "Energy", FormMethod.Post))
+    {
 
         <fieldset>
-            <legend>Energy</legend>
 
             <br />
             <!-- QUESTION 1 -->
             <h3><u>Question 1:</u></h3><h5>Which of the following best describes energy?</h5>
             <div>
-                <input type="radio" name="question-1-answers" id="question-1-answers-A" value="A" />
+                @Html.RadioButtonFor(m => m.Question1, "A")
                 <label for="question-1-answers-A">A) Energy allows humans to exercise</label>
             </div>
             <div>
-                <input type="radio" name="question-1-answers" id="question-1-answers-B" value="B" />
+                @Html.RadioButtonFor(m => m.Question1, "B")
                 <label for="question-1-answers-B">B) Energy allows organisms to think</label>
             </div>
             <div>
-                <input type="radio" name="question-1-answers" id="question-1-answers-C" value="C" />
+                @Html.RadioButtonFor(m => m.Question1, "C")
                 <label for="question-1-answers-C">C) Energy allows work to be done</label>
             </div>
             <div>
-                <input type="radio" name="question-1-answers" id="question-1-answers-D" value="D" />
+                @Html.RadioButtonFor(m => m.Question1, "D")
                 <label for="question-1-answers-D">D) Energy allows humans to do work</label>
             </div>
 
@@ -42,19 +44,19 @@
             <!-- QUESTION 2 -->
             <h3><u>Question 2:</u></h3><h5>Which of the following is a <b>type</b> of energy?</h5>
             <div>
-                <input type="radio" name="question-2-answers" id="question-2-answers-A" value="A" />
+                @Html.RadioButtonFor(m => m.Question2, "A")
                 <label for="question-2-answers-A">A) Kinetic</label>
             </div>
             <div>
-                <input type="radio" name="question-2-answers" id="question-2-answers-B" value="B" />
+                @Html.RadioButtonFor(m => m.Question2, "B")
                 <label for="question-2-answers-B">B) ADHD</label>
             </div>
             <div>
-                <input type="radio" name="question-2-answers" id="question-2-answers-C" value="C" />
+                @Html.RadioButtonFor(m => m.Question2, "C")
                 <label for="question-2-answers-C">C) Sugar</label>
             </div>
             <div>
-                <input type="radio" name="question-2-answers" id="question-2-answers-D" value="D" />
+                @Html.RadioButtonFor(m => m.Question2, "D")
                 <label for="question-2-answers-D">D) Fire</label>
             </div>
 
@@ -63,19 +65,19 @@
             <!-- QUESTION 3 -->
             <h3><u>Question 3:</u></h3><h5>Which of the following is <b>true</b> about energy?</h5>
             <div>
-                <input type="radio" name="question-3-answers" id="question-3-answers-A" value="A" />
+                @Html.RadioButtonFor(m => m.Question3, "A")
                 <label for="question-3-answers-A">A) Energy can be created.</label>
             </div>
             <div>
-                <input type="radio" name="question-3-answers" id="question-3-answers-B" value="B" />
+                @Html.RadioButtonFor(m => m.Question3, "B")
                 <label for="question-3-answers-B">B) Energy can be destroyed.</label>
             </div>
             <div>
-                <input type="radio" name="question-3-answers" id="question-3-answers-C" value="C" />
+                @Html.RadioButtonFor(m => m.Question3, "C")
                 <label for="question-3-answers-C">C) We are running out of energy.</label>
             </div>
             <div>
-                <input type="radio" name="question-3-answers" id="question-3-answers-D" value="D" />
+                @Html.RadioButtonFor(m => m.Question3, "D")
                 <label for="question-3-answers-D">D) Energy cannot be created or destroyed.</label>
             </div>
 
@@ -84,19 +86,19 @@
             <!-- QUESTION 4 -->
             <h3><u>Question 4:</u></h3><h5>Which of the following is an equation we can use for energy? (You can pick <b>more than one</b> answer)</h5>
             <div>
-                <input type="checkbox" name="question-4-answers" id="question-4-answers-A" value="A" />
+                @Html.CheckBoxFor(m => m.Question4a)
                 <label for="question-4-answers-A">A)&emsp;&emsp;&emsp;&emsp;E = mc<sup>2</sup></label>
             </div>
             <div>
-                <input type="checkbox" name="question-4-answers" id="question-4-answers-B" value="B" />
+                @Html.CheckBoxFor(m => m.Question4b)
                 <label for="question-4-answers-B">B)&emsp;&emsp;&emsp;&emsp;E<sub>k </sub>= ½mv<sup>2</sup></label>
             </div>
             <div>
-                <input type="checkbox" name="question-4-answers" id="question-4-answers-C" value="C" />
+                @Html.CheckBoxFor(m => m.Question4c)
                 <label for="question-4-answers-C">C)&emsp;&emsp;&emsp;&emsp;y = mx + c</label>
             </div>
             <div>
-                <input type="checkbox" name="question-4-answers" id="question-4-answers-D" value="D" />
+                @Html.CheckBoxFor(m => m.Question4d)
                 <label for="question-4-answers-D">D)&emsp;&emsp;&emsp;&emsp;E<sub>p</sub> = mgh</label>
             </div>
 
@@ -105,19 +107,19 @@
             <!-- QUESTION 5 -->
             <h3><u>Question 5:</u></h3><h5>When heating something up, which of the <b>following statements are true?</b> (You can pick <b>more than one</b> answer)</h5>
             <div>
-                <input type="checkbox" name="question-5-answers" id="question-5-answers-A" value="A" />
+                @Html.CheckBoxFor(m => m.Question5a)
                 <label for="question-5-answers-A">A) Heating something up takes <b>less</b> energy.</label>
             </div>
             <div>
-                <input type="checkbox" name="question-5-answers" id="question-5-answers-B" value="B" />
+                @Html.CheckBoxFor(m => m.Question5b)
                 <label for="question-5-answers-B">B) Heating something up takes <b>more</b> energy.</label>
             </div>
             <div>
-                <input type="checkbox" name="question-5-answers" id="question-5-answers-C" value="C" />
+                @Html.CheckBoxFor(m => m.Question5c)
                 <label for="question-5-answers-C">C) Something that is hot has <b>less</b> energy than something that is cold.</label>
             </div>
             <div>
-                <input type="checkbox" name="question-5-answers" id="question-5-answers-D" value="D" />
+                @Html.CheckBoxFor(m => m.Question5d)
                 <label for="question-5-answers-D">D) Something that is hot has <b>more</b> energy than something that is cold.</label>
             </div>
 
@@ -127,62 +129,56 @@
             <h3><u>Question 6:</u></h3><h5>We rely on multiple different sources of energy; some are <b>renewable</b> and some are <b>non-renewable</b>. Sort these into renewable or non-renewable sources.</h5>
             <div>
                 A) <u>Geothermal</u> - energy that comes from underground sources of heat.<br />
-                
-                <input type="radio" name="question-6-answers-A" id="question-6-answers-A1" value="A1" />
+                @Html.RadioButtonFor(m => m.Question6a, "A1")
                 <label for="question-6-answers-A1">Renewable</label>
                 &emsp;&emsp;|&emsp;&emsp;
-                <input type="radio" name="question-6-answers-A" id="question-6-answers-A2" value="A2" />
+                @Html.RadioButtonFor(m => m.Question6a, "A2")
                 <label for="question-6-answers-A2">Non-renewable</label>
             </div>
             <div>
                 B) <u>Natural Gas</u> - a natural form of gas that's extracted from under the Earth's surface.<br />
-
-                <input type="radio" name="question-6-answers-B" id="question-6-answers-B1" value="B1" />
+                @Html.RadioButtonFor(m => m.Question6b, "B1")
                 <label for="question-6-answers-B1">Renewable</label>
                 &emsp;&emsp;|&emsp;&emsp;
-                <input type="radio" name="question-6-answers-B" id="question-6-answers-B2" value="B2" />
+                @Html.RadioButtonFor(m => m.Question6b, "B2")
                 <label for="question-6-answers-B2">Non-renewable</label>
             </div>
             <div>
                 C) <u>Wind</u> - Turning a turbine using the kinetic energy from the wind.<br />
-
-                <input type="radio" name="question-6-answers-C" id="question-6-answers-C1" value="C1" />
+                @Html.RadioButtonFor(m => m.Question6c, "C1")
                 <label for="question-6-answers-C1">Renewable</label>
                 &emsp;&emsp;|&emsp;&emsp;
-                <input type="radio" name="question-6-answers-C" id="question-6-answers-C2" value="C2" />
+                @Html.RadioButtonFor(m => m.Question6c, "C2")
                 <label for="question-6-answers-C2">Non-renewable</label>
             </div>
             <div>
                 D) <u>Nuclear</u> - Using a radioactive source to turn turbines.<br />
-
-                <input type="radio" name="question-6-answers-D" id="question-6-answers-D1" value="D1" />
+                @Html.RadioButtonFor(m => m.Question6d, "D1")
                 <label for="question-6-answers-D1">Renewable</label>
                 &emsp;&emsp;|&emsp;&emsp;
-                <input type="radio" name="question-6-answers-D" id="question-6-answers-D2" value="D2" />
+                @Html.RadioButtonFor(m => m.Question6d, "D2")
                 <label for="question-6-answers-D2">Non-renewable</label>
             </div>
             <div>
                 E) <u>Coal</u> - mining a combustible black rock from beneath the Earth's surface and combusting it.<br />
-
-                <input type="radio" name="question-6-answers-E" id="question-6-answers-E1" value="E1" />
+                @Html.RadioButtonFor(m => m.Question6e, "E1")
                 <label for="question-6-answers-E1">Renewable</label>
                 &emsp;&emsp;|&emsp;&emsp;
-                <input type="radio" name="question-6-answers-E" id="question-6-answers-E2" value="E2" />
+                @Html.RadioButtonFor(m => m.Question6e, "E2")
                 <label for="question-6-answers-E2">Non-renewable</label>
             </div>
             <div>
                 F) <u>Bio-fuels</u> - Using either plant products or animal dung to produce energy.<br />
-
-                <input type="radio" name="question-6-answers-F" id="question-6-answers-F1" value="F1" />
+                @Html.RadioButtonFor(m => m.Question6f, "F1")
                 <label for="question-6-answers-F1">Renewable</label>
                 &emsp;&emsp;|&emsp;&emsp;
-                <input type="radio" name="question-6-answers-F" id="question-6-answers-F2" value="F2" />
+                @Html.RadioButtonFor(m => m.Question6f, "F2")
                 <label for="question-6-answers-F2">Non-renewable</label>
             </div>
             <hr />
-            <button type="button" class="btn btn-success">Submit</button>
+            <button type="submit" class="btn btn-success">Submit</button>
         </fieldset>
-    </form>
+    }
 </div>
 
 <br />
