@@ -6,7 +6,7 @@
 
 <br />
 <div class="container" style="margin-top:80px;">
-    <h2 style="text-align: center; margin-top:80px;"><u>Energy - Opening Quiz</u></h2>
+    <h2 style="text-align: center; margin-top:80px;"><u>Energy - Chapter Quiz</u></h2>
     <br />
     <p>
         <strong>Let's see what you've learned!</strong> Consolidation of knowledge is often done
@@ -15,8 +15,11 @@
         in order of the topics' structure. <b>If you leave this form, it will not save your progress</b>.
         Try and apply your knowledge as best you can to each question. Good luck!
     </p>
+    <p>
+        @Model.CorrectAnswerTotal of 15 Correct - well done! (@Model.Percentage%)
+    </p>
 
-    @using (Html.BeginForm("OpeningQuiz", "Energy", FormMethod.Post))
+    @using (Html.BeginForm("energyIndex", "Energy", FormMethod.Get))
     {
 
     <fieldset>
@@ -25,84 +28,137 @@
         <!-- QUESTION 1 -->
         <h3><u>Question 1:</u></h3>
         <h5>Which of the following is the best way a physicist can describe energy?</h5>
+        @if (Model.Question1Correct)
+        {
+            <div class="alert alert-dismissible alert-success quiz-answer-container">
+                <span class="quiz-correct">Correct</span>
+                <span>- You picked @Model.Question1CorrectText, well done!</span>
+            </div>
+        }
+
+        else
+        {
+            <div class="alert alert-dismissible alert-danger quiz-answer-container">
+                <span class="quiz-incorrect">Incorrect</span>
+                <span>
+                    - You picked @Model.Question1CorrectText. Work is another way of saying moving something, or heating
+                    something up.
+                </span>
+            </div>
+        }
         <div>
-            @Html.RadioButtonFor(m => m.Question1, "A")
-            <label for="question-1-answers-A">A) Energy allows work to be done</label>
+            <b>A) Energy allows work to be done</b>
         </div>
         <div>
-            @Html.RadioButtonFor(m => m.Question1, "B")
-            <label for="question-1-answers-B">B) Energy allows stars to form</label>
+            <s>B) Energy allows stars to form</s>
         </div>
         <div>
-            @Html.RadioButtonFor(m => m.Question1, "C")
-            <label for="question-1-answers-C">C) Energy allows humans to exercise</label>
+            <s>C) Energy allows humans to exercise</s>
         </div>
         <div>
-            @Html.RadioButtonFor(m => m.Question1, "D")
-            <label for="question-1-answers-D">D) Energy allows humans to do work</label>
+            <s>D) Energy allows humans to do work</s>
         </div>
 
         <br />
 
         <!-- QUESTION 2 -->
         <h3><u>Question 2:</u></h3><h5>Where does the Earth get most of its energy from?</h5>
+        @if (Model.Question2Correct)
+        {
+            <div class="alert alert-dismissible alert-success quiz-answer-container">
+                <span class="quiz-correct">Correct</span>
+                <span>- You picked @Model.Question2CorrectText, good work! The Sun gives us a LOT of energy.</span>
+            </div>
+        }
+
+        else
+        {
+            <div class="alert alert-dismissible alert-danger quiz-answer-container">
+                <span class="quiz-incorrect">Incorrect</span>
+                <span>
+                    - You picked @Model.Question2CorrectText. The Sun gives us most of our energy, everything else
+                    is a by-product of the Sun's energy.
+                </span>
+            </div>
+        }
         <div>
-            @Html.RadioButtonFor(m => m.Question2, "A")
-            <label for="question-2-answers-A">A) Sugar</label>
+            <s><label for="question-2-answers-A">A) Sugar</label></s>
         </div>
         <div>
-            @Html.RadioButtonFor(m => m.Question2, "B")
-            <label for="question-2-answers-B">B) Humans</label>
+            <s><label for="question-2-answers-B">B) Humans</label></s>
         </div>
         <div>
-            @Html.RadioButtonFor(m => m.Question2, "C")
-            <label for="question-2-answers-C">C) The Sun</label>
+            <b><label for="question-2-answers-C">C) The Sun</label></b>
         </div>
         <div>
-            @Html.RadioButtonFor(m => m.Question2, "D")
-            <label for="question-2-answers-D">D) Fire</label>
+            <s><label for="question-2-answers-D">D) Fire</label></s>
         </div>
 
         <br />
 
         <!-- QUESTION 3 -->
         <h3><u>Question 3:</u></h3><h5>What is the scientific (SI) unit for energy?</h5>
+        @if (Model.Question3Correct)
+        {
+            <div class="alert alert-dismissible alert-success quiz-answer-container">
+                <span class="quiz-correct">Correct</span>
+                <span>- You picked @Model.Question3CorrectText. You were paying attention!</span>
+            </div>
+        }
+
+        else
+        {
+            <div class="alert alert-dismissible alert-danger quiz-answer-container">
+                <span class="quiz-incorrect">Incorrect</span>
+                <span>
+                    - You picked @Model.Question3CorrectText. The Joule is named after James Prescott Joule,
+                    the founder of the unit for energy.
+                </span>
+            </div>
+        }
         <div>
-            @Html.RadioButtonFor(m => m.Question3, "A")
-            <label for="question-3-answers-A">A) Jewel</label>
+            <s><label for="question-3-answers-A">A) Jewel</label></s>
         </div>
         <div>
-            @Html.RadioButtonFor(m => m.Question3, "B")
-            <label for="question-3-answers-B">B) Gem</label>
+            <s><label for="question-3-answers-B">B) Gem</label></s>
         </div>
         <div>
-            @Html.RadioButtonFor(m => m.Question3, "C")
-            <label for="question-3-answers-C">C) Crystal</label>
+            <s><label for="question-3-answers-C">C) Crystal</label></s>
         </div>
         <div>
-            @Html.RadioButtonFor(m => m.Question3, "D")
-            <label for="question-3-answers-D">D) Joule</label>
+            <b><label for="question-3-answers-D">D) Joule</label></b>
         </div>
 
         <br />
 
         <!-- QUESTION 4 -->
         <h3><u>Question 4:</u></h3><h5>Which of these is one of the nine stores of energy we looked at?</h5>
+        @if (Model.Question4Correct)
+        {
+            <div class="alert alert-dismissible alert-success quiz-answer-container">
+                <span class="quiz-correct">Correct</span>
+                <span>- You picked @Model.Question4CorrectText, well done!</span>
+            </div>
+        }
+
+        else
+        {
+            <div class="alert alert-dismissible alert-danger quiz-answer-container">
+                <span class="quiz-incorrect">Incorrect</span>
+                <span>- You picked @Model.Question4CorrectText. Whilst they all store energy, only nuclear is a type of energy store.</span>
+            </div>
+        }
         <div>
-            @Html.RadioButtonFor(m => m.Question4, "A")
-            <label for="question-4-answers-A">A) Fat</label>
+            <label for="question-4-answers-A"><s>A) Fat</s></label>
         </div>
         <div>
-            @Html.RadioButtonFor(m => m.Question4, "B")
-            <label for="question-4-answers-B">B) Nuclear</label>
+            <label for="question-4-answers-B"><b>B) Nuclear</b></label>
         </div>
         <div>
-            @Html.RadioButtonFor(m => m.Question4, "C")
-            <label for="question-4-answers-C">C) Tea</label>
+            <label for="question-4-answers-C"><s>C) Tea</s></label>
         </div>
         <div>
-            @Html.RadioButtonFor(m => m.Question4, "D")
-            <label for="question-4-answers-D">D) The Sun</label>
+            <label for="question-4-answers-D"><s>D) The Sun</s></label>
         </div>
 
         <br />
@@ -110,42 +166,70 @@
         <!-- QUESTION 5 -->
         <h3><u>Question 5:</u></h3>
         <h5>Which of the below best describes the energy transferring between stores in a car when you press the accelerator?</h5>
+        @if (Model.Question5Correct)
+        {
+            <div class="alert alert-dismissible alert-success quiz-answer-container">
+                <span class="quiz-correct">Correct</span>
+                <span>- You picked @Model.Question5CorrectText. This required a lot of thought, well done.</span>
+            </div>
+        }
+
+        else
+        {
+            <div class="alert alert-dismissible alert-danger quiz-answer-container">
+                <span class="quiz-incorrect">Incorrect</span>
+                <span>
+                    - You picked @Model.Question5CorrectText. Remember that fuel is a form of chemical energy,
+                    and a car ultimately moves. A car engine makes heat and sound as a by-product.
+                </span>
+            </div>
+        }
         <div>
-            @Html.RadioButtonFor(m => m.Question5, "A")
-            <label for="question-5-answers-A">A) Nuclear energy -> heat energy -> kinetic energy</label>
+            <s><label for="question-5-answers-A">A) Nuclear energy -> heat energy -> kinetic energy</label></s>
         </div>
         <div>
-            @Html.RadioButtonFor(m => m.Question5, "B")
-            <label for="question-5-answers-B">B) Chemical energy -> sound energy -> nuclear energy -> kinetic energy</label>
+            <s><label for="question-5-answers-B">B) Chemical energy -> sound energy -> nuclear energy -> kinetic energy</label></s>
         </div>
         <div>
-            @Html.RadioButtonFor(m => m.Question5, "C")
-            <label for="question-5-answers-C">C) Kinetic energy -> heat energy -> chemical energy</label>
+            <s><label for="question-5-answers-C">C) Kinetic energy -> heat energy -> chemical energy</label></s>
         </div>
         <div>
-            @Html.RadioButtonFor(m => m.Question5, "D")
-            <label for="question-5-answers-D">D) Chemical energy -> heat energy -> sound energy -> kinetic energy</label>
+            <b><label for="question-5-answers-D">D) Chemical energy -> heat energy -> sound energy -> kinetic energy</label></b>
         </div>
 
         <br />
 
         <!-- QUESTION 6 -->
         <h3><u>Question 6:</u></h3><h5>Which of the equations below is used to calculate the kinetic energy store of an object?</h5>
+        @if (Model.Question6Correct)
+        {
+            <div class="alert alert-dismissible alert-success quiz-answer-container">
+                <span class="quiz-correct">Correct</span>
+                <span>- You picked @Model.Question6CorrectText, well done!</span>
+            </div>
+        }
+
+        else
+        {
+            <div class="alert alert-dismissible alert-danger quiz-answer-container">
+                <span class="quiz-incorrect">Incorrect</span>
+                <span>
+                    - You picked @Model.Question6CorrectText. The correct equation starts with an E for energy, and
+                    the k stands for kinetic. It's worth looking at every equation carefully.
+                </span>
+            </div>
+        }
         <div>
-            @Html.RadioButtonFor(m => m.Question6, "A")
-            <label for="question-4-answers-A">A)&emsp;&emsp;&emsp;&emsp;E = mc<sup>2</sup></label>
+            <s><label for="question-4-answers-A">A)&emsp;&emsp;&emsp;&emsp;E = mc<sup>2</sup></label></s>
         </div>
         <div>
-            @Html.RadioButtonFor(m => m.Question6, "B")
-            <label for="question-4-answers-B">B)&emsp;&emsp;&emsp;&emsp;E<sub>k </sub>= ½mv<sup>2</sup></label>
+            <b><label for="question-4-answers-B">B)&emsp;&emsp;&emsp;&emsp;E<sub>k </sub>= ½mv<sup>2</sup></label></b>
         </div>
         <div>
-            @Html.RadioButtonFor(m => m.Question6, "C")
-            <label for="question-4-answers-C">C)&emsp;&emsp;&emsp;&emsp;y = mx + c</label>
+            <s><label for="question-4-answers-C">C)&emsp;&emsp;&emsp;&emsp;y = mx + c</label></s>
         </div>
         <div>
-            @Html.RadioButtonFor(m => m.Question6, "D")
-            <label for="question-4-answers-D">D)&emsp;&emsp;&emsp;&emsp;E<sub>p</sub> = mgh</label>
+            <s><label for="question-4-answers-D">D)&emsp;&emsp;&emsp;&emsp;E<sub>p</sub> = mgh</label></s>
         </div>
 
         <br />
@@ -156,42 +240,70 @@
             A 10kg object is dropped from a window at a height of 25 metres. What is it's
             gravitational potential energy in Joules to 1 decimal place? Where E<sub>p</sub> = mgh (Use 9.81 for g)
         </h5>
+        @if (Model.Question7Correct)
+        {
+            <div class="alert alert-dismissible alert-success quiz-answer-container">
+                <span class="quiz-correct">Correct</span>
+                <span>- You picked @Model.Question7CorrectText, congratulations! You can do physics with this question.</span>
+            </div>
+        }
+
+        else
+        {
+            <div class="alert alert-dismissible alert-danger quiz-answer-container">
+                <span class="quiz-incorrect">Incorrect</span>
+                <span>
+                    - You picked @Model.Question7CorrectText. This was a difficult question, but remember that letters are just
+                    placeholders for the numerical values in the question.
+                </span>
+            </div>
+        }
         <div>
-            @Html.RadioButtonFor(m => m.Question7, "A")
-            <label for="question-7-answers-A">A) 2,452.5 J</label>
+            <b><label for="question-7-answers-A">A) 2,452.5 J</label></b>
         </div>
         <div>
-            @Html.RadioButtonFor(m => m.Question7, "B")
-            <label for="question-7-answers-B">B) 2,452.50 J</label>
+            <s><label for="question-7-answers-B">B) 2,452.50 J</label></s>
         </div>
         <div>
-            @Html.RadioButtonFor(m => m.Question7, "C")
-            <label for="question-7-answers-C">C) 2,502.0 J</label>
+            <s><label for="question-7-answers-C">C) 2,502.0 J</label></s>
         </div>
         <div>
-            @Html.RadioButtonFor(m => m.Question7, "D")
-            <label for="question-7-answers-D">D) 2.502 kJ</label>
+            <s><label for="question-7-answers-D">D) 2.502 kJ</label></s>
         </div>
 
         <br />
 
         <!-- QUESTION 8 -->
         <h3><u>Question 8:</u></h3><h5>Conservation of energy states that...</h5>
+        @if (Model.Question8Correct)
+        {
+            <div class="alert alert-dismissible alert-success quiz-answer-container">
+                <span class="quiz-correct">Correct</span>
+                <span>- You picked @Model.Question8CorrectText. Good!</span>
+            </div>
+        }
+
+        else
+        {
+            <div class="alert alert-dismissible alert-danger quiz-answer-container">
+                <span class="quiz-incorrect">Incorrect</span>
+                <span>
+                    - You picked @Model.Question8CorrectText. Energy cannot be created or destroyed,
+                    but changes from one form to another, remember?
+                </span>
+            </div>
+        }
         <div>
-            @Html.RadioButtonFor(m => m.Question8, "A")
-            <label for="question-8-answers-A">A) Energy can be created</label>
+            <s><label for="question-8-answers-A">A) Energy can be created</label></s>
         </div>
         <div>
-            @Html.RadioButtonFor(m => m.Question8, "B")
-            <label for="question-8-answers-B">B) Energy cannot be created nor destroyed</label>
+            <b><label for="question-8-answers-B">B) Energy cannot be created nor destroyed</label></b>
         </div>
         <div>
-            @Html.RadioButtonFor(m => m.Question8, "C")
-            <label for="question-8-answers-C">C) Energy can be created and destroyed</label>
+            <s><label for="question-8-answers-C">C) Energy can be created and destroyed</label></s>
         </div>
         <div>
-            @Html.RadioButtonFor(m => m.Question8, "D")
-            <label for="question-8-answers-D">D) Energy can be destroyed</label>
+            <s><label for="question-8-answers-D">D) Energy can be destroyed</label></s>
         </div>
 
         <br />
@@ -202,151 +314,244 @@
             50,000 Joules of energy is stored in a log. If the log is set on fire, which of the below is the
             most likely energy transfer?
         </h5>
+        @if (Model.Question9Correct)
+        {
+            <div class="alert alert-dismissible alert-success quiz-answer-container">
+                <span class="quiz-correct">Correct</span>
+                <span>
+                    - You picked @Model.Question9CorrectText. Applying conservation of energy to this has given
+                    you another mark. Well done!
+                </span>
+            </div>
+        }
+
+        else
+        {
+            <div class="alert alert-dismissible alert-danger quiz-answer-container">
+                <span class="quiz-incorrect">Incorrect</span>
+                <span>
+                    - You picked @Model.Question9CorrectText. Starting off with 50,000 J of energy means you should have
+                    50,000 J of energy at the end. This was a hard question.
+                </span>
+            </div>
+        }
         <div>
-            @Html.RadioButtonFor(m => m.Question9, "A")
-            <label for="question-9-answers-A">A) 26,000 J of heat energy and 26,000 J of light energy</label>
+            <s><label for="question-9-answers-A">A) 26,000 J of heat energy and 26,000 J of light energy</label></s>
         </div>
         <div>
-            @Html.RadioButtonFor(m => m.Question9, "B")
-            <label for="question-9-answers-B">B) 5,000 J of heat energy, 5,000 J of light energy and 5,000 J of sound energy</label>
+            <s><label for="question-9-answers-B">B) 5,000 J of heat energy, 5,000 J of light energy and 5,000 J of sound energy</label></s>
         </div>
         <div>
-            @Html.RadioButtonFor(m => m.Question9, "C")
-            <label for="question-9-answers-C">C) 38,000 J of heat energy, 8,000 J of light energy and 4,000 J of sound energy</label>
+            <b><label for="question-9-answers-C">C) 38,000 J of heat energy, 8,000 J of light energy and 4,000 J of sound energy</label></b>
         </div>
         <div>
-            @Html.RadioButtonFor(m => m.Question9, "D")
-            <label for="question-9-answers-D">D) 48,000 J of sound energy and 2,000 J of heat energy</label>
+            <s><label for="question-9-answers-D">D) 48,000 J of sound energy and 2,000 J of heat energy</label></s>
         </div>
 
         <br />
 
         <!-- QUESTION 10 -->
         <h3><u>Question 10:</u></h3><h5>What is the <b>useful</b> energy we want from a car?</h5>
+        @if (Model.Question10Correct)
+        {
+            <div class="alert alert-dismissible alert-success quiz-answer-container">
+                <span class="quiz-correct">Correct</span>
+                <span>- You picked @Model.Question10CorrectText, good!</span>
+            </div>
+        }
+
+        else
+        {
+            <div class="alert alert-dismissible alert-danger quiz-answer-container">
+                <span class="quiz-incorrect">Incorrect</span>
+                <span>
+                    - You picked @Model.Question10CorrectText. While we can get all energy types from the car,
+                    we need to think what the primary purpose of a car is? Transport, so it needs to move!
+                </span>
+            </div>
+        }
         <div>
-            @Html.RadioButtonFor(m => m.Question10, "A")
-            <label for="question-10-answers-A">A) Electrical energy</label>
+            <s><label for="question-10-answers-A">A) Electrical energy</label></s>
         </div>
         <div>
-            @Html.RadioButtonFor(m => m.Question10, "B")
-            <label for="question-10-answers-B">B) Sound energy</label>
+            <s><label for="question-10-answers-B">B) Sound energy</label></s>
         </div>
         <div>
-            @Html.RadioButtonFor(m => m.Question10, "C")
-            <label for="question-10-answers-C">C) Heat energy</label>
+            <s><label for="question-10-answers-C">C) Heat energy</label></s>
         </div>
         <div>
-            @Html.RadioButtonFor(m => m.Question10, "D")
-            <label for="question-10-answers-D">D) Kinetic energy</label>
+            <b><label for="question-10-answers-D">D) Kinetic energy</label></b>
         </div>
 
         <br />
 
         <!-- QUESTION 11 -->
         <h3><u>Question 11:</u></h3><h5>Conduction occurs in...? (You can pick <b>more than one</b> answer)</h5>
+        @if (Model.Question11Correct)
+        {
+            <div class="alert alert-dismissible alert-success quiz-answer-container">
+                <span class="quiz-correct">Correct</span>
+                <span>- You picked @Model.Question11CorrectText, well done! Another mark!</span>
+            </div>
+        }
+        else
+        {
+            <div class="alert alert-dismissible alert-danger quiz-answer-container">
+                <span class="quiz-incorrect">Incorrect</span>
+                <span>
+                    - You picked @Model.Question11CorrectText- gases and vaccuum's cannot conduct energy.
+                    Conduction happens because particles heat up, transferring their heat to the particle next to it.
+                </span>
+            </div>
+        }
         <div>
-            @Html.CheckBoxFor(m => m.Question11a)
-            <label for="question-11-answers-A">A) A solid</label>
+            <b><label for="question-11-answers-A">A) A solid</label></b>
         </div>
         <div>
-            @Html.CheckBoxFor(m => m.Question11b)
-            <label for="question-11-answers-B">B) A liquid</label>
+            <b><label for="question-11-answers-B">B) A liquid</label></b>
         </div>
         <div>
-            @Html.CheckBoxFor(m => m.Question11c)
-            <label for="question-11-answers-C">C) A gas</label>
+            <s><label for="question-11-answers-C">C) A gas</label></s>
         </div>
         <div>
-            @Html.CheckBoxFor(m => m.Question11d)
-            <label for="question-11-answers-D">D) A vaccuum</label>
+            <s><label for="question-11-answers-D">D) A vaccuum</label></s>
         </div>
 
         <br />
 
         <!-- QUESTION 12 -->
         <h3><u>Question 12:</u></h3><h5>Whilst convection occurs in...? (You can pick <b>more than one</b> answer)</h5>
+        @if (Model.Question12Correct)
+        {
+            <div class="alert alert-dismissible alert-success quiz-answer-container">
+                <span class="quiz-correct">Correct</span>
+                <span>- You picked @Model.Question12CorrectText, great! You know the difference between conduction and convection!</span>
+            </div>
+        }
+        else
+        {
+            <div class="alert alert-dismissible alert-danger quiz-answer-container">
+                <span class="quiz-incorrect">Incorrect</span>
+                <span>
+                    - You picked @Model.Question12CorrectText. Not a lot of people are familiar with convection, but it happens
+                    in gases and liquids where particles can move around.
+                </span>
+            </div>
+        }
         <div>
-            @Html.CheckBoxFor(m => m.Question12a)
-            <label for="question-12-answers-A">A) A solid</label>
+            <s><label for="question-12-answers-A">A) A solid</label></s>
         </div>
         <div>
-            @Html.CheckBoxFor(m => m.Question12b)
-            <label for="question-12-answers-B">B) A liquid</label>
+            <b><label for="question-12-answers-B">B) A liquid</label></b>
         </div>
         <div>
-            @Html.CheckBoxFor(m => m.Question12c)
-            <label for="question-12-answers-C">C) A gas</label>
+            <b><label for="question-12-answers-C">C) A gas</label></b>
         </div>
         <div>
-            @Html.CheckBoxFor(m => m.Question12d)
-            <label for="question-12-answers-D">D) A vaccuum</label>
+            <s><label for="question-12-answers-D">D) A vaccuum</label></s>
         </div>
 
         <br />
 
         <!-- QUESTION 13 -->
         <h3><u>Question 13:</u></h3><h5>Radiation is unique because it can travel through...? (You can pick <b>more than one</b> answer)</h5>
+        @if (Model.Question13Correct)
+        {
+            <div class="alert alert-dismissible alert-success quiz-answer-container">
+                <span class="quiz-correct">Correct</span>
+                <span>- You picked @Model.Question13CorrectText. Fantastic! Different forms of radiation can travel through all of them!</span>
+            </div>
+        }
+        else
+        {
+            <div class="alert alert-dismissible alert-danger quiz-answer-container">
+                <span class="quiz-incorrect">Incorrect</span>
+                <span>- You picked @Model.Question13CorrectText. Radiation can travel through all of them!</span>
+            </div>
+        }
         <div>
-            @Html.CheckBoxFor(m => m.Question13a)
-            <label for="question-13-answers-A">A) A solid</label>
+            <b><label for="question-13-answers-A">A) A solid</label></b>
         </div>
         <div>
-            @Html.CheckBoxFor(m => m.Question13b)
-            <label for="question-13-answers-B">B) A liquid</label>
+            <b><label for="question-13-answers-B">B) A liquid</label></b>
         </div>
         <div>
-            @Html.CheckBoxFor(m => m.Question13c)
-            <label for="question-13-answers-C">C) A gas</label>
+            <b><label for="question-13-answers-C">C) A gas</label></b>
         </div>
         <div>
-            @Html.CheckBoxFor(m => m.Question13d)
-            <label for="question-13-answers-D">D) A vaccuum</label>
+            <b><label for="question-13-answers-D">D) A vaccuum</label></b>
         </div>
 
         <br />
 
         <!-- QUESTION 14 -->
         <h3><u>Question 14:</u></h3><h5>Which of the following are <b>non-renewable</b> energy source(s)? (You can pick <b>more than one</b> answer)</h5>
+        @if (Model.Question14Correct)
+        {
+            <div class="alert alert-dismissible alert-success quiz-answer-container">
+                <span class="quiz-correct">Correct</span>
+                <span>- You picked @Model.Question14CorrectText - a lot of people mistake nuclear for renewable, so well done!</span>
+            </div>
+        }
+        else
+        {
+            <div class="alert alert-dismissible alert-danger quiz-answer-container">
+                <span class="quiz-incorrect">Incorrect</span>
+                <span>
+                    - You picked @Model.Question14CorrectText. Remember, when used, non-renewable energy sources cannot be
+                    used or harvested again.
+                </span>
+            </div>
+        }
         <div>
-            @Html.CheckBoxFor(m => m.Question14a)
-            <label for="question-14-answers-A">A) Solar</label>
+            <s><label for="question-14-answers-A">A) Solar</label></s>
         </div>
         <div>
-            @Html.CheckBoxFor(m => m.Question14b)
-            <label for="question-14-answers-B">B) Nuclear</label>
+            <b><label for="question-14-answers-B">B) Nuclear</label></b>
         </div>
         <div>
-            @Html.CheckBoxFor(m => m.Question14c)
-            <label for="question-14-answers-C">C) Tidal</label>
+            <s><label for="question-14-answers-C">C) Tidal</label></s>
         </div>
         <div>
-            @Html.CheckBoxFor(m => m.Question14d)
-            <label for="question-14-answers-D">D) Natural gas</label>
+            <b><label for="question-14-answers-D">D) Natural gas</label></b>
         </div>
 
         <br />
 
         <!-- QUESTION 15 -->
         <h3><u>Question 15:</u></h3><h5>Which of the following are <b>renewable</b> energy source(s)? (You can pick <b>more than one</b> answer)</h5>
+        @if (Model.Question15Correct)
+        {
+            <div class="alert alert-dismissible alert-success quiz-answer-container">
+                <span class="quiz-correct">Correct</span>
+                <span>- You picked @Model.Question15CorrectText, great!</span>
+            </div>
+        }
+        else
+        {
+            <div class="alert alert-dismissible alert-danger quiz-answer-container">
+                <span class="quiz-incorrect">Incorrect</span>
+                <span>
+                    - You picked @Model.Question15CorrectText. Remember that renewable energy sources 
+                    are ones we can use again and again.
+                </span>
+            </div>
+        }
         <div>
-            @Html.CheckBoxFor(m => m.Question15a)
-            <label for="question-15-answers-A">A) Solar</label>
+            <b><label for="question-15-answers-A">A) Solar</label></b>
         </div>
         <div>
-            @Html.CheckBoxFor(m => m.Question15b)
-            <label for="question-15-answers-B">B) Nuclear</label>
+            <s><label for="question-15-answers-B">B) Nuclear</label></s>
         </div>
         <div>
-            @Html.CheckBoxFor(m => m.Question15c)
-            <label for="question-15-answers-C">C) Tidal</label>
+            <b><label for="question-15-answers-C">C) Tidal</label></b>
         </div>
         <div>
-            @Html.CheckBoxFor(m => m.Question15d)
-            <label for="question-15-answers-D">D) Natural gas</label>
+            <s><label for="question-15-answers-D">D) Natural gas</label></s>
         </div>
         <br />
         <hr />
-        <button type="submit" class="btn btn-success">Submit</button>
+        <button type="submit" class="btn btn-success">Back to Energy</button>
     </fieldset>
     }
 </div>

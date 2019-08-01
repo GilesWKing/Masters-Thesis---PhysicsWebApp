@@ -44,21 +44,21 @@ namespace LearnPhysics.Models
 
         public enum QuizEnergyChapter
         {
-            Question1 = 1,
-            Question2 = 2,
-            Question3 = 3,
-            Question4 = 4,
-            Question5 = 5,
-            Question6 = 6,
-            Question7 = 7,
-            Question8 = 8,
-            Question9 = 9,
-            Question10 = 10,
-            Question11 = 11,
-            Question12 = 12,
-            Question13 = 13,
-            Question14 = 14,
-            Question15 = 15,
+            Question1 = 7,
+            Question2 = 8,
+            Question3 = 9,
+            Question4 = 10,
+            Question5 = 11,
+            Question6 = 12,
+            Question7 = 13,
+            Question8 = 15,
+            Question9 = 16,
+            Question10 = 17,
+            Question11 = 18,
+            Question12 = 19,
+            Question13 = 20,
+            Question14 = 21,
+            Question15 = 22,
         }
 
         // Method to transfer User ID from database to EnergyController.

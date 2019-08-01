@@ -79,6 +79,85 @@ namespace LearnPhysics.Controllers
 
         public IActionResult OpeningQuiz()
         {
+            int userId = _common.GetUserId(HttpContext);
+
+            UserQuiz userQuiz = _context.UserQuiz
+                       // SQL Query joined Quiz to UserQuiz tables to ensure we have the correct topic ID.
+                       .Join(_context.Quiz, UserQuiz => UserQuiz.QuizId, Quiz => Quiz.QuizId, (UserQuiz, Quiz) => new { Quiz, UserQuiz })
+                       .Where(JoinedTable => JoinedTable.UserQuiz.UserId == userId && JoinedTable.Quiz.QuizId == (int)Common.QuizEnergy.OpeningQuiz)
+                       .Select(JoinedTable => new UserQuiz
+                       {
+                           QuizId = JoinedTable.UserQuiz.QuizId,
+                           CorrectAnswers = JoinedTable.UserQuiz.CorrectAnswers,
+                           TotalAnswers = JoinedTable.UserQuiz.TotalAnswers,
+                           Percentage = JoinedTable.UserQuiz.Percentage
+                       }).SingleOrDefault();
+
+            if (userQuiz != null)
+            {
+                EnergyOpeningQuiz quiz = new EnergyOpeningQuiz();
+
+                quiz.CorrectAnswerTotal = userQuiz.CorrectAnswers;
+                quiz.Percentage = userQuiz.Percentage;
+
+                IEnumerable<UserQuizQuestion> userQuizQuestions = _context.UserQuizQuestion
+                    .Join(_context.QuizQuestion, UserQuizQuestion => UserQuizQuestion.QuizQuestionId, QuizQuestion => QuizQuestion.QuizQuestionId, (UserQuizQuestion, QuizQuestion) => new { QuizQuestion, UserQuizQuestion })
+                    .Where(JoinedTable => JoinedTable.UserQuizQuestion.UserId == userId && JoinedTable.QuizQuestion.QuizId == (int)Common.QuizEnergy.OpeningQuiz)
+                    .Select(JoinedTable => new UserQuizQuestion
+                    {
+                        QuizQuestionId = JoinedTable.UserQuizQuestion.QuizQuestionId,
+                        Correct = JoinedTable.UserQuizQuestion.Correct,
+                        AnswerText = JoinedTable.UserQuizQuestion.AnswerText
+                    });
+
+                foreach (UserQuizQuestion userQuizQuestion in userQuizQuestions)
+                {
+                    if (userQuizQuestion.QuizQuestionId == (int)Common.QuizEnergyOpen.Question1)
+                    {
+                        quiz.Question1Correct = userQuizQuestion.Correct;
+                        quiz.Question1CorrectText = userQuizQuestion.AnswerText;
+                    }
+                    else if(userQuizQuestion.QuizQuestionId == (int)Common.QuizEnergyOpen.Question2)
+                    {
+                        quiz.Question2Correct = userQuizQuestion.Correct;
+                        quiz.Question2CorrectText = userQuizQuestion.AnswerText;
+                    }
+                    else if (userQuizQuestion.QuizQuestionId == (int)Common.QuizEnergyOpen.Question3)
+                    {
+                        quiz.Question3Correct = userQuizQuestion.Correct;
+                        quiz.Question3CorrectText = userQuizQuestion.AnswerText;
+                    }
+                    else if (userQuizQuestion.QuizQuestionId == (int)Common.QuizEnergyOpen.Question4)
+                    {
+                        quiz.Question4Correct = userQuizQuestion.Correct;
+                        quiz.Question4CorrectText = userQuizQuestion.AnswerText;
+                    }
+                    else if (userQuizQuestion.QuizQuestionId == (int)Common.QuizEnergyOpen.Question5)
+                    {
+                        quiz.Question5Correct = userQuizQuestion.Correct;
+                        quiz.Question5CorrectText = userQuizQuestion.AnswerText;
+                    }
+                    else if (userQuizQuestion.QuizQuestionId == (int)Common.QuizEnergyOpen.Question6)
+                    {
+                        quiz.Question6Correct = userQuizQuestion.Correct;
+                        string text = userQuizQuestion.AnswerText;
+                        string[] answers = text.Split(new char[] { '#' });
+
+                        if(answers.Length == 6)
+                        {
+                            quiz.Question6aCorrectText = answers[0];
+                            quiz.Question6bCorrectText = answers[1];
+                            quiz.Question6cCorrectText = answers[2];
+                            quiz.Question6dCorrectText = answers[3];
+                            quiz.Question6eCorrectText = answers[4];
+                            quiz.Question6fCorrectText = answers[5];
+                        }
+                    }
+                }
+
+                return View("OpeningQuizResults", quiz);
+            }
+
             return View();
         }
 
@@ -268,31 +347,42 @@ namespace LearnPhysics.Controllers
             userQuizQuestion1.UserId = userQuiz.UserId;
             userQuizQuestion1.QuizQuestionId = (int)Common.QuizEnergyOpen.Question1;
             userQuizQuestion1.Correct = quiz.Question1Correct;
+            userQuizQuestion1.AnswerText = quiz.Question1CorrectText;
 
             UserQuizQuestion userQuizQuestion2 = new UserQuizQuestion();
             userQuizQuestion2.UserId = userQuiz.UserId;
             userQuizQuestion2.QuizQuestionId = (int)Common.QuizEnergyOpen.Question2;
             userQuizQuestion2.Correct = quiz.Question2Correct;
+            userQuizQuestion2.AnswerText = quiz.Question2CorrectText;
 
             UserQuizQuestion userQuizQuestion3 = new UserQuizQuestion();
             userQuizQuestion3.UserId = userQuiz.UserId;
             userQuizQuestion3.QuizQuestionId = (int)Common.QuizEnergyOpen.Question3;
             userQuizQuestion3.Correct = quiz.Question3Correct;
+            userQuizQuestion3.AnswerText = quiz.Question3CorrectText;
 
             UserQuizQuestion userQuizQuestion4 = new UserQuizQuestion();
             userQuizQuestion4.UserId = userQuiz.UserId;
             userQuizQuestion4.QuizQuestionId = (int)Common.QuizEnergyOpen.Question4;
             userQuizQuestion4.Correct = quiz.Question4Correct;
+            userQuizQuestion4.AnswerText = quiz.Question4CorrectText;
 
             UserQuizQuestion userQuizQuestion5 = new UserQuizQuestion();
             userQuizQuestion5.UserId = userQuiz.UserId;
             userQuizQuestion5.QuizQuestionId = (int)Common.QuizEnergyOpen.Question5;
             userQuizQuestion5.Correct = quiz.Question5Correct;
+            userQuizQuestion5.AnswerText = quiz.Question5CorrectText;
 
             UserQuizQuestion userQuizQuestion6 = new UserQuizQuestion();
             userQuizQuestion6.UserId = userQuiz.UserId;
             userQuizQuestion6.QuizQuestionId = (int)Common.QuizEnergyOpen.Question6;
             userQuizQuestion6.Correct = quiz.Question6Correct;
+            userQuizQuestion6.AnswerText = string.Concat(quiz.Question6aCorrectText,"#",
+                                                         quiz.Question6bCorrectText,"#",
+                                                         quiz.Question6cCorrectText, "#",
+                                                         quiz.Question6dCorrectText, "#",
+                                                         quiz.Question6eCorrectText, "#",
+                                                         quiz.Question6fCorrectText);
 
             try
             {
@@ -311,10 +401,10 @@ namespace LearnPhysics.Controllers
             return View("OpeningQuizResults", quiz);
         }
         
-        public IActionResult OpeningQuizResults()
-        {
-            return View();
-        }
+        //public IActionResult OpeningQuizResults()
+        //{
+        //    return View();
+        //}
 
         public IActionResult Lesson1()
         {
@@ -453,6 +543,120 @@ namespace LearnPhysics.Controllers
 
         public IActionResult ChapterQuiz()
         {
+            int userId = _common.GetUserId(HttpContext);
+
+            UserQuiz userQuiz = _context.UserQuiz
+                       // SQL Query joined Quiz to UserQuiz tables to ensure we have the correct topic ID.
+                       .Join(_context.Quiz, UserQuiz => UserQuiz.QuizId, Quiz => Quiz.QuizId, (UserQuiz, Quiz) => new { Quiz, UserQuiz })
+                       .Where(JoinedTable => JoinedTable.UserQuiz.UserId == userId && JoinedTable.Quiz.QuizId == (int)Common.QuizEnergy.ChapterQuiz)
+                       .Select(JoinedTable => new UserQuiz
+                       {
+                           QuizId = JoinedTable.UserQuiz.QuizId,
+                           CorrectAnswers = JoinedTable.UserQuiz.CorrectAnswers,
+                           TotalAnswers = JoinedTable.UserQuiz.TotalAnswers,
+                           Percentage = JoinedTable.UserQuiz.Percentage
+                       }).SingleOrDefault();
+
+            if (userQuiz != null)
+            {
+                EnergyChapterQuiz quiz = new EnergyChapterQuiz();
+
+                quiz.CorrectAnswerTotal = userQuiz.CorrectAnswers;
+                quiz.Percentage = userQuiz.Percentage;
+
+                IEnumerable<UserQuizQuestion> userQuizQuestions = _context.UserQuizQuestion
+                    .Join(_context.QuizQuestion, UserQuizQuestion => UserQuizQuestion.QuizQuestionId, QuizQuestion => QuizQuestion.QuizQuestionId, (UserQuizQuestion, QuizQuestion) => new { QuizQuestion, UserQuizQuestion })
+                    .Where(JoinedTable => JoinedTable.UserQuizQuestion.UserId == userId && JoinedTable.QuizQuestion.QuizId == (int)Common.QuizEnergy.ChapterQuiz)
+                    .Select(JoinedTable => new UserQuizQuestion
+                    {
+                        QuizQuestionId = JoinedTable.UserQuizQuestion.QuizQuestionId,
+                        Correct = JoinedTable.UserQuizQuestion.Correct,
+                        AnswerText = JoinedTable.UserQuizQuestion.AnswerText
+                    });
+
+                foreach (UserQuizQuestion userQuizQuestion in userQuizQuestions)
+                {
+                    if (userQuizQuestion.QuizQuestionId == (int)Common.QuizEnergyChapter.Question1)
+                    {
+                        quiz.Question1Correct = userQuizQuestion.Correct;
+                        quiz.Question1CorrectText = userQuizQuestion.AnswerText;
+                    }
+                    else if (userQuizQuestion.QuizQuestionId == (int)Common.QuizEnergyChapter.Question2)
+                    {
+                        quiz.Question2Correct = userQuizQuestion.Correct;
+                        quiz.Question2CorrectText = userQuizQuestion.AnswerText;
+                    }
+                    else if (userQuizQuestion.QuizQuestionId == (int)Common.QuizEnergyChapter.Question3)
+                    {
+                        quiz.Question3Correct = userQuizQuestion.Correct;
+                        quiz.Question3CorrectText = userQuizQuestion.AnswerText;
+                    }
+                    else if (userQuizQuestion.QuizQuestionId == (int)Common.QuizEnergyChapter.Question4)
+                    {
+                        quiz.Question4Correct = userQuizQuestion.Correct;
+                        quiz.Question4CorrectText = userQuizQuestion.AnswerText;
+                    }
+                    else if (userQuizQuestion.QuizQuestionId == (int)Common.QuizEnergyChapter.Question5)
+                    {
+                        quiz.Question5Correct = userQuizQuestion.Correct;
+                        quiz.Question5CorrectText = userQuizQuestion.AnswerText;
+                    }
+                    else if (userQuizQuestion.QuizQuestionId == (int)Common.QuizEnergyChapter.Question6)
+                    {
+                        quiz.Question6Correct = userQuizQuestion.Correct;
+                        quiz.Question6CorrectText = userQuizQuestion.AnswerText;
+                    }
+                    else if (userQuizQuestion.QuizQuestionId == (int)Common.QuizEnergyChapter.Question7)
+                    {
+                        quiz.Question7Correct = userQuizQuestion.Correct;
+                        quiz.Question7CorrectText = userQuizQuestion.AnswerText;
+                    }
+                    else if (userQuizQuestion.QuizQuestionId == (int)Common.QuizEnergyChapter.Question8)
+                    {
+                        quiz.Question8Correct = userQuizQuestion.Correct;
+                        quiz.Question8CorrectText = userQuizQuestion.AnswerText;
+                    }
+                    else if (userQuizQuestion.QuizQuestionId == (int)Common.QuizEnergyChapter.Question9)
+                    {
+                        quiz.Question9Correct = userQuizQuestion.Correct;
+                        quiz.Question9CorrectText = userQuizQuestion.AnswerText;
+                    }
+                    else if (userQuizQuestion.QuizQuestionId == (int)Common.QuizEnergyChapter.Question10)
+                    {
+                        quiz.Question10Correct = userQuizQuestion.Correct;
+                        quiz.Question10CorrectText = userQuizQuestion.AnswerText;
+                    }
+                    else if (userQuizQuestion.QuizQuestionId == (int)Common.QuizEnergyChapter.Question11)
+                    {
+                        quiz.Question11Correct = userQuizQuestion.Correct;
+                        quiz.Question11CorrectText = userQuizQuestion.AnswerText;
+                    }
+                    else if (userQuizQuestion.QuizQuestionId == (int)Common.QuizEnergyChapter.Question12)
+                    {
+                        quiz.Question12Correct = userQuizQuestion.Correct;
+                        quiz.Question12CorrectText = userQuizQuestion.AnswerText;
+                    }
+                    else if (userQuizQuestion.QuizQuestionId == (int)Common.QuizEnergyChapter.Question13)
+                    {
+                        quiz.Question13Correct = userQuizQuestion.Correct;
+                        quiz.Question13CorrectText = userQuizQuestion.AnswerText;
+                    }
+                    else if (userQuizQuestion.QuizQuestionId == (int)Common.QuizEnergyChapter.Question14)
+                    {
+                        quiz.Question14Correct = userQuizQuestion.Correct;
+                        quiz.Question14CorrectText = userQuizQuestion.AnswerText;
+                    }
+                    else if (userQuizQuestion.QuizQuestionId == (int)Common.QuizEnergyChapter.Question15)
+                    {
+                        quiz.Question15Correct = userQuizQuestion.Correct;
+                        quiz.Question15CorrectText = userQuizQuestion.AnswerText;
+                    }
+
+                }
+
+                return View("ChapterQuizResults", quiz);
+            }
+
             return View();
         }
 
@@ -638,7 +842,7 @@ namespace LearnPhysics.Controllers
             quiz.Question12CorrectText = text;
 
             // Marking Question 13 correct or incorrect
-            if (quiz.Question13d)
+            if (quiz.Question13a && quiz.Question13b && quiz.Question13c && quiz.Question13d)
             {
                 quiz.Question13Correct = true;
                 count++;
@@ -752,7 +956,7 @@ namespace LearnPhysics.Controllers
             UserQuiz userQuiz = new UserQuiz();
             userQuiz.UserId = _common.GetUserId(HttpContext);
             // Change to retrieve quiz id
-            userQuiz.QuizId = (int)Common.QuizEnergy.OpeningQuiz;
+            userQuiz.QuizId = (int)Common.QuizEnergy.ChapterQuiz;
             userQuiz.CorrectAnswers = count;
             userQuiz.TotalAnswers = 15;
 
@@ -768,76 +972,91 @@ namespace LearnPhysics.Controllers
             userQuizQuestion1.UserId = userQuiz.UserId;
             userQuizQuestion1.QuizQuestionId = (int)Common.QuizEnergyChapter.Question1;
             userQuizQuestion1.Correct = quiz.Question1Correct;
+            userQuizQuestion1.AnswerText = quiz.Question1CorrectText;
 
             UserQuizQuestion userQuizQuestion2 = new UserQuizQuestion();
             userQuizQuestion2.UserId = userQuiz.UserId;
             userQuizQuestion2.QuizQuestionId = (int)Common.QuizEnergyChapter.Question2;
             userQuizQuestion2.Correct = quiz.Question2Correct;
+            userQuizQuestion2.AnswerText = quiz.Question2CorrectText;
 
             UserQuizQuestion userQuizQuestion3 = new UserQuizQuestion();
             userQuizQuestion3.UserId = userQuiz.UserId;
             userQuizQuestion3.QuizQuestionId = (int)Common.QuizEnergyChapter.Question3;
             userQuizQuestion3.Correct = quiz.Question3Correct;
+            userQuizQuestion3.AnswerText = quiz.Question3CorrectText;
 
             UserQuizQuestion userQuizQuestion4 = new UserQuizQuestion();
             userQuizQuestion4.UserId = userQuiz.UserId;
             userQuizQuestion4.QuizQuestionId = (int)Common.QuizEnergyChapter.Question4;
             userQuizQuestion4.Correct = quiz.Question4Correct;
+            userQuizQuestion4.AnswerText = quiz.Question4CorrectText;
 
             UserQuizQuestion userQuizQuestion5 = new UserQuizQuestion();
             userQuizQuestion5.UserId = userQuiz.UserId;
             userQuizQuestion5.QuizQuestionId = (int)Common.QuizEnergyChapter.Question5;
             userQuizQuestion5.Correct = quiz.Question5Correct;
+            userQuizQuestion5.AnswerText = quiz.Question5CorrectText;
 
             UserQuizQuestion userQuizQuestion6 = new UserQuizQuestion();
             userQuizQuestion6.UserId = userQuiz.UserId;
             userQuizQuestion6.QuizQuestionId = (int)Common.QuizEnergyChapter.Question6;
             userQuizQuestion6.Correct = quiz.Question6Correct;
+            userQuizQuestion6.AnswerText = quiz.Question6CorrectText;
 
             UserQuizQuestion userQuizQuestion7 = new UserQuizQuestion();
             userQuizQuestion7.UserId = userQuiz.UserId;
             userQuizQuestion7.QuizQuestionId = (int)Common.QuizEnergyChapter.Question7;
             userQuizQuestion7.Correct = quiz.Question7Correct;
+            userQuizQuestion7.AnswerText = quiz.Question7CorrectText;
 
             UserQuizQuestion userQuizQuestion8 = new UserQuizQuestion();
             userQuizQuestion8.UserId = userQuiz.UserId;
             userQuizQuestion8.QuizQuestionId = (int)Common.QuizEnergyChapter.Question8;
             userQuizQuestion8.Correct = quiz.Question8Correct;
+            userQuizQuestion8.AnswerText = quiz.Question8CorrectText;
 
             UserQuizQuestion userQuizQuestion9 = new UserQuizQuestion();
             userQuizQuestion9.UserId = userQuiz.UserId;
             userQuizQuestion9.QuizQuestionId = (int)Common.QuizEnergyChapter.Question9;
             userQuizQuestion9.Correct = quiz.Question9Correct;
+            userQuizQuestion9.AnswerText = quiz.Question9CorrectText;
 
             UserQuizQuestion userQuizQuestion10 = new UserQuizQuestion();
             userQuizQuestion10.UserId = userQuiz.UserId;
             userQuizQuestion10.QuizQuestionId = (int)Common.QuizEnergyChapter.Question10;
             userQuizQuestion10.Correct = quiz.Question10Correct;
+            userQuizQuestion10.AnswerText = quiz.Question10CorrectText;
 
             UserQuizQuestion userQuizQuestion11 = new UserQuizQuestion();
             userQuizQuestion11.UserId = userQuiz.UserId;
             userQuizQuestion11.QuizQuestionId = (int)Common.QuizEnergyChapter.Question11;
             userQuizQuestion11.Correct = quiz.Question11Correct;
+            userQuizQuestion11.AnswerText = quiz.Question11CorrectText;
 
             UserQuizQuestion userQuizQuestion12 = new UserQuizQuestion();
             userQuizQuestion12.UserId = userQuiz.UserId;
             userQuizQuestion12.QuizQuestionId = (int)Common.QuizEnergyChapter.Question12;
             userQuizQuestion12.Correct = quiz.Question12Correct;
+            userQuizQuestion12.AnswerText = quiz.Question12CorrectText;
 
             UserQuizQuestion userQuizQuestion13 = new UserQuizQuestion();
             userQuizQuestion13.UserId = userQuiz.UserId;
             userQuizQuestion13.QuizQuestionId = (int)Common.QuizEnergyChapter.Question13;
             userQuizQuestion13.Correct = quiz.Question13Correct;
+            userQuizQuestion13.AnswerText = quiz.Question13CorrectText;
 
             UserQuizQuestion userQuizQuestion14 = new UserQuizQuestion();
             userQuizQuestion14.UserId = userQuiz.UserId;
             userQuizQuestion14.QuizQuestionId = (int)Common.QuizEnergyChapter.Question14;
             userQuizQuestion14.Correct = quiz.Question14Correct;
+            userQuizQuestion14.AnswerText = quiz.Question14CorrectText;
 
             UserQuizQuestion userQuizQuestion15 = new UserQuizQuestion();
             userQuizQuestion15.UserId = userQuiz.UserId;
             userQuizQuestion15.QuizQuestionId = (int)Common.QuizEnergyChapter.Question15;
             userQuizQuestion15.Correct = quiz.Question15Correct;
+            userQuizQuestion15.AnswerText = quiz.Question15CorrectText;
 
             try
             {
@@ -865,10 +1084,10 @@ namespace LearnPhysics.Controllers
             return View("ChapterQuizResults", quiz);
         }
 
-        public IActionResult ChapterQuizResults()
-        {
-            return View();
-        }
+        //public IActionResult ChapterQuizResults()
+        //{
+        //    return View();
+        //}
 
     }
 }

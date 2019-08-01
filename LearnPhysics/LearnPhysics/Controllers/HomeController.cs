@@ -88,6 +88,12 @@ namespace LearnPhysics.Controllers
         {
             registrationData.UserId = 0;
 
+            // INSERT VALIDATION HERE!!! //
+            // if validation fails, return view with registration data //
+            // if validation passes continue //
+            // use viewbags to return individual messages for each failure //
+            // i.e. gender, password, age - each has individual viewbag. //
+
             // Stores unencrypted password in model rather than encrypted version.
             string password = registrationData.Password;
             // Creates a new salt stored in a variable called salt.

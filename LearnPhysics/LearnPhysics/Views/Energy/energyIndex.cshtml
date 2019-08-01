@@ -35,7 +35,7 @@
         <li>
             @if (Model.QuizOpening)
             {
-                <s>Opening quiz</s>
+                <a asp-area="" asp-controller="Energy" asp-action="OpeningQuiz"><s>Opening quiz</s></a>
                 <span class="menu-read">  (complete)</span> @Model.QuizOpeningResults
             }
 
@@ -186,7 +186,7 @@
             {
                 @if (Model.QuizChapter)
                 {
-                    <s>Chapter quiz</s>
+                    <a asp-area="" asp-controller="Energy" asp-action="ChapterQuiz"><s>Chapter quiz</s></a>
                     <span class="menu-read">  (complete)</span> @Model.QuizChapterResults
                 }
 

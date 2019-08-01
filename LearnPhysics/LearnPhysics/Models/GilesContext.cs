@@ -178,6 +178,11 @@ namespace LearnPhysics.Models
                 entity.HasKey(o => new { o.UserId, o.QuizQuestionId });
 
                 entity.Property(e => e.Correct).HasColumnName("Correct");
+
+                entity.Property(e => e.AnswerText)
+                    .IsRequired()
+                    .HasColumnName("Answer_Text")
+                    .IsUnicode(false);
             });
         }
     }

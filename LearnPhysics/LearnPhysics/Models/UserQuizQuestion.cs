@@ -16,5 +16,6 @@ namespace LearnPhysics.Models
         [Key, Column(Order = 1)]
         public int QuizQuestionId { get; set; }
         public bool Correct { get; set; }
+        public string AnswerText { get; set; }
     }
 }
