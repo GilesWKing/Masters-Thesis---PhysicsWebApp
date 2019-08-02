@@ -1,0 +1,27 @@
+﻿
+@{
+    ViewData["Title"] = "Further Reading";
+}
+<br />
+<div class="container" style="margin-top:80px;">
+    <h2 style="text-align: center; margin-top:80px;"><u>Further Reading</u></h2>
+    <br />
+    <p>
+        You've finished this topic! I hope you've found it interesting and your knowledge
+        around energy has grown deeper. In preparation for the end of chapter quiz, I have
+        included some interesting videos, reading and links below that you can investigate.
+        If you feel comfortable with the content in this lesson, then there's no need to
+        invest any more time. However reading or watching an idea explained in another way
+        helps build and reinforce links between what you already know, and the next part
+        of the concept you wish to learn. Enjoy!
+    </p>
+
+
+
+
+
+    @using (Html.BeginForm("energyIndex", "Energy", FormMethod.Get))
+    {
+        <button type="submit" class="btn btn-success">Back to Energy</button>
+    }
+</div>

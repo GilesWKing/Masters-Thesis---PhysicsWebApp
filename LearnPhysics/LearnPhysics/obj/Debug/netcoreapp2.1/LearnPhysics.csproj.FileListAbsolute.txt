@@ -125,3 +125,4 @@ C:\Users\Giles\Source\Repos\giles-king-pg\Proj516\LearnPhysics\LearnPhysics\obj\
 C:\Users\Giles\Source\Repos\giles-king-pg\Proj516\LearnPhysics\LearnPhysics\obj\Debug\netcoreapp2.1\Razor\Views\Energy\OpeningQuizResults.g.cshtml.cs
 C:\Users\Giles\Source\Repos\giles-king-pg\Proj516\LearnPhysics\LearnPhysics\obj\Debug\netcoreapp2.1\Razor\Views\Energy\ChapterQuiz.g.cshtml.cs
 C:\Users\Giles\Source\Repos\giles-king-pg\Proj516\LearnPhysics\LearnPhysics\obj\Debug\netcoreapp2.1\Razor\Views\Energy\ChapterQuizResults.g.cshtml.cs
+C:\Users\Giles\Source\Repos\giles-king-pg\Proj516\LearnPhysics\LearnPhysics\obj\Debug\netcoreapp2.1\Razor\Views\Energy\FurtherReading.g.cshtml.cs

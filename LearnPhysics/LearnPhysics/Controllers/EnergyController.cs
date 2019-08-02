@@ -541,6 +541,11 @@ namespace LearnPhysics.Controllers
             return RedirectToAction("EnergyIndex", "Energy");
         }
 
+        public IActionResult FurtherReading()
+        {
+            return View();
+        }
+
         public IActionResult ChapterQuiz()
         {
             int userId = _common.GetUserId(HttpContext);
