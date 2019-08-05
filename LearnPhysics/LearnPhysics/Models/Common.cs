@@ -26,6 +26,17 @@ namespace LearnPhysics.Models
             Lesson6 = 9
         }
 
+        public enum LessonParticles
+        {
+            Lesson1 = 11,
+            Lesson2 = 12,
+            Lesson3 = 13,
+            Lesson4 = 14,
+            Lesson5 = 15,
+            Lesson6 = 16,
+            Lesson7 = 17
+        }
+
         public enum QuizEnergy
         {
             OpeningQuiz = 1,
@@ -59,6 +70,12 @@ namespace LearnPhysics.Models
             Question13 = 20,
             Question14 = 21,
             Question15 = 22,
+        }
+
+        public enum QuizParticles
+        {
+            OpeningQuiz = 5,
+            ChapterQuiz = 6
         }
 
         // Method to transfer User ID from database to EnergyController.

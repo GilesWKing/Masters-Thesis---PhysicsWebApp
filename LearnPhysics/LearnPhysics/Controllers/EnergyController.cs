@@ -762,7 +762,7 @@ namespace LearnPhysics.Controllers
                 quiz.Question9CorrectText = "none";
 
             // Marking Question 10 correct or incorrect
-            if (quiz.Question10 == "C")
+            if (quiz.Question10 == "D")
             {
                 quiz.Question10Correct = true;
                 count++;

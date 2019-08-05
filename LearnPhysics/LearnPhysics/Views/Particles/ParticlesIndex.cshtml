@@ -19,10 +19,185 @@
             <th scope="col"><h3 style="margin-bottom: 0rem;">Particles</h3></th>
         </tr>
         <tr>
-            <td><p-custom>2 equations</p-custom></td>
+            <td><p-custom>3 equations</p-custom></td>
         </tr>
         <tr>
             <td><p-custom>medium</p-custom></td>
         </tr>
     </table>
+</div>
+<!-- END OF TABLE -->
+
+<br />
+<!-- LIST OF LESSONS - NAVIGABLE LINKS -->
+<div class="container">
+    <ul style="list-style: circle;">
+        <li>
+            @*@if (Model.QuizOpening)
+            {*@
+            <a asp-area="" asp-controller="Particles" asp-action="OpeningQuiz"><s>Opening quiz</s></a>
+            @*<span class="menu-read">  (complete)</span> @Model.QuizOpeningResults
+            }
+
+            else
+            {
+                <a asp-area="" asp-controller="Particles" asp-action="OpeningQuiz">Opening quiz</a>
+            }*@
+        </li>
+
+        <!-- Code below is responsible for the "Mark as read" on topics page. -->
+        <li>
+            @*@if (!Model.QuizOpening)
+            {*@
+            <span>Lesson 1: Particles and matter</span>
+            @*}
+            else
+            {
+                @if (Model.Lesson1)
+                {
+                    <a asp-area="" asp-controller="Particles" asp-action="Lesson1"><s>Lesson 1: Matter</s></a>
+                    <span class="menu-read">  (read)</span>
+                }
+
+                else
+                {
+                    <a asp-area="" asp-controller="Energy" asp-action="Lesson1">Lesson 1: Energy</a>
+                }
+            }*@
+        </li>
+
+        <li>
+            @*
+            @if (!Model.QuizOpening)
+            {
+            *@<span>Lesson 2: Density</span>@*
+            }
+            else
+            {
+                @if (Model.Lesson2)
+                {
+                    <a asp-area="" asp-controller="Energy" asp-action="Lesson2"><s>Lesson 2: Energy stores</s></a>
+                    <span class="menu-read">  (read)</span>
+                }
+
+                else
+                {
+                    <a asp-area="" asp-controller="Energy" asp-action="Lesson2">Lesson 2: Energy stores</a>
+                }
+            }*@
+        </li>
+
+        <li>
+            @*
+            @if (!Model.QuizOpening)
+            {
+            *@<span>Lesson 3: Internal energy</span>@*
+            }
+            else
+            {
+            @if (Model.Lesson3)
+            {
+                <a asp-area="" asp-controller="Energy" asp-action="Lesson3"><s>Lesson 3: Equations and calculations</s></a>
+                <span class="menu-read">  (read)</span>
+            }
+
+            else
+            {
+                <a asp-area="" asp-controller="Energy" asp-action="Lesson3">Lesson 3: Equations and calculations</a>
+            }
+            }*@
+        </li>
+
+        <li>
+            @*
+            @if (!Model.QuizOpening)
+            {
+            *@<span>Lesson 4: Changes of state</span>@*
+            }
+            else
+            {
+            @if (Model.Lesson4)
+            {
+                <a asp-area="" asp-controller="Energy" asp-action="Lesson4"><s>Lesson 4: Conservation of energy</s></a>
+                <span class="menu-read">  (read)</span>
+            }
+
+            else
+            {
+                <a asp-area="" asp-controller="Energy" asp-action="Lesson4">Lesson 4: Conservation of energy</a>
+            }
+            }*@
+        </li>
+
+        <li>
+            @*
+            @if (!Model.QuizOpening)
+            {
+            *@<span>Lesson 5: Specific heat capacity</span>@*
+            }
+            else
+            {
+            @if (Model.Lesson5)
+            {
+                <a asp-area="" asp-controller="Energy" asp-action="Lesson5"><s>Lesson 5: Heating and energy transfer</s></a>
+                <span class="menu-read">  (read)</span>
+            }
+
+            else
+            {
+                <a asp-area="" asp-controller="Energy" asp-action="Lesson5">Lesson 5: Heating and energy transfer</a>
+            }
+            }*@
+        </li>
+
+        <li>
+            @*
+            @if (!Model.QuizOpening)
+            {
+            *@<span>Lesson 6: Specific latent heat</span>@*
+            }
+            else
+            {
+            @if (Model.Lesson6)
+            {
+                <a asp-area="" asp-controller="Energy" asp-action="Lesson6"><s>Lesson 6: Energy resources</s></a>
+                <span class="menu-read">  (read)</span>
+            }
+
+            else
+            {
+                <a asp-area="" asp-controller="Energy" asp-action="Lesson6">Lesson 6: Energy resources</a>
+            }
+            }*@
+        </li>
+        <li>
+            <span>Lesson 7: Gas laws</span>
+        </li>
+        <li>
+            <a asp-area="" asp-controller="Energy" asp-action="FurtherReading">Further reading and links</a>
+        </li>
+
+        <li>
+            @*
+            @if (!Model.QuizOpening)
+            {
+            *@<span>Chapter quiz</span>@*
+            }
+            else
+            {
+            @if (Model.QuizChapter)
+            {
+            *@
+            <a asp-area="" asp-controller="Energy" asp-action="ChapterQuiz"><s>Chapter quiz</s></a>
+            @*<span class="menu-read">  (complete)</span> @Model.QuizChapterResults*@
+            @*}
+
+                    else
+                    {
+                        <a asp-area="" asp-controller="Energy" asp-action="ChapterQuiz">Chapter quiz</a>
+                    }
+                }
+            </li>*@
+    </ul>
+    <a asp-area="" asp-controller="Topics" asp-action="TopicsIndex">Back to topics list</a>
 </div>
