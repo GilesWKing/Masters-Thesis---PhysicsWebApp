@@ -78,6 +78,35 @@ namespace LearnPhysics.Models
             ChapterQuiz = 6
         }
 
+        public enum QuizParticlesOpen
+        {
+            Question1 = 24,
+            Question2 = 25,
+            Question3 = 26,
+            Question4 = 27,
+            Question5 = 28,
+            Question6 = 29
+        }
+
+        public enum QuizParticlesChapter
+        {
+            Question1 = 30,
+            Question2 = 31,
+            Question3 = 32,
+            Question4 = 33,
+            Question5 = 34,
+            Question6 = 35,
+            Question7 = 36,
+            Question8 = 37,
+            Question9 = 38,
+            Question10 = 39,
+            Question11 = 40,
+            Question12 = 41,
+            Question13 = 42,
+            Question14 = 43,
+            Question15 = 44,
+        }
+
         // Method to transfer User ID from database to EnergyController.
         public int GetUserId(HttpContext httpContext)
         {

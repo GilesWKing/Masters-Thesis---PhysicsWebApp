@@ -400,11 +400,6 @@ namespace LearnPhysics.Controllers
 
             return View("OpeningQuizResults", quiz);
         }
-        
-        //public IActionResult OpeningQuizResults()
-        //{
-        //    return View();
-        //}
 
         public IActionResult Lesson1()
         {

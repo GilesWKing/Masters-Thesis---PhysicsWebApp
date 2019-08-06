@@ -77,7 +77,7 @@ using LearnPhysics.Models;
                         ");
             EndContext();
             BeginContext(464, 70, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "5c75a2944fea42daab78dd90282c78bb", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "fb80879baecf46a384fd610fe4a544ee", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -117,7 +117,7 @@ using LearnPhysics.Models;
 ");
             EndContext();
             BeginContext(936, 301, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6a93c418c429420b9f1e0be3b85b990a", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2abd5c226f394ab187dd876ba8b29558", async() => {
                 BeginContext(942, 288, true);
                 WriteLiteral(@"<input type=""button"" value=""Popup Calculator"" onclick=""javascript:window.open('https://localhost:44353/calculator/Calculator','calculator'+new Date().getTime(),'toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=yes,copyhistory=no,width=450,height=300');"">");
                 EndContext();
