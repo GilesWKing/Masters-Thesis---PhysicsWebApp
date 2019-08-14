@@ -29,17 +29,22 @@
     </table>
 </div>
 
+<br />
+<!-- LIST OF LESSONS - NAVIGABLE LINKS -->
+<div class="container">
+    <ul style="list-style: circle;">
+        <li>
+            <a asp-area="" asp-controller="Maths" asp-action="Algebra">Learning Algebra</a>
+        </li>
+        <li>
+            <a asp-area="" asp-controller="Maths" asp-action="MathsIndex">Standard Index Units</a>
+        </li>
+        <li>
+            <a asp-area="" asp-controller="Maths" asp-action="MathsIndex">Square numbers, cube numbers and powers</a>
+        </li>
+    </ul>
+    <a asp-area="" asp-controller="Topics" asp-action="TopicsIndex">Back to topics list</a>
+</div>
 
-
-
-<form><input type="button" value="Popup Calculator" onclick="javascript:window.open('https://localhost:44353/calculator/Calculator','calculator'+new Date().getTime(),'toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=yes,copyhistory=no,width=450,height=300');"></form>
-
-<p align="center">
-    <font face="arial" size="-2">This free script provided by</font><br>
-    <font face="arial, helvetica" size="-2">
-        <a href="http://javascriptkit.com">
-            JavaScript
-            Kit
-        </a>
-    </font>
-</p>
+@* Pop-up calculator script. *@
+@*<form><input type="button" value="Popup Calculator" onclick="javascript:window.open('https://localhost:44353/calculator/Calculator','calculator'+new Date().getTime(),'toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=yes,copyhistory=no,width=450,height=300');"></form>*@

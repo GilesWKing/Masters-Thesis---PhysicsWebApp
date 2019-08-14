@@ -141,7 +141,7 @@ using LearnPhysics.Models;
             WriteLiteral("    </div>\r\n\r\n    <div class=\"login-button-wrapper\">\r\n        <br />\r\n        <button type=\"submit\" class=\"btn btn-primary\">Login</button>\r\n    </div>\r\n    <div class=\"text-center\">Haven\'t registered yet? ");
             EndContext();
             BeginContext(1261, 77, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c71745a95bb0457db628d638ecc6535e", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "de3cbaa50fb14ec4815afbf1f7725875", async() => {
                 BeginContext(1324, 10, true);
                 WriteLiteral("Click here");
                 EndContext();

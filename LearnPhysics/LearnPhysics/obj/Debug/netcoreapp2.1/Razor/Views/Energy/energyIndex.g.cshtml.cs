@@ -86,7 +86,7 @@ using LearnPhysics.Models;
                         ");
             EndContext();
             BeginContext(498, 74, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "69b6f9375f0b40bfaa6bc067b655b5bd", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "1a680a62e62044669788b8602c4a0e86", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -136,7 +136,7 @@ using LearnPhysics.Models;
             WriteLiteral("                ");
             EndContext();
             BeginContext(1145, 87, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "68fd6e321cc24e4998dd136bc1a7d8a5", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9d7a349453aa4d6dbbdfb828621ebb78", async() => {
                 BeginContext(1209, 19, true);
                 WriteLiteral("<s>Opening quiz</s>");
                 EndContext();
@@ -181,7 +181,7 @@ using LearnPhysics.Models;
             WriteLiteral("                ");
             EndContext();
             BeginContext(1387, 101, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4183f8d9805e4021913c59d6285cb72e", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "aab97f2e34674b1e8043364ad3f05d25", async() => {
                 BeginContext(1451, 33, true);
                 WriteLiteral("Opening quiz <u>< Start here!</u>");
                 EndContext();
@@ -241,7 +241,7 @@ using LearnPhysics.Models;
             WriteLiteral("                    ");
             EndContext();
             BeginContext(1843, 87, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0737d6ddaa614f1e8956a1a14b9b7b67", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "103068a1e6d2498194470779b28d0a50", async() => {
                 BeginContext(1903, 23, true);
                 WriteLiteral("<s>Lesson 1: Energy</s>");
                 EndContext();
@@ -278,7 +278,7 @@ using LearnPhysics.Models;
             WriteLiteral("                    ");
             EndContext();
             BeginContext(2075, 100, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "210ff08c1bcf4ca48c717c317d6bde0d", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8b2f359e05fe45988bd36e1a737cf517", async() => {
                 BeginContext(2135, 36, true);
                 WriteLiteral("Lesson 1: Energy <u>< Then here!</u>");
                 EndContext();
@@ -344,7 +344,7 @@ using LearnPhysics.Models;
             WriteLiteral("                    ");
             EndContext();
             BeginContext(2473, 94, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f5abe987229c4b0ea317ea466f019daa", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a1d99773aff2486bac357b5b47c74ecc", async() => {
                 BeginContext(2533, 30, true);
                 WriteLiteral("<s>Lesson 2: Energy stores</s>");
                 EndContext();
@@ -381,7 +381,7 @@ using LearnPhysics.Models;
             WriteLiteral("                    ");
             EndContext();
             BeginContext(2712, 87, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d919990cb3f44feea846121128796e38", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c2c638f1917a412a9624d74696b31649", async() => {
                 BeginContext(2772, 23, true);
                 WriteLiteral("Lesson 2: Energy stores");
                 EndContext();
@@ -447,7 +447,7 @@ using LearnPhysics.Models;
             WriteLiteral("                    ");
             EndContext();
             BeginContext(3110, 107, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f0b8a11036064fbb80d525849eb3c344", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a17d20d775404ba29014fd14b37be811", async() => {
                 BeginContext(3170, 43, true);
                 WriteLiteral("<s>Lesson 3: Equations and calculations</s>");
                 EndContext();
@@ -484,7 +484,7 @@ using LearnPhysics.Models;
             WriteLiteral("                    ");
             EndContext();
             BeginContext(3362, 100, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8738900e0a0b4323b54fb00a8c3e6506", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9e6dde45f9034ac78515c39c56c29f32", async() => {
                 BeginContext(3422, 36, true);
                 WriteLiteral("Lesson 3: Equations and calculations");
                 EndContext();
@@ -550,7 +550,7 @@ using LearnPhysics.Models;
             WriteLiteral("                    ");
             EndContext();
             BeginContext(3769, 103, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3def7e8c08e94a61912a472f66e58e6a", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d728c7e208b6402aa800271bf18cd70e", async() => {
                 BeginContext(3829, 39, true);
                 WriteLiteral("<s>Lesson 4: Conservation of energy</s>");
                 EndContext();
@@ -587,7 +587,7 @@ using LearnPhysics.Models;
             WriteLiteral("                    ");
             EndContext();
             BeginContext(4017, 96, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2e04fc5137e64652a2e9f742cd4ab76a", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "63cf3c583eb14325a0c0f9306aa1858a", async() => {
                 BeginContext(4077, 32, true);
                 WriteLiteral("Lesson 4: Conservation of energy");
                 EndContext();
@@ -653,7 +653,7 @@ using LearnPhysics.Models;
             WriteLiteral("                    ");
             EndContext();
             BeginContext(4425, 108, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fc02b46fd2f945ba8bee1d662e0d5fd2", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0761afb6f55549cbaf127bfc44a9e493", async() => {
                 BeginContext(4485, 44, true);
                 WriteLiteral("<s>Lesson 5: Heating and energy transfer</s>");
                 EndContext();
@@ -690,7 +690,7 @@ using LearnPhysics.Models;
             WriteLiteral("                    ");
             EndContext();
             BeginContext(4678, 101, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "41296e3f17dc4d7c8549487db6afef0a", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "487a5e5f5dd04dd0969a6d41a5e19854", async() => {
                 BeginContext(4738, 37, true);
                 WriteLiteral("Lesson 5: Heating and energy transfer");
                 EndContext();
@@ -756,7 +756,7 @@ using LearnPhysics.Models;
             WriteLiteral("                    ");
             EndContext();
             BeginContext(5080, 97, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "983ca35d42b84e6a84cf58351e8f71cd", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b65e11609b874ca7bdd614d13e816f80", async() => {
                 BeginContext(5140, 33, true);
                 WriteLiteral("<s>Lesson 6: Energy resources</s>");
                 EndContext();
@@ -793,7 +793,7 @@ using LearnPhysics.Models;
             WriteLiteral("                    ");
             EndContext();
             BeginContext(5322, 90, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "30011924df27418288e1b7308d91e34d", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5d81d6555c964f5dbfbf9bef9516d267", async() => {
                 BeginContext(5382, 26, true);
                 WriteLiteral("Lesson 6: Energy resources");
                 EndContext();
@@ -833,7 +833,7 @@ using LearnPhysics.Models;
             WriteLiteral("        </li>\r\n        <li>\r\n            ");
             EndContext();
             BeginContext(5489, 96, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1fa3d80d2277488e9263cd4d742dc5a4", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7c209169df4b4c38990619c056c6a7ae", async() => {
                 BeginContext(5556, 25, true);
                 WriteLiteral("Further reading and links");
                 EndContext();
@@ -885,7 +885,7 @@ using LearnPhysics.Models;
             WriteLiteral("                    ");
             EndContext();
             BeginContext(5858, 87, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4ffb0297c6094e7f9ed9a01cce0c1704", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d0ccb07a03604aa3a5b59b2d105a2dba", async() => {
                 BeginContext(5922, 19, true);
                 WriteLiteral("<s>Chapter quiz</s>");
                 EndContext();
@@ -930,7 +930,7 @@ using LearnPhysics.Models;
             WriteLiteral("                    ");
             EndContext();
             BeginContext(6120, 80, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "aca5ce5839944cdf8897f28a1ce7a2e2", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d4178ccbcd3b49ceb1730a31f0af1218", async() => {
                 BeginContext(6184, 12, true);
                 WriteLiteral("Chapter quiz");
                 EndContext();
@@ -970,7 +970,7 @@ using LearnPhysics.Models;
             WriteLiteral("        </li>\r\n    </ul>\r\n    ");
             EndContext();
             BeginContext(6266, 87, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4423a4d00ae341269d4a94fd3690ea27", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b18a404003824abcbee50a06c9ced4f4", async() => {
                 BeginContext(6330, 19, true);
                 WriteLiteral("Back to topics list");
                 EndContext();

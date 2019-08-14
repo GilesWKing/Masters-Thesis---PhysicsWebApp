@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewData["Title"] = "Algebra";
+}
+<br />
+
+<h2 style="text-align: center; margin-top:80px;"><u>Learning Algebra</u></h2>
+
+<br />
+
+<div class="container">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <embed src="~/Presenter/MathsSkills/index.htm" width="1100" height="530" scrolling=”no” />
+    <br />
+
+    <input type="button" class="btn btn-info" value="Popup Calculator" onclick="javascript:window.open('https://localhost:44353/calculator/Calculator','calculator'+new Date().getTime(),'toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=yes,copyhistory=no,width=250,height=200');">
+    <br />
+    <a asp-area="" asp-controller="Maths" asp-action="MathsIndex">Back to Maths Index</a>
+</div>
+<br />

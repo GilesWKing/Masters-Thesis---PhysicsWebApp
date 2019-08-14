@@ -136,3 +136,4 @@ C:\Users\Giles\Source\Repos\giles-king-pg\Proj516\LearnPhysics\LearnPhysics\obj\
 C:\Users\Giles\Source\Repos\giles-king-pg\Proj516\LearnPhysics\LearnPhysics\obj\Debug\netcoreapp2.1\Razor\Views\Particles\Lesson7.g.cshtml.cs
 C:\Users\Giles\Source\Repos\giles-king-pg\Proj516\LearnPhysics\LearnPhysics\obj\Debug\netcoreapp2.1\Razor\Views\Particles\OpeningQuiz.g.cshtml.cs
 C:\Users\Giles\Source\Repos\giles-king-pg\Proj516\LearnPhysics\LearnPhysics\obj\Debug\netcoreapp2.1\LearnPhysics.csprojAssemblyReference.cache
+C:\Users\Giles\Source\Repos\giles-king-pg\Proj516\LearnPhysics\LearnPhysics\obj\Debug\netcoreapp2.1\Razor\Views\Maths\Algebra.g.cshtml.cs

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tracking-metadata generator="Presenter ver 10.0" version="1.0">
+	<objective id="Quiz10182" max-score="5" passing-score="4" min-score="0">
+		<name>Kinetic Energy Calculations</name>
+		<interactions>
+			<interaction id="Interaction10187" QUniqId="10187" type="long-fill-in" score="1" correct-response="155.87">
+				<title>The fastest tennis serve was Samuel Groth at 163.7 mph (73 m/s). The mass of a tennis ball is 58.5 grams (0.0585 kg). Calculate the amount of energy in the tennis balls kinetic energy store to 2 decimal places.</title>
+				<responses>
+					<response id="1">
+						<option id="0">*</option>
+						<option id="1">155.87</option>
+					</response>
+				</responses>
+			</interaction>
+			<interaction id="Interaction10194" QUniqId="10194" type="long-fill-in" score="1" correct-response="160.15">
+				<title>The fastest baseball pitch was thrown by Aroldis Chapman at 105.1 mph (47 m/s). The mass of a baseball is 145 grams (0.145 kg). Calculate the amount of energy in the baseballs kinetic energy store to 2 decimal places.</title>
+				<responses>
+					<response id="1">
+						<option id="0">*</option>
+						<option id="1">160.15</option>
+					</response>
+				</responses>
+			</interaction>
+			<interaction id="Interaction10201" QUniqId="10201" type="long-fill-in" score="1" correct-response="24502.50;24502.5;24,502.50;24,502.5">
+				<title>A cheetah weighs in at 45 kilograms and can run at 33 metres per second. What is a cheetah’s kinetic energy store to 2 decimal places?</title>
+				<responses>
+					<response id="1">
+						<option id="0">*</option>
+						<option id="1">24502.50</option>
+						<option id="2">24502.5</option>
+						<option id="3">24,502.50</option>
+						<option id="4">24,502.5</option>
+					</response>
+				</responses>
+			</interaction>
+			<interaction id="Interaction10209" QUniqId="10209" type="long-fill-in" score="1" correct-response="11553173.78;11,553,173.78">
+				<title>The current record for fastest road car is the Koenigsegg Agera RS and has been clocked at 277.87 mph (128.7 m/s). It weighs in at 1,395 kg. Calculate it’s kinetic energy store at top speed to 2 decimal places!</title>
+				<responses>
+					<response id="1">
+						<option id="0">*</option>
+						<option id="1">11553173.78</option>
+						<option id="2">11,553,173.78</option>
+					</response>
+				</responses>
+			</interaction>
+			<interaction id="Interaction10219" QUniqId="10219" type="long-fill-in" score="1" correct-response="7.90;7.9;7.90x10^45;7.9x10^45;7.90 x10^45;7.9 x10^45;7.90 x 10^45;7.9 x 10^45;7.90 x 10 ^45;7.9 x 10 ^45;7.90x10 ^45;7.9x10 ^45">
+				<title>   You may need a scientific calculator for this one… The Ceres asteroid is the largest object in the asteroid belt. It’s mass is 939,300x1015 kg and it’s travelling at 17.9 km/s. Calculate it’s kinetic energy store to 2 decimal places. (hint: there’s 1,000 metres in 1 km). To make things easier, the answer will be x10^45</title>
+				<responses>
+					<response id="1">
+						<option id="0">*</option>
+						<option id="1">7.90</option>
+						<option id="2">7.9</option>
+						<option id="3">7.90x10^45</option>
+						<option id="4">7.9x10^45</option>
+						<option id="5">7.90 x10^45</option>
+						<option id="6">7.9 x10^45</option>
+						<option id="7">7.90 x 10^45</option>
+						<option id="8">7.9 x 10^45</option>
+						<option id="9">7.90 x 10 ^45</option>
+						<option id="10">7.9 x 10 ^45</option>
+						<option id="11">7.90x10 ^45</option>
+						<option id="12">7.9x10 ^45</option>
+					</response>
+				</responses>
+			</interaction>
+		</interactions>
+	</objective>
+</tracking-metadata>
