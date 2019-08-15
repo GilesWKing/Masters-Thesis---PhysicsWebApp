@@ -4,15 +4,15 @@
 	<speakers></speakers>
 	<search url="srchdata.xml"/>
 	<presentationBg url="bg.swf"/>
-	<masters><master url="Master0.swf" id="1" totalFrames="1"><backdrop frameNum="0"/><slidexml><AS3Class className="TL_3bfbdf8bb7544e5b98af19247a69d20byxy" classType="PptTmline_xyxyxyxyxyxyxyxyxyxyxyxyxyxy" frameRate="30"><OnLoadCallBacks/><Audios/></AS3Class></slidexml></master></masters>
-	<layouts><layout url="Layout0.swf" id="1" totalFrames="1"><backdrop displayBgSp="true"/><slidexml><AS3Class className="TL_2ca2345b57894f928a468f18411a3f41yxy" classType="PptTmline_xyxyxyxyxyxyxyxyxyxyxyxyxyxy" frameRate="30"><OnLoadCallBacks/><Audios/></AS3Class></slidexml></layout><layout url="Layout1.swf" id="2" totalFrames="1"><backdrop displayBgSp="true"/><slidexml><AS3Class className="TL_c57c3ba40eef4821bac63265646e72ceyxy" classType="PptTmline_xyxyxyxyxyxyxyxyxyxyxyxyxyxy" frameRate="30"><OnLoadCallBacks/><Audios/></AS3Class></slidexml></layout></layouts>
+	<masters><master url="Master0.swf" id="1" totalFrames="1"><backdrop frameNum="0"/><slidexml><AS3Class className="TL_42516f6528554b6da163e592606190d3yxy" classType="PptTmline_xyxyxyxyxyxyxyxyxyxyxyxyxyxy" frameRate="30"><OnLoadCallBacks/><Audios/></AS3Class></slidexml></master></masters>
+	<layouts><layout url="Layout0.swf" id="1" totalFrames="1"><backdrop displayBgSp="true"/><slidexml><AS3Class className="TL_e2e767ed3554487ab077c26ecaf78ac0yxy" classType="PptTmline_xyxyxyxyxyxyxyxyxyxyxyxyxyxy" frameRate="30"><OnLoadCallBacks/><Audios/></AS3Class></slidexml></layout><layout url="Layout1.swf" id="2" totalFrames="1"><backdrop displayBgSp="true"/><slidexml><AS3Class className="TL_4cac972781dc4ea7ab268cab69e77389yxy" classType="PptTmline_xyxyxyxyxyxyxyxyxyxyxyxyxyxy" frameRate="30"><OnLoadCallBacks/><Audios/></AS3Class></slidexml></layout></layouts>
 	<slides>
 		<slide id="256" showInTOC="" inSequence="" frameRate="30" totalFrames="30" usePptxSlideDur="0" lockInteractionSlide="false" isHiddenInteractionSl="false" isWrongInteractionSl="false" swfConvertorEngine="Nova" slideDuration="20" advance="auto" blockMovement="false" hideplaybar="false" type="normal">
 			<content url="Slide0.swf" id="256"/>
 			<backdrop displayBgSp="true"/>
 			<master id="1" frameNum="0"/>
 			<layout id="1" frameNum="0"/>
-			<slidexml><AS3Class className="TL_50f6f0a0d9674cbd8fec883ee1afb3c4yxy" classType="PptTmline_xyxyxyxyxyxyxyxyxyxyxyxyxyxy" frameRate="30" normalSlide="1"><OnLoadCallBacks/><Audios/></AS3Class></slidexml>
+			<slidexml><AS3Class className="TL_761da58389db40b8a25451d55a33db6ayxy" classType="PptTmline_xyxyxyxyxyxyxyxyxyxyxyxyxyxy" frameRate="30" normalSlide="1"><OnLoadCallBacks/><Audios/></AS3Class></slidexml>
 			<clickAnimations></clickAnimations>
 			<webObjectContents/>
 			<flvContents/>
@@ -20,16 +20,16 @@
 			<notes isHTML="true"></notes>
 			<slideThumbnail url="thumb.swf" frame="1"/>
 		</slide>
-		<slide id="269" showInTOC="false" inSequence="" frameRate="30" totalFrames="180" usePptxSlideDur="0" lockInteractionSlide="false" isHiddenInteractionSl="false" isWrongInteractionSl="false" swfConvertorEngine="Nova" slideDuration="20" advance="never" blockMovement="false" hideplaybar="false" type="quiz" quiz="10182" group="-1">
+		<slide id="262" showInTOC="false" inSequence="" frameRate="30" totalFrames="180" usePptxSlideDur="0" lockInteractionSlide="false" isHiddenInteractionSl="false" isWrongInteractionSl="false" swfConvertorEngine="Nova" slideDuration="20" advance="never" blockMovement="false" hideplaybar="false" type="quiz" quiz="10237" group="-1">
 			<questions>
-				<question index="10187" weight="1" showCorrectFeedback="true" showIncorrectFeedback="true" isMandatory="0" scoreType="scored" shuffleAnswers="false"/>
+				<question index="10252" weight="1" showCorrectFeedback="true" showIncorrectFeedback="true" isMandatory="0" scoreType="scored" shuffleAnswers="false"/>
 			</questions>
 			<audioFeedbacks></audioFeedbacks>
-			<content url="Slide1.swf" id="269"/>
+			<content url="Slide1.swf" id="262"/>
 			<backdrop displayBgSp="true"/>
 			<master id="1" frameNum="0"/>
 			<layout id="2" frameNum="0"/>
-			<slidexml><AS3Class className="TL_3c4ce21cef28485c9859977bbee91122yxy" classType="PptTmline_xyxyxyxyxyxyxyxyxyxyxyxyxyxy" frameRate="30" normalSlide="1"><FrameScript frameNo="1"><Stop/></FrameScript><OnLoadCallBacks/><Audios/></AS3Class><Quiz questionType="ShortAnswer"><AS3Class className="Question10187xyxyxyxyxyxyxyxyxyxyxyxyx" classType="Question_xyxyxyxyxyxyxyxyxyxyxyxyxyxyx" numQuestionAttemptsAllowed="1" questionNumInQuiz="10187" questionText="" isTracked="1" objectiveID="Quiz10182" interactionID="Interaction10187" interactionType="long-fill-in" mustAnswerAll="1"><AS3Class className="CorrectFeedbackxyxyxyxyxyxyxyxyxyxyxyx" classType="Feedback_xyxyxyxyxyxyxyxyxyxyxyxyxyxyx" onlyDoAction="0" actionType="nextSlide" visible="0" accText=" " audioClipID="-1" actionArg1="" actionArg2="1"/><AS3Class className="IncorrectFeedbackxyxyxyxyxyxyxyxyxyxyx" classType="Feedback_xyxyxyxyxyxyxyxyxyxyxyxyxyxyx" onlyDoAction="0" actionType="nextSlide" visible="0" accText=" " audioClipID="-1" actionArg1="" actionArg2="1"/><AS3Class className="IncompleteFeedbackyxyxyxyxyxyxyxyxyxyx" classType="Feedback_xyxyxyxyxyxyxyxyxyxyxyxyxyxyx" onlyDoAction="0" visible="0" accText=" "/><AS3Class className="ReviewFeedback10187xyxyxyxyxyxyxyxyxyx" classType="ReviewFeedback_xyxyxyxyxyxyxyxyxyxyxyx"/></AS3Class></Quiz></slidexml>
+			<slidexml><AS3Class className="TL_acc4a4bf9b3e4be9ab143d04c8e21e4byxy" classType="PptTmline_xyxyxyxyxyxyxyxyxyxyxyxyxyxy" frameRate="30" normalSlide="1"><FrameScript frameNo="1"><Stop/></FrameScript><OnLoadCallBacks/><Audios/></AS3Class><Quiz questionType="ShortAnswer"><AS3Class className="Question10252xyxyxyxyxyxyxyxyxyxyxyxyx" classType="Question_xyxyxyxyxyxyxyxyxyxyxyxyxyxyx" numQuestionAttemptsAllowed="1" questionNumInQuiz="10252" questionText="" isTracked="1" objectiveID="Quiz10237" interactionID="Interaction10252" interactionType="long-fill-in" mustAnswerAll="1"><AS3Class className="CorrectFeedbackxyxyxyxyxyxyxyxyxyxyxyx" classType="Feedback_xyxyxyxyxyxyxyxyxyxyxyxyxyxyx" onlyDoAction="0" actionType="nextSlide" visible="0" accText=" " audioClipID="-1" actionArg1="" actionArg2="1"/><AS3Class className="IncorrectFeedbackxyxyxyxyxyxyxyxyxyxyx" classType="Feedback_xyxyxyxyxyxyxyxyxyxyxyxyxyxyx" onlyDoAction="0" actionType="nextSlide" visible="0" accText=" " audioClipID="-1" actionArg1="" actionArg2="1"/><AS3Class className="IncompleteFeedbackyxyxyxyxyxyxyxyxyxyx" classType="Feedback_xyxyxyxyxyxyxyxyxyxyxyxyxyxyx" onlyDoAction="0" visible="0" accText=" "/><AS3Class className="ReviewFeedback10252xyxyxyxyxyxyxyxyxyx" classType="ReviewFeedback_xyxyxyxyxyxyxyxyxyxyxyx"/></AS3Class></Quiz></slidexml>
 			<clickAnimations>
 				<click startTime="167" isStartRelative="false" duration="666"/>
 				<click startTime="867" isStartRelative="false" duration="666"/>
@@ -41,20 +41,20 @@
 			</clickAnimations>
 			<webObjectContents/>
 			<flvContents/>
-			<slideTitle>@The fastest tennis serve was Samuel Groth at 163.7 mph (73 m/s). The mass of a tennis ball is 58.5 grams (0.0585 kg). Calculate the amount of energy in the tennis balls kinetic energy store to 2 decimal places.@</slideTitle>
+			<slideTitle>@A man throws a tennis ball for his dog. At it’s highest point, the ball is 4 metres from the ground. The mass of a tennis ball is 58.5 grams (0.0585 kg). Using 9.81 for g, calculate the tennis ball’s gravitational potential energy to 1 decimal place.@</slideTitle>
 			<notes isHTML="true"></notes>
 			<slideThumbnail url="thumb.swf" frame="2"/>
 		</slide>
-		<slide id="271" showInTOC="false" inSequence="" frameRate="30" totalFrames="180" usePptxSlideDur="0" lockInteractionSlide="false" isHiddenInteractionSl="false" isWrongInteractionSl="false" swfConvertorEngine="Nova" slideDuration="20" advance="never" blockMovement="false" hideplaybar="false" type="quiz" quiz="10182" group="-1">
+		<slide id="264" showInTOC="false" inSequence="" frameRate="30" totalFrames="180" usePptxSlideDur="0" lockInteractionSlide="false" isHiddenInteractionSl="false" isWrongInteractionSl="false" swfConvertorEngine="Nova" slideDuration="20" advance="never" blockMovement="false" hideplaybar="false" type="quiz" quiz="10237" group="-1">
 			<questions>
-				<question index="10194" weight="1" showCorrectFeedback="true" showIncorrectFeedback="true" isMandatory="0" scoreType="scored" shuffleAnswers="false"/>
+				<question index="10260" weight="1" showCorrectFeedback="true" showIncorrectFeedback="true" isMandatory="0" scoreType="scored" shuffleAnswers="false"/>
 			</questions>
 			<audioFeedbacks></audioFeedbacks>
-			<content url="Slide2.swf" id="271"/>
+			<content url="Slide2.swf" id="264"/>
 			<backdrop displayBgSp="true"/>
 			<master id="1" frameNum="0"/>
 			<layout id="2" frameNum="0"/>
-			<slidexml><AS3Class className="TL_5bef55cf82764870a2662c38d594ae88yxy" classType="PptTmline_xyxyxyxyxyxyxyxyxyxyxyxyxyxy" frameRate="30" normalSlide="1"><FrameScript frameNo="1"><Stop/></FrameScript><OnLoadCallBacks/><Audios/></AS3Class><Quiz questionType="ShortAnswer"><AS3Class className="Question10194xyxyxyxyxyxyxyxyxyxyxyxyx" classType="Question_xyxyxyxyxyxyxyxyxyxyxyxyxyxyx" numQuestionAttemptsAllowed="1" questionNumInQuiz="10194" questionText="" isTracked="1" objectiveID="Quiz10182" interactionID="Interaction10194" interactionType="long-fill-in" mustAnswerAll="1"><AS3Class className="CorrectFeedbackxyxyxyxyxyxyxyxyxyxyxyx" classType="Feedback_xyxyxyxyxyxyxyxyxyxyxyxyxyxyx" onlyDoAction="0" actionType="nextSlide" visible="0" accText=" " audioClipID="-1" actionArg1="" actionArg2="1"/><AS3Class className="IncorrectFeedbackxyxyxyxyxyxyxyxyxyxyx" classType="Feedback_xyxyxyxyxyxyxyxyxyxyxyxyxyxyx" onlyDoAction="0" actionType="nextSlide" visible="0" accText=" " audioClipID="-1" actionArg1="" actionArg2="1"/><AS3Class className="IncompleteFeedbackyxyxyxyxyxyxyxyxyxyx" classType="Feedback_xyxyxyxyxyxyxyxyxyxyxyxyxyxyx" onlyDoAction="0" visible="0" accText=" "/><AS3Class className="ReviewFeedback10194xyxyxyxyxyxyxyxyxyx" classType="ReviewFeedback_xyxyxyxyxyxyxyxyxyxyxyx"/></AS3Class></Quiz></slidexml>
+			<slidexml><AS3Class className="TL_da3d901cde874effba20688463dc92e8yxy" classType="PptTmline_xyxyxyxyxyxyxyxyxyxyxyxyxyxy" frameRate="30" normalSlide="1"><FrameScript frameNo="1"><Stop/></FrameScript><OnLoadCallBacks/><Audios/></AS3Class><Quiz questionType="ShortAnswer"><AS3Class className="Question10260xyxyxyxyxyxyxyxyxyxyxyxyx" classType="Question_xyxyxyxyxyxyxyxyxyxyxyxyxyxyx" numQuestionAttemptsAllowed="1" questionNumInQuiz="10260" questionText="" isTracked="1" objectiveID="Quiz10237" interactionID="Interaction10260" interactionType="long-fill-in" mustAnswerAll="1"><AS3Class className="CorrectFeedbackxyxyxyxyxyxyxyxyxyxyxyx" classType="Feedback_xyxyxyxyxyxyxyxyxyxyxyxyxyxyx" onlyDoAction="0" actionType="nextSlide" visible="0" accText=" " audioClipID="-1" actionArg1="" actionArg2="1"/><AS3Class className="IncorrectFeedbackxyxyxyxyxyxyxyxyxyxyx" classType="Feedback_xyxyxyxyxyxyxyxyxyxyxyxyxyxyx" onlyDoAction="0" actionType="nextSlide" visible="0" accText=" " audioClipID="-1" actionArg1="" actionArg2="1"/><AS3Class className="IncompleteFeedbackyxyxyxyxyxyxyxyxyxyx" classType="Feedback_xyxyxyxyxyxyxyxyxyxyxyxyxyxyx" onlyDoAction="0" visible="0" accText=" "/><AS3Class className="ReviewFeedback10260xyxyxyxyxyxyxyxyxyx" classType="ReviewFeedback_xyxyxyxyxyxyxyxyxyxyxyx"/></AS3Class></Quiz></slidexml>
 			<clickAnimations>
 				<click startTime="167" isStartRelative="false" duration="666"/>
 				<click startTime="867" isStartRelative="false" duration="666"/>
@@ -66,20 +66,20 @@
 			</clickAnimations>
 			<webObjectContents/>
 			<flvContents/>
-			<slideTitle>@The fastest baseball pitch was thrown by Aroldis Chapman at 105.1 mph (47 m/s). The mass of a baseball is 145 grams (0.145 kg). Calculate the amount of energy in the baseballs kinetic energy store to 2 decimal places.@</slideTitle>
+			<slideTitle>@An Orca whale can jump as high as 4.5 metres out of the water and can weight as much as 5,400 kg. Using 9.81 for g, calculate its gravitational potential energy.@</slideTitle>
 			<notes isHTML="true"></notes>
 			<slideThumbnail url="thumb.swf" frame="3"/>
 		</slide>
-		<slide id="272" showInTOC="false" inSequence="" frameRate="30" totalFrames="180" usePptxSlideDur="0" lockInteractionSlide="false" isHiddenInteractionSl="false" isWrongInteractionSl="false" swfConvertorEngine="Nova" slideDuration="20" advance="never" blockMovement="false" hideplaybar="false" type="quiz" quiz="10182" group="-1">
+		<slide id="267" showInTOC="false" inSequence="" frameRate="30" totalFrames="180" usePptxSlideDur="0" lockInteractionSlide="false" isHiddenInteractionSl="false" isWrongInteractionSl="false" swfConvertorEngine="Nova" slideDuration="20" advance="never" blockMovement="false" hideplaybar="false" type="quiz" quiz="10237" group="-1">
 			<questions>
-				<question index="10201" weight="1" showCorrectFeedback="true" showIncorrectFeedback="true" isMandatory="0" scoreType="scored" shuffleAnswers="false"/>
+				<question index="10288" weight="1" showCorrectFeedback="true" showIncorrectFeedback="true" isMandatory="0" scoreType="scored" shuffleAnswers="false"/>
 			</questions>
 			<audioFeedbacks></audioFeedbacks>
-			<content url="Slide3.swf" id="272"/>
+			<content url="Slide3.swf" id="267"/>
 			<backdrop displayBgSp="true"/>
 			<master id="1" frameNum="0"/>
 			<layout id="2" frameNum="0"/>
-			<slidexml><AS3Class className="TL_bb7ad0996326410bb867c05d12b3db69yxy" classType="PptTmline_xyxyxyxyxyxyxyxyxyxyxyxyxyxy" frameRate="30" normalSlide="1"><FrameScript frameNo="1"><Stop/></FrameScript><OnLoadCallBacks/><Audios/></AS3Class><Quiz questionType="ShortAnswer"><AS3Class className="Question10201xyxyxyxyxyxyxyxyxyxyxyxyx" classType="Question_xyxyxyxyxyxyxyxyxyxyxyxyxyxyx" numQuestionAttemptsAllowed="1" questionNumInQuiz="10201" questionText="" isTracked="1" objectiveID="Quiz10182" interactionID="Interaction10201" interactionType="long-fill-in" mustAnswerAll="1"><AS3Class className="CorrectFeedbackxyxyxyxyxyxyxyxyxyxyxyx" classType="Feedback_xyxyxyxyxyxyxyxyxyxyxyxyxyxyx" onlyDoAction="0" actionType="nextSlide" visible="0" accText=" " audioClipID="-1" actionArg1="" actionArg2="1"/><AS3Class className="IncorrectFeedbackxyxyxyxyxyxyxyxyxyxyx" classType="Feedback_xyxyxyxyxyxyxyxyxyxyxyxyxyxyx" onlyDoAction="0" actionType="nextSlide" visible="0" accText=" " audioClipID="-1" actionArg1="" actionArg2="1"/><AS3Class className="IncompleteFeedbackyxyxyxyxyxyxyxyxyxyx" classType="Feedback_xyxyxyxyxyxyxyxyxyxyxyxyxyxyx" onlyDoAction="0" visible="0" accText=" "/><AS3Class className="ReviewFeedback10201xyxyxyxyxyxyxyxyxyx" classType="ReviewFeedback_xyxyxyxyxyxyxyxyxyxyxyx"/></AS3Class></Quiz></slidexml>
+			<slidexml><AS3Class className="TL_8c387587b56547b1885f10e6ab4a734dyxy" classType="PptTmline_xyxyxyxyxyxyxyxyxyxyxyxyxyxy" frameRate="30" normalSlide="1"><FrameScript frameNo="1"><Stop/></FrameScript><OnLoadCallBacks/><Audios/></AS3Class><Quiz questionType="ShortAnswer"><AS3Class className="Question10288xyxyxyxyxyxyxyxyxyxyxyxyx" classType="Question_xyxyxyxyxyxyxyxyxyxyxyxyxyxyx" numQuestionAttemptsAllowed="1" questionNumInQuiz="10288" questionText="" isTracked="1" objectiveID="Quiz10237" interactionID="Interaction10288" interactionType="long-fill-in" mustAnswerAll="1"><AS3Class className="CorrectFeedbackxyxyxyxyxyxyxyxyxyxyxyx" classType="Feedback_xyxyxyxyxyxyxyxyxyxyxyxyxyxyx" onlyDoAction="0" actionType="nextSlide" visible="0" accText=" " audioClipID="-1" actionArg1="" actionArg2="1"/><AS3Class className="IncorrectFeedbackxyxyxyxyxyxyxyxyxyxyx" classType="Feedback_xyxyxyxyxyxyxyxyxyxyxyxyxyxyx" onlyDoAction="0" actionType="nextSlide" visible="0" accText=" " audioClipID="-1" actionArg1="" actionArg2="1"/><AS3Class className="IncompleteFeedbackyxyxyxyxyxyxyxyxyxyx" classType="Feedback_xyxyxyxyxyxyxyxyxyxyxyxyxyxyx" onlyDoAction="0" visible="0" accText=" "/><AS3Class className="ReviewFeedback10288xyxyxyxyxyxyxyxyxyx" classType="ReviewFeedback_xyxyxyxyxyxyxyxyxyxyxyx"/></AS3Class></Quiz></slidexml>
 			<clickAnimations>
 				<click startTime="167" isStartRelative="false" duration="666"/>
 				<click startTime="867" isStartRelative="false" duration="666"/>
@@ -91,20 +91,20 @@
 			</clickAnimations>
 			<webObjectContents/>
 			<flvContents/>
-			<slideTitle>@A cheetah weighs in at 45 kilograms and can run at 33 metres per second. What is a cheetah’s kinetic energy store to 2 decimal places?@</slideTitle>
+			<slideTitle>@In 2005, a Guinness world record attempt let loose a peregrine falcon at a height of 3 miles (4,828 metres) to see how fast it could fly. “Frightful” only weighed 997.9 grams (0.9979 kg). What was her gravitational potential energy to 2 decimal places?@</slideTitle>
 			<notes isHTML="true"></notes>
 			<slideThumbnail url="thumb.swf" frame="4"/>
 		</slide>
-		<slide id="273" showInTOC="false" inSequence="" frameRate="30" totalFrames="180" usePptxSlideDur="0" lockInteractionSlide="false" isHiddenInteractionSl="false" isWrongInteractionSl="false" swfConvertorEngine="Nova" slideDuration="20" advance="never" blockMovement="false" hideplaybar="false" type="quiz" quiz="10182" group="-1">
+		<slide id="268" showInTOC="false" inSequence="" frameRate="30" totalFrames="180" usePptxSlideDur="0" lockInteractionSlide="false" isHiddenInteractionSl="false" isWrongInteractionSl="false" swfConvertorEngine="Nova" slideDuration="20" advance="never" blockMovement="false" hideplaybar="false" type="quiz" quiz="10237" group="-1">
 			<questions>
-				<question index="10209" weight="1" showCorrectFeedback="true" showIncorrectFeedback="true" isMandatory="0" scoreType="scored" shuffleAnswers="false"/>
+				<question index="10294" weight="1" showCorrectFeedback="true" showIncorrectFeedback="true" isMandatory="0" scoreType="scored" shuffleAnswers="false"/>
 			</questions>
 			<audioFeedbacks></audioFeedbacks>
-			<content url="Slide4.swf" id="273"/>
+			<content url="Slide4.swf" id="268"/>
 			<backdrop displayBgSp="true"/>
 			<master id="1" frameNum="0"/>
 			<layout id="2" frameNum="0"/>
-			<slidexml><AS3Class className="TL_86fbf4106cae4d68a43dfd7deafc9c58yxy" classType="PptTmline_xyxyxyxyxyxyxyxyxyxyxyxyxyxy" frameRate="30" normalSlide="1"><FrameScript frameNo="1"><Stop/></FrameScript><OnLoadCallBacks/><Audios/></AS3Class><Quiz questionType="ShortAnswer"><AS3Class className="Question10209xyxyxyxyxyxyxyxyxyxyxyxyx" classType="Question_xyxyxyxyxyxyxyxyxyxyxyxyxyxyx" numQuestionAttemptsAllowed="1" questionNumInQuiz="10209" questionText="" isTracked="1" objectiveID="Quiz10182" interactionID="Interaction10209" interactionType="long-fill-in" mustAnswerAll="1"><AS3Class className="CorrectFeedbackxyxyxyxyxyxyxyxyxyxyxyx" classType="Feedback_xyxyxyxyxyxyxyxyxyxyxyxyxyxyx" onlyDoAction="0" actionType="nextSlide" visible="0" accText=" " audioClipID="-1" actionArg1="" actionArg2="1"/><AS3Class className="IncorrectFeedbackxyxyxyxyxyxyxyxyxyxyx" classType="Feedback_xyxyxyxyxyxyxyxyxyxyxyxyxyxyx" onlyDoAction="0" actionType="nextSlide" visible="0" accText=" " audioClipID="-1" actionArg1="" actionArg2="1"/><AS3Class className="IncompleteFeedbackyxyxyxyxyxyxyxyxyxyx" classType="Feedback_xyxyxyxyxyxyxyxyxyxyxyxyxyxyx" onlyDoAction="0" visible="0" accText=" "/><AS3Class className="ReviewFeedback10209xyxyxyxyxyxyxyxyxyx" classType="ReviewFeedback_xyxyxyxyxyxyxyxyxyxyxyx"/></AS3Class></Quiz></slidexml>
+			<slidexml><AS3Class className="TL_0b0082f6e18a45e4b5d62fee0686314ayxy" classType="PptTmline_xyxyxyxyxyxyxyxyxyxyxyxyxyxy" frameRate="30" normalSlide="1"><FrameScript frameNo="1"><Stop/></FrameScript><OnLoadCallBacks/><Audios/></AS3Class><Quiz questionType="ShortAnswer"><AS3Class className="Question10294xyxyxyxyxyxyxyxyxyxyxyxyx" classType="Question_xyxyxyxyxyxyxyxyxyxyxyxyxyxyx" numQuestionAttemptsAllowed="1" questionNumInQuiz="10294" questionText="" isTracked="1" objectiveID="Quiz10237" interactionID="Interaction10294" interactionType="long-fill-in" mustAnswerAll="1"><AS3Class className="CorrectFeedbackxyxyxyxyxyxyxyxyxyxyxyx" classType="Feedback_xyxyxyxyxyxyxyxyxyxyxyxyxyxyx" onlyDoAction="0" actionType="nextSlide" visible="0" accText=" " audioClipID="-1" actionArg1="" actionArg2="1"/><AS3Class className="IncorrectFeedbackxyxyxyxyxyxyxyxyxyxyx" classType="Feedback_xyxyxyxyxyxyxyxyxyxyxyxyxyxyx" onlyDoAction="0" actionType="nextSlide" visible="0" accText=" " audioClipID="-1" actionArg1="" actionArg2="1"/><AS3Class className="IncompleteFeedbackyxyxyxyxyxyxyxyxyxyx" classType="Feedback_xyxyxyxyxyxyxyxyxyxyxyxyxyxyx" onlyDoAction="0" visible="0" accText=" "/><AS3Class className="ReviewFeedback10294xyxyxyxyxyxyxyxyxyx" classType="ReviewFeedback_xyxyxyxyxyxyxyxyxyxyxyx"/></AS3Class></Quiz></slidexml>
 			<clickAnimations>
 				<click startTime="167" isStartRelative="false" duration="666"/>
 				<click startTime="867" isStartRelative="false" duration="666"/>
@@ -116,20 +116,20 @@
 			</clickAnimations>
 			<webObjectContents/>
 			<flvContents/>
-			<slideTitle>@The current record for fastest road car is the Koenigsegg Agera RS and has been clocked at 277.87 mph (128.7 m/s). It weighs in at 1,395 kg. Calculate it’s kinetic energy store at top speed to 2 decimal places!@</slideTitle>
+			<slideTitle>@The average sky diver jumps out of a plane at 4,000 metres. Use 85 kg for the mans mass and 9.81 for g. Calculate the sky divers G.P.E.@</slideTitle>
 			<notes isHTML="true"></notes>
 			<slideThumbnail url="thumb.swf" frame="5"/>
 		</slide>
-		<slide id="274" showInTOC="false" inSequence="" frameRate="30" totalFrames="180" usePptxSlideDur="0" lockInteractionSlide="false" isHiddenInteractionSl="false" isWrongInteractionSl="false" swfConvertorEngine="Nova" slideDuration="20" advance="never" blockMovement="false" hideplaybar="false" type="quiz" quiz="10182" group="-1">
+		<slide id="269" showInTOC="false" inSequence="" frameRate="30" totalFrames="180" usePptxSlideDur="0" lockInteractionSlide="false" isHiddenInteractionSl="false" isWrongInteractionSl="false" swfConvertorEngine="Nova" slideDuration="20" advance="never" blockMovement="false" hideplaybar="false" type="quiz" quiz="10237" group="-1">
 			<questions>
-				<question index="10219" weight="1" showCorrectFeedback="true" showIncorrectFeedback="true" isMandatory="0" scoreType="scored" shuffleAnswers="false"/>
+				<question index="10301" weight="1" showCorrectFeedback="true" showIncorrectFeedback="true" isMandatory="0" scoreType="scored" shuffleAnswers="false"/>
 			</questions>
 			<audioFeedbacks></audioFeedbacks>
-			<content url="Slide5.swf" id="274"/>
+			<content url="Slide5.swf" id="269"/>
 			<backdrop displayBgSp="true"/>
 			<master id="1" frameNum="0"/>
 			<layout id="2" frameNum="0"/>
-			<slidexml><AS3Class className="TL_bff35039707d4edb9edce51bc9eabb02yxy" classType="PptTmline_xyxyxyxyxyxyxyxyxyxyxyxyxyxy" frameRate="30" normalSlide="1"><FrameScript frameNo="1"><Stop/></FrameScript><OnLoadCallBacks/><Audios/></AS3Class><Quiz questionType="ShortAnswer"><AS3Class className="Question10219xyxyxyxyxyxyxyxyxyxyxyxyx" classType="Question_xyxyxyxyxyxyxyxyxyxyxyxyxyxyx" numQuestionAttemptsAllowed="1" questionNumInQuiz="10219" questionText="" isTracked="1" objectiveID="Quiz10182" interactionID="Interaction10219" interactionType="long-fill-in" mustAnswerAll="1"><AS3Class className="CorrectFeedbackxyxyxyxyxyxyxyxyxyxyxyx" classType="Feedback_xyxyxyxyxyxyxyxyxyxyxyxyxyxyx" onlyDoAction="0" actionType="nextSlide" visible="0" accText=" " audioClipID="-1" actionArg1="" actionArg2="1"/><AS3Class className="IncorrectFeedbackxyxyxyxyxyxyxyxyxyxyx" classType="Feedback_xyxyxyxyxyxyxyxyxyxyxyxyxyxyx" onlyDoAction="0" actionType="nextSlide" visible="0" accText=" " audioClipID="-1" actionArg1="" actionArg2="1"/><AS3Class className="IncompleteFeedbackyxyxyxyxyxyxyxyxyxyx" classType="Feedback_xyxyxyxyxyxyxyxyxyxyxyxyxyxyx" onlyDoAction="0" visible="0" accText=" "/><AS3Class className="ReviewFeedback10219xyxyxyxyxyxyxyxyxyx" classType="ReviewFeedback_xyxyxyxyxyxyxyxyxyxyxyx"/></AS3Class></Quiz></slidexml>
+			<slidexml><AS3Class className="TL_d274b702b7e942b58332c0d97bf7c4aayxy" classType="PptTmline_xyxyxyxyxyxyxyxyxyxyxyxyxyxy" frameRate="30" normalSlide="1"><FrameScript frameNo="1"><Stop/></FrameScript><OnLoadCallBacks/><Audios/></AS3Class><Quiz questionType="ShortAnswer"><AS3Class className="Question10301xyxyxyxyxyxyxyxyxyxyxyxyx" classType="Question_xyxyxyxyxyxyxyxyxyxyxyxyxyxyx" numQuestionAttemptsAllowed="1" questionNumInQuiz="10301" questionText="" isTracked="1" objectiveID="Quiz10237" interactionID="Interaction10301" interactionType="long-fill-in" mustAnswerAll="1"><AS3Class className="CorrectFeedbackxyxyxyxyxyxyxyxyxyxyxyx" classType="Feedback_xyxyxyxyxyxyxyxyxyxyxyxyxyxyx" onlyDoAction="0" actionType="nextSlide" visible="0" accText=" " audioClipID="-1" actionArg1="" actionArg2="1"/><AS3Class className="IncorrectFeedbackxyxyxyxyxyxyxyxyxyxyx" classType="Feedback_xyxyxyxyxyxyxyxyxyxyxyxyxyxyx" onlyDoAction="0" actionType="nextSlide" visible="0" accText=" " audioClipID="-1" actionArg1="" actionArg2="1"/><AS3Class className="IncompleteFeedbackyxyxyxyxyxyxyxyxyxyx" classType="Feedback_xyxyxyxyxyxyxyxyxyxyxyxyxyxyx" onlyDoAction="0" visible="0" accText=" "/><AS3Class className="ReviewFeedback10301xyxyxyxyxyxyxyxyxyx" classType="ReviewFeedback_xyxyxyxyxyxyxyxyxyxyxyx"/></AS3Class></Quiz></slidexml>
 			<clickAnimations>
 				<click startTime="167" isStartRelative="false" duration="666"/>
 				<click startTime="867" isStartRelative="false" duration="666"/>
@@ -141,22 +141,22 @@
 			</clickAnimations>
 			<webObjectContents/>
 			<flvContents/>
-			<slideTitle>@   You may need a scientific calculator for this one… The Ceres asteroid is the largest object in the asteroid belt. It’s mass is 939,300x1015 kg and it’s travelling at 17.9 km/s. Calculate it’s kinetic energy store to 2 decimal places. (hint: there’s 1,000 metres in 1 km). To make things easier, the answer will be x10^45@</slideTitle>
+			<slideTitle>@Jupiter is nearly 11 times bigger than Earth. It’s gravitational field strength is 24.79 N/kg. Calculate a sky diver’s G.P.E whilst falling from a plane at 4,000 metres above Saturn. Keep 85 kg for the mass.@</slideTitle>
 			<notes isHTML="true"></notes>
 			<slideThumbnail url="thumb.swf" frame="6"/>
 		</slide>
-		<slide id="270" showInTOC="false" inSequence="" frameRate="30" totalFrames="30" usePptxSlideDur="0" lockInteractionSlide="false" isHiddenInteractionSl="false" isWrongInteractionSl="false" swfConvertorEngine="Nova" slideDuration="20" advance="never" blockMovement="false" hideplaybar="false" type="scoring" quiz="10182">
-			<content url="Slide6.swf" id="270"/>
+		<slide id="263" showInTOC="false" inSequence="" frameRate="30" totalFrames="30" usePptxSlideDur="0" lockInteractionSlide="false" isHiddenInteractionSl="false" isWrongInteractionSl="false" swfConvertorEngine="Nova" slideDuration="20" advance="never" blockMovement="false" hideplaybar="false" type="scoring" quiz="10237">
+			<content url="Slide6.swf" id="263"/>
 			<backdrop displayBgSp="true"/>
 			<master id="1" frameNum="0"/>
 			<layout id="2" frameNum="0"/>
-			<slidexml><AS3Class className="TL_03b998e79fda4e2ab31b8adf12b0c6abyxy" classType="PptTmline_xyxyxyxyxyxyxyxyxyxyxyxyxyxy" frameRate="30" normalSlide="1"><FrameScript frameNo="1"><Stop/></FrameScript><OnLoadCallBacks/><Audios/></AS3Class><Quiz questionType="ScoringSlide"/></slidexml>
+			<slidexml><AS3Class className="TL_b802d74ac2b14b87b22275210982f164yxy" classType="PptTmline_xyxyxyxyxyxyxyxyxyxyxyxyxyxy" frameRate="30" normalSlide="1"><FrameScript frameNo="1"><Stop/></FrameScript><OnLoadCallBacks/><Audios/></AS3Class><Quiz questionType="ScoringSlide"/></slidexml>
 			<clickAnimations>
 				<click startTime="167" isStartRelative="false" duration="666"/>
 			</clickAnimations>
 			<webObjectContents/>
 			<flvContents/>
-			<slideTitle>@Kinetic Energy Calculations@</slideTitle>
+			<slideTitle>@Graphical Potential Energy Quiz@</slideTitle>
 			<notes isHTML="true"></notes>
 			<slideThumbnail url="thumb.swf" frame="7"/>
 		</slide>
@@ -164,6 +164,9 @@
 	<quizzes>
 		<reportingOptions statusReportingOption="0" successReportingCriteria="-1" completionReportingCriteria="-1" slideViewCompletionCriteria="-1" slideViewSuccessCriteria="-1" quizCompletionCriteria="-1" quizSuccessCriteria="-1" completionCriteriaSlideViewVal="0" successCriteriaSlideViewVal="0" dataToReport="1" exitNormal="0" isTracked="false"></reportingOptions>
 		<quizSettings showQuestionList="true" showScores="true" showPassScore="false" showCurrentScore="false" showQuestionMarks="false" showAttempts="true" showQuizAttempts="false" showQuestionAttempts="false" showQuestionCorrectFeedback="true" showQuestionIncorrectFeedback="true" showQuizNavigationWarning="true"></quizSettings>
+		<quiz quizID="10237" title="Graphical Potential Energy Quiz" numQuizAttemptsAllowed="1" minScore="0" passingScore="80" percent="true" passingGradeAction="nextSlide" passingGradeActionArg1="" passingGradeActionArg2="1" failingGradeAction="nextSlide" failingGradeActionArg1="" failingGradeActionArg2="1" questionAdvance="optional" quizAdvance="optional" showProgress="minimal" allowBackwardMovementInQuiz="true" allowReviewMode="true" passedScoreFeedback="Passed" failedScoreFeedback="Failed" shuffleQuestions="0">
+			<questiongroups></questiongroups>
+		</quiz>
 		<quiz quizID="10182" title="Kinetic Energy Calculations" numQuizAttemptsAllowed="1" minScore="0" passingScore="80" percent="true" passingGradeAction="nextSlide" passingGradeActionArg1="" passingGradeActionArg2="1" failingGradeAction="nextSlide" failingGradeActionArg1="" failingGradeActionArg2="1" questionAdvance="optional" quizAdvance="optional" showProgress="minimal" allowBackwardMovementInQuiz="true" allowReviewMode="true" passedScoreFeedback="Passed" failedScoreFeedback="Failed" shuffleQuestions="0">
 			<questiongroups></questiongroups>
 		</quiz>

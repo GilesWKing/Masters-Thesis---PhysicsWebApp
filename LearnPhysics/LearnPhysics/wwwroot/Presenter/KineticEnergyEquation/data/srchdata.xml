@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<document-metadata version="1.0" xmlns="http://breeze.macromedia.com/">
+	<document-info>
+		<title>Maths Skills</title>
+		<summary></summary>
+		<author/>
+		<keywords/>
+		<thumbnail href="data/thumb/thumb_slide_000001.jpg"/>
+		<view-link href="/index.htm?slide={{position}}" href-html5="/index.htm?slide={{position}}" href-swf="/"/>
+	</document-info>
+	<section type="slide" position="1" xmlns="">
+		<title>Kinetic Energy</title>
+		<content>Kinetic Energy When we combine the two components (mass and speed) together, it's easy to imagine moving something heavy at a high speed requires a lot more energy that something heavy with a lower speed.      Kinetic Energy When we combine the two components (mass and speed) together, it's easy to imagine moving something heavy at a high speed requires a lot more energy that something heavy with a lower speed.      </content>
+		<related-content></related-content>
+		<thumbnail href="data/thumb/thumb_slide_000001.jpg"/>
+	</section>
+	<section type="slide" position="2" xmlns="">
+		<title>We can show this mathematically…</title>
+		<content> We can show this mathematically… The average weight of a midsize car in the UK is 1600 kilograms (1.6 tons). We will keep the mass the same and change the value of speed to compare the differences in the kinetic energy of an object. Whilst it's stationary (0 metres per second), it would have no kinetic energy because anything multiplied by zero is still zero. The speed limit in a UK town is 30 mph, but we're going to use 25mph (11 metres per second). We're going to compare this against a car travelling at 50mph (22 metres per second). The speed for an instant ban is in excess of 100 mph (45 metres per second).  We can show this mathematically… The average weight of a midsize car in the UK is 1600 kilograms (1.6 tons). We will keep the mass the same and change the value of speed to compare the differences in the kinetic energy of an object. Whilst it's stationary (0 metres per second), it would have no kinetic energy because anything multiplied by zero is still zero. The speed limit in a UK town is 30 mph, but we're going to use 25mph (11 metres per second). We're going to compare this against a car travelling at 50mph (22 metres per second). The speed for an instant ban is in excess of 100 mph (45 metres per second). </content>
+		<related-content></related-content>
+		<thumbnail href="data/thumb/thumb_slide_000002.jpg"/>
+	</section>
+	<section type="slide" position="3" xmlns="">
+		<title>Kinetic energy</title>
+		<content>Kinetic energy     Kinetic energy     </content>
+		<related-content></related-content>
+		<thumbnail href="data/thumb/thumb_slide_000003.jpg"/>
+	</section>
+	<section type="slide" position="4" xmlns="">
+		<title>Example 1</title>
+		<content> Example 1 The average weight of a midsize car in the UK is 1600 kilograms (1.6 tons). Whilst it's stationary (0 metres per second), it would have no kinetic energy because anything multiplied by zero is still zero.       0.5     1600              Example 1 The average weight of a midsize car in the UK is 1600 kilograms (1.6 tons). Whilst it's stationary (0 metres per second), it would have no kinetic energy because anything multiplied by zero is still zero.       0.5     1600             </content>
+		<related-content></related-content>
+		<thumbnail href="data/thumb/thumb_slide_000004.jpg"/>
+	</section>
+	<section type="slide" position="5" xmlns="">
+		<title>Example 2</title>
+		<content> Example 2 The average weight of a midsize car in the UK is 1600 kilograms (1.6 tons). When travelling at 25mph (11 metres per second), what is it’s kinetic energy?       0.5     1600              Example 2 The average weight of a midsize car in the UK is 1600 kilograms (1.6 tons). When travelling at 25mph (11 metres per second), what is it’s kinetic energy?       0.5     1600             </content>
+		<related-content></related-content>
+		<thumbnail href="data/thumb/thumb_slide_000005.jpg"/>
+	</section>
+	<section type="slide" position="6" xmlns="">
+		<title>Example 3</title>
+		<content> Example 3 The average weight of a midsize car in the UK is 1600 kilograms (1.6 tons). When travelling at 50mph (31 metres per second), what is it’s kinetic energy?       0.5     1600                Example 3 The average weight of a midsize car in the UK is 1600 kilograms (1.6 tons). When travelling at 50mph (31 metres per second), what is it’s kinetic energy?       0.5     1600               </content>
+		<related-content></related-content>
+		<thumbnail href="data/thumb/thumb_slide_000006.jpg"/>
+	</section>
+	<section type="slide" position="7" xmlns="">
+		<title>Example 4</title>
+		<content> Example 4 The average weight of a midsize car in the UK is 1600 kilograms (1.6 tons). When travelling at 100mph (45 metres per second), what is it’s kinetic energy?       0.5     1600                  Example 4 The average weight of a midsize car in the UK is 1600 kilograms (1.6 tons). When travelling at 100mph (45 metres per second), what is it’s kinetic energy?       0.5     1600                 </content>
+		<related-content></related-content>
+		<thumbnail href="data/thumb/thumb_slide_000007.jpg"/>
+	</section>
+	<section type="slide" position="8" xmlns="">
+		<title>Let’s plot the results!</title>
+		<content>Let’s plot the results!    Reading graphs is a skill that takes time to acquire. Even though the mass is staying the same, and the speed is doubling, the graph is increasing at a higher rate. This is because we are squaring our speed which is increasing the value for Ek at more than double. This is why higher speed crashes are more fatal; because there’s more energy involved. Let’s plot the results!    Reading graphs is a skill that takes time to acquire. Even though the mass is staying the same, and the speed is doubling, the graph is increasing at a higher rate. This is because we are squaring our speed which is increasing the value for Ek at more than double. This is why higher speed crashes are more fatal; because there’s more energy involved. </content>
+		<related-content></related-content>
+		<thumbnail href="data/thumb/thumb_slide_000008.jpg"/>
+	</section>
+	<section type="slide" position="9" xmlns="">
+		<title>Key points</title>
+		<content>Key points The equation isn’t that hard in comparison to the algebra examples; remember that each letter is just a placeholder for a number. You should now be able to find the values you need and replace them with the appropriate letter. This is the fundamentals of learning mathematical equations: 	- Understand what’s in the equation; 	- Apply the numbers; 	- Explain what’s going on. Key points The equation isn’t that hard in comparison to the algebra examples; remember that each letter is just a placeholder for a number. You should now be able to find the values you need and replace them with the appropriate letter. This is the fundamentals of learning mathematical equations: 	- Understand what’s in the equation; 	- Apply the numbers; 	- Explain what’s going on. </content>
+		<related-content></related-content>
+		<thumbnail href="data/thumb/thumb_slide_000009.jpg"/>
+	</section>
+</document-metadata>

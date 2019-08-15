@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<document-metadata version="1.0" xmlns="http://breeze.macromedia.com/">
+	<document-info>
+		<title>Maths Skills</title>
+		<summary></summary>
+		<author/>
+		<keywords/>
+		<thumbnail href="data/thumb/thumb_slide_000001.jpg"/>
+		<view-link href="/index.htm?slide={{position}}" href-html5="/index.htm?slide={{position}}" href-swf="/"/>
+	</document-info>
+	<section type="slide" position="1" xmlns="">
+		<title>Gravitational Potential Energy</title>
+		<content> Gravitational Potential Energy When we combine the three components (mass, gravitational field strength, and height) together, it's easy to imagine that the higher you climb, for example up a tree or a building, the harder your fall would be.     Gravitational Potential Energy When we combine the three components (mass, gravitational field strength, and height) together, it's easy to imagine that the higher you climb, for example up a tree or a building, the harder your fall would be.    </content>
+		<related-content></related-content>
+		<thumbnail href="data/thumb/thumb_slide_000001.jpg"/>
+	</section>
+	<section type="slide" position="2" xmlns="">
+		<title>We can show this mathematically…</title>
+		<content>We can show this mathematically… The average weight of a man is 85 kg and we know the Earth’s gravitational field strength is 9.81 N/kg. We can show the amount of energy a man would have at different heights from above the Earth’s surface!  We can show this mathematically… The average weight of a man is 85 kg and we know the Earth’s gravitational field strength is 9.81 N/kg. We can show the amount of energy a man would have at different heights from above the Earth’s surface!  </content>
+		<related-content></related-content>
+		<thumbnail href="data/thumb/thumb_slide_000002.jpg"/>
+	</section>
+	<section type="slide" position="3" xmlns="">
+		<title>Gravitational Potential Energy</title>
+		<content>Gravitational Potential Energy     Gravitational Potential Energy     </content>
+		<related-content></related-content>
+		<thumbnail href="data/thumb/thumb_slide_000003.jpg"/>
+	</section>
+	<section type="slide" position="4" xmlns="">
+		<title>Example 1</title>
+		<content>Example 1 A man weighing 85 kg jumps from a tree branch at 5 metres height. Calculate his gravitational potential energy where g = 9.81.     85     9.81   h        Example 1 A man weighing 85 kg jumps from a tree branch at 5 metres height. Calculate his gravitational potential energy where g = 9.81.     85     9.81   h        </content>
+		<related-content></related-content>
+		<thumbnail href="data/thumb/thumb_slide_000004.jpg"/>
+	</section>
+	<section type="slide" position="5" xmlns="">
+		<title>Example 2</title>
+		<content> Example 2 A skydiver weighing 85 kg jumps from Big Ben at a height of 100m (96 really…). Calculate his gravitational potential energy where g = 9.81.     85     9.81   h           Example 2 A skydiver weighing 85 kg jumps from Big Ben at a height of 100m (96 really…). Calculate his gravitational potential energy where g = 9.81.     85     9.81   h          </content>
+		<related-content></related-content>
+		<thumbnail href="data/thumb/thumb_slide_000005.jpg"/>
+	</section>
+	<section type="slide" position="6" xmlns="">
+		<title>Our next example will need some explaining…</title>
+		<content>Our next example will need some explaining… Gravitational field strength is dictated by the mass of the object. Earth has a field strength of 9.81 N/kg meaning for every kilogram, the force of gravity experienced is 9.81 N. The mass of the Moon is much smaller than Earth. The Moon therefore has a weaker gravitational field strength at 1.6 N/kg. The opposite is also true; the larger a planet, the greater it’s field strength.  Our next example will need some explaining… Gravitational field strength is dictated by the mass of the object. Earth has a field strength of 9.81 N/kg meaning for every kilogram, the force of gravity experienced is 9.81 N. The mass of the Moon is much smaller than Earth. The Moon therefore has a weaker gravitational field strength at 1.6 N/kg. The opposite is also true; the larger a planet, the greater it’s field strength.  </content>
+		<related-content></related-content>
+		<thumbnail href="data/thumb/thumb_slide_000006.jpg"/>
+	</section>
+	<section type="slide" position="7" xmlns="">
+		<title>Example 3</title>
+		<content> Example 3 A skydiver weighing 85 kg now jumps from Big Ben at a height of 100m (96 really…). But Big Ben was transported to the Moon. Calculate his G.P.E where g = 1.6.     85     1.6   h             Example 3 A skydiver weighing 85 kg now jumps from Big Ben at a height of 100m (96 really…). But Big Ben was transported to the Moon. Calculate his G.P.E where g = 1.6.     85     1.6   h            </content>
+		<related-content></related-content>
+		<thumbnail href="data/thumb/thumb_slide_000007.jpg"/>
+	</section>
+	<section type="slide" position="8" xmlns="">
+		<title>Let’s plot the results!</title>
+		<content>Let’s plot the results!   This graph is relatively easy to read. Between the tree and Big Ben, we only changed the height (+95m) But between Big Ben and the Moon, we only changed the field strength (9.81 down to 1.6). You can see that there are many variables to G.P.E and we changed the height and the field strength. Why don’t you try changing the mass?  Let’s plot the results!   This graph is relatively easy to read. Between the tree and Big Ben, we only changed the height (+95m) But between Big Ben and the Moon, we only changed the field strength (9.81 down to 1.6). You can see that there are many variables to G.P.E and we changed the height and the field strength. Why don’t you try changing the mass?  </content>
+		<related-content></related-content>
+		<thumbnail href="data/thumb/thumb_slide_000008.jpg"/>
+	</section>
+	<section type="slide" position="9" xmlns="">
+		<title>Key points</title>
+		<content>Key points The equation isn’t that hard in comparison to the kinetic energy example. Remember that each letter is just a placeholder for a number – this still applies. Hopefully this equation has been a little easier to apply but also  Key points The equation isn’t that hard in comparison to the kinetic energy example. Remember that each letter is just a placeholder for a number – this still applies. Hopefully this equation has been a little easier to apply but also  </content>
+		<related-content></related-content>
+		<thumbnail href="data/thumb/thumb_slide_000009.jpg"/>
+	</section>
+</document-metadata>
